@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.lanayru.app"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.lanayru.app.ui.MainActivity"
+            android:theme="@style/AppTheme.Splash"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.custom.TestActivity"/>
+        <activity android:name=".ui.custom.InfoViewActivity"/>
+        <activity android:name=".ui.custom.PullLoadingViewActivity"/>
+        <activity android:name=".ui.classloader.DexClassLoaderActivity"/>
+        <activity android:name=".ui.ThemeActivity"/>
+        <activity android:name=".ui.classloader.HotFixActivity"/>
+        <activity android:name=".ui.ProcessActivity"
+                  android:autoRemoveFromRecents="true"
+                  android:excludeFromRecents="true"
+                  android:icon="@color/colorAccent"
+                  android:banner="@color/colorAccent"
+            />
+        <activity android:name=".ui.architecture.UserDbActivity"/>
+        <activity android:name=".ui.ProgressBarActivity"/>
+        <activity android:name=".ui.SpansActivity"/>
+        <activity android:name=".ui.custom.GridLayoutActivity"/>
+        <activity android:name=".ui.eth.EthWalletActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,693 @@
+Initialized native services in: /Users/seven/.gradle/native
+Found daemon DaemonInfo{pid=34556, address=[ea783b7a-cf79-4e2d-bba8-75fefb26fa00 port:58543, addresses:[/0:0:0:0:0:0:0:1, /127.0.0.1]], state=Idle, lastBusy=1532677195118, context=DefaultDaemonContext[uid=0dea947d-a832-4957-a3b5-2e259c6b0911,javaHome=/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home,daemonRegistryDir=/Users/seven/.gradle/daemon,pid=34556,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=1024m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx5120m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home,daemonRegistryDir=/Users/seven/.gradle/daemon,pid=37832,idleTimeout=null,daemonOpts=-XX:MaxPermSize=1024m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx5120m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+Actual: DefaultDaemonContext[uid=0dea947d-a832-4957-a3b5-2e259c6b0911,javaHome=/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home,daemonRegistryDir=/Users/seven/.gradle/daemon,pid=34556,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=1024m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx5120m,-Dfile.encoding=UTF-8,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 36578). The daemon log file: /Users/seven/.gradle/daemon/4.4/daemon-36578.out.log
+Starting 20th build in daemon [uptime: 1 hrs 15 mins 45.414 secs, performance: 95%, no major garbage collections]
+Using 8 worker leases.
+Creating new cache for fileHashes, path /Users/seven/github.com/Lanayru/.gradle/4.4/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@3dee4ba3
+Starting Build
+Settings evaluated using settings file '/Users/seven/github.com/Lanayru/settings.gradle'.
+Projects loaded. Root project using build file '/Users/seven/github.com/Lanayru/build.gradle'.
+Included projects: [root project 'Lanayru', project ':JavaDemo', project ':app', project ':skin1']
+Evaluating root project 'Lanayru' using build file '/Users/seven/github.com/Lanayru/build.gradle'.
+Creating new cache for metadata-1.1/results, path /Users/seven/.gradle/caches/transforms-1/metadata-1.1/results.bin, access org.gradle.cache.internal.DefaultCacheAccess@71ab39a8
+Creating new cache for metadata-2.36/module-metadata, path /Users/seven/.gradle/caches/modules-2/metadata-2.36/module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@2ae10151
+Creating new cache for metadata-2.36/module-artifact, path /Users/seven/.gradle/caches/modules-2/metadata-2.36/module-artifact.bin, access org.gradle.cache.internal.DefaultCacheAccess@2ae10151
+Evaluating project ':JavaDemo' using build file '/Users/seven/github.com/Lanayru/JavaDemo/build.gradle'.
+Evaluating project ':app' using build file '/Users/seven/github.com/Lanayru/app/build.gradle'.
+WARNING: The option 'android.enableAapt2' is deprecated and should not be used anymore.
+Use 'android.enableAapt2=true' to remove this warning.
+It will be removed at the end of 2018..
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration androidTestDebugCompile
+Creating configuration androidTestDebugApk
+Creating configuration androidTestDebugProvided
+Creating configuration androidTestDebugApi
+Creating configuration androidTestDebugImplementation
+Creating configuration androidTestDebugRuntimeOnly
+Creating configuration androidTestDebugCompileOnly
+Creating configuration androidTestDebugWearApp
+Creating configuration androidTestDebugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+SDK initialized in 29 ms
+Using incremental javac compilation for :app debug.
+Using incremental javac compilation for :app debugUnitTest.
+Using incremental javac compilation for :app release.
+Using incremental javac compilation for :app releaseUnitTest.
+Using incremental javac compilation for :app debugAndroidTest.
+Evaluating project ':skin1' using build file '/Users/seven/github.com/Lanayru/skin1/build.gradle'.
+WARNING: The option 'android.enableAapt2' is deprecated and should not be used anymore.
+Use 'android.enableAapt2=true' to remove this warning.
+It will be removed at the end of 2018..
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration androidTestDebugCompile
+Creating configuration androidTestDebugApk
+Creating configuration androidTestDebugProvided
+Creating configuration androidTestDebugApi
+Creating configuration androidTestDebugImplementation
+Creating configuration androidTestDebugRuntimeOnly
+Creating configuration androidTestDebugCompileOnly
+Creating configuration androidTestDebugWearApp
+Creating configuration androidTestDebugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+SDK initialized in 0 ms
+Using incremental javac compilation for :skin1 debug.
+Using incremental javac compilation for :skin1 debugUnitTest.
+Using incremental javac compilation for :skin1 release.
+Using incremental javac compilation for :skin1 releaseUnitTest.
+Using incremental javac compilation for :skin1 debugAndroidTest.
+All projects evaluated.
+Selected primary task ':skin1:build' from project :skin1
+Creating new cache for annotation-processors, path /Users/seven/github.com/Lanayru/.gradle/4.4/fileContent/annotation-processors.bin, access org.gradle.cache.internal.DefaultCacheAccess@61d44b0
+Tasks to be executed: [task ':skin1:preBuild', task ':skin1:preDebugBuild', task ':skin1:compileDebugAidl', task ':skin1:compileDebugRenderscript', task ':skin1:checkDebugManifest', task ':skin1:generateDebugBuildConfig', task ':skin1:prepareLintJar', task ':skin1:mainApkListPersistenceDebug', task ':skin1:generateDebugResValues', task ':skin1:generateDebugResources', task ':skin1:mergeDebugResources', task ':skin1:createDebugCompatibleScreenManifests', task ':skin1:processDebugManifest', task ':skin1:splitsDiscoveryTaskDebug', task ':skin1:processDebugResources', task ':skin1:generateDebugSources', task ':skin1:javaPreCompileDebug', task ':skin1:compileDebugJavaWithJavac', task ':skin1:compileDebugNdk', task ':skin1:compileDebugSources', task ':skin1:mergeDebugShaders', task ':skin1:compileDebugShaders', task ':skin1:generateDebugAssets', task ':skin1:mergeDebugAssets', task ':skin1:transformClassesWithDexBuilderForDebug', task ':skin1:transformDexArchiveWithExternalLibsDexMergerForDebug', task ':skin1:transformDexArchiveWithDexMergerForDebug', task ':skin1:mergeDebugJniLibFolders', task ':skin1:transformNativeLibsWithMergeJniLibsForDebug', task ':skin1:transformNativeLibsWithStripDebugSymbolForDebug', task ':skin1:processDebugJavaRes', task ':skin1:transformResourcesWithMergeJavaResForDebug', task ':skin1:validateSigningDebug', task ':skin1:packageDebug', task ':skin1:assembleDebug', task ':skin1:preReleaseBuild', task ':skin1:compileReleaseAidl', task ':skin1:compileReleaseRenderscript', task ':skin1:checkReleaseManifest', task ':skin1:generateReleaseBuildConfig', task ':skin1:mainApkListPersistenceRelease', task ':skin1:generateReleaseResValues', task ':skin1:generateReleaseResources', task ':skin1:mergeReleaseResources', task ':skin1:createReleaseCompatibleScreenManifests', task ':skin1:processReleaseManifest', task ':skin1:splitsDiscoveryTaskRelease', task ':skin1:processReleaseResources', task ':skin1:generateReleaseSources', task ':skin1:javaPreCompileRelease', task ':skin1:compileReleaseJavaWithJavac', task ':skin1:compileReleaseNdk', task ':skin1:compileReleaseSources', task ':skin1:lintVitalRelease', task ':skin1:mergeReleaseShaders', task ':skin1:compileReleaseShaders', task ':skin1:generateReleaseAssets', task ':skin1:mergeReleaseAssets', task ':skin1:transformClassesWithDexBuilderForRelease', task ':skin1:transformDexArchiveWithExternalLibsDexMergerForRelease', task ':skin1:transformDexArchiveWithDexMergerForRelease', task ':skin1:mergeReleaseJniLibFolders', task ':skin1:transformNativeLibsWithMergeJniLibsForRelease', task ':skin1:transformNativeLibsWithStripDebugSymbolForRelease', task ':skin1:processReleaseJavaRes', task ':skin1:transformResourcesWithMergeJavaResForRelease', task ':skin1:packageRelease', task ':skin1:assembleRelease', task ':skin1:assemble', task ':skin1:lint', task ':skin1:preDebugUnitTestBuild', task ':skin1:javaPreCompileDebugUnitTest', task ':skin1:compileDebugUnitTestJavaWithJavac', task ':skin1:mockableAndroidJar', task ':skin1:processDebugUnitTestJavaRes', task ':skin1:testDebugUnitTest', task ':skin1:preReleaseUnitTestBuild', task ':skin1:javaPreCompileReleaseUnitTest', task ':skin1:compileReleaseUnitTestJavaWithJavac', task ':skin1:processReleaseUnitTestJavaRes', task ':skin1:testReleaseUnitTest', task ':skin1:test', task ':skin1:check', task ':skin1:build']
+Creating new cache for resourceHashesCache, path /Users/seven/github.com/Lanayru/.gradle/4.4/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheAccess@3dee4ba3
+Creating new cache for taskHistory, path /Users/seven/github.com/Lanayru/.gradle/4.4/taskHistory/taskHistory.bin, access org.gradle.cache.internal.DefaultCacheAccess@2e63d2e6
+Creating new cache for outputFiles, path /Users/seven/github.com/Lanayru/.gradle/buildOutputCleanup/outputFiles.bin, access org.gradle.cache.internal.DefaultCacheAccess@1f21bf8f
+:skin1:preBuild (Thread[Task worker for ':',5,main]) started.
+:skin1:preBuild
+Skipping task ':skin1:preBuild' as it has no actions.
+:skin1:preBuild UP-TO-DATE
+:skin1:preBuild (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:preDebugBuild (Thread[Task worker for ':',5,main]) started.
+:skin1:preDebugBuild
+Putting task artifact state for task ':skin1:preDebugBuild' into context took 0.0 secs.
+Skipping task ':skin1:preDebugBuild' as it is up-to-date (took 0.003 secs).
+:skin1:preDebugBuild UP-TO-DATE
+:skin1:preDebugBuild (Thread[Task worker for ':',5,main]) completed. Took 0.003 secs.
+:skin1:compileDebugAidl (Thread[Task worker for ':',5,main]) started.
+:skin1:compileDebugAidl
+Putting task artifact state for task ':skin1:compileDebugAidl' into context took 0.0 secs.
+Skipping task ':skin1:compileDebugAidl' as it is up-to-date (took 0.001 secs).
+:skin1:compileDebugAidl UP-TO-DATE
+:skin1:compileDebugAidl (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:compileDebugRenderscript (Thread[Task worker for ':',5,main]) started.
+:skin1:compileDebugRenderscript
+Putting task artifact state for task ':skin1:compileDebugRenderscript' into context took 0.0 secs.
+Skipping task ':skin1:compileDebugRenderscript' as it is up-to-date (took 0.001 secs).
+:skin1:compileDebugRenderscript UP-TO-DATE
+:skin1:compileDebugRenderscript (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:checkDebugManifest (Thread[Task worker for ':',5,main]) started.
+:skin1:checkDebugManifest
+Putting task artifact state for task ':skin1:checkDebugManifest' into context took 0.0 secs.
+Skipping task ':skin1:checkDebugManifest' as it is up-to-date (took 0.0 secs).
+:skin1:checkDebugManifest UP-TO-DATE
+:skin1:checkDebugManifest (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:generateDebugBuildConfig (Thread[Task worker for ':',5,main]) started.
+:skin1:generateDebugBuildConfig
+Putting task artifact state for task ':skin1:generateDebugBuildConfig' into context took 0.0 secs.
+Skipping task ':skin1:generateDebugBuildConfig' as it is up-to-date (took 0.0 secs).
+:skin1:generateDebugBuildConfig UP-TO-DATE
+:skin1:generateDebugBuildConfig (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:prepareLintJar (Thread[Task worker for ':',5,main]) started.
+:skin1:prepareLintJar
+Putting task artifact state for task ':skin1:prepareLintJar' into context took 0.0 secs.
+Skipping task ':skin1:prepareLintJar' as it is up-to-date (took 0.0 secs).
+:skin1:prepareLintJar UP-TO-DATE
+:skin1:prepareLintJar (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:mainApkListPersistenceDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:mainApkListPersistenceDebug
+Putting task artifact state for task ':skin1:mainApkListPersistenceDebug' into context took 0.0 secs.
+Skipping task ':skin1:mainApkListPersistenceDebug' as it is up-to-date (took 0.0 secs).
+:skin1:mainApkListPersistenceDebug UP-TO-DATE
+:skin1:mainApkListPersistenceDebug (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:generateDebugResValues (Thread[Task worker for ':',5,main]) started.
+:skin1:generateDebugResValues
+Putting task artifact state for task ':skin1:generateDebugResValues' into context took 0.0 secs.
+Skipping task ':skin1:generateDebugResValues' as it is up-to-date (took 0.0 secs).
+:skin1:generateDebugResValues UP-TO-DATE
+:skin1:generateDebugResValues (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:generateDebugResources (Thread[Task worker for ':',5,main]) started.
+:skin1:generateDebugResources
+Skipping task ':skin1:generateDebugResources' as it has no actions.
+:skin1:generateDebugResources UP-TO-DATE
+:skin1:generateDebugResources (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:mergeDebugResources (Thread[Task worker for ':',5,main]) started.
+:skin1:mergeDebugResources
+Putting task artifact state for task ':skin1:mergeDebugResources' into context took 0.0 secs.
+Skipping task ':skin1:mergeDebugResources' as it is up-to-date (took 0.001 secs).
+:skin1:mergeDebugResources UP-TO-DATE
+:skin1:mergeDebugResources (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:createDebugCompatibleScreenManifests (Thread[Task worker for ':',5,main]) started.
+:skin1:createDebugCompatibleScreenManifests
+Putting task artifact state for task ':skin1:createDebugCompatibleScreenManifests' into context took 0.0 secs.
+Skipping task ':skin1:createDebugCompatibleScreenManifests' as it is up-to-date (took 0.0 secs).
+:skin1:createDebugCompatibleScreenManifests UP-TO-DATE
+:skin1:createDebugCompatibleScreenManifests (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:processDebugManifest (Thread[Task worker for ':',5,main]) started.
+:skin1:processDebugManifest
+Putting task artifact state for task ':skin1:processDebugManifest' into context took 0.0 secs.
+Skipping task ':skin1:processDebugManifest' as it is up-to-date (took 0.0 secs).
+:skin1:processDebugManifest UP-TO-DATE
+:skin1:processDebugManifest (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:splitsDiscoveryTaskDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:splitsDiscoveryTaskDebug
+Putting task artifact state for task ':skin1:splitsDiscoveryTaskDebug' into context took 0.0 secs.
+Skipping task ':skin1:splitsDiscoveryTaskDebug' as it is up-to-date (took 0.0 secs).
+:skin1:splitsDiscoveryTaskDebug UP-TO-DATE
+:skin1:splitsDiscoveryTaskDebug (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:processDebugResources (Thread[Task worker for ':',5,main]) started.
+:skin1:processDebugResources
+Putting task artifact state for task ':skin1:processDebugResources' into context took 0.0 secs.
+Skipping task ':skin1:processDebugResources' as it is up-to-date (took 0.001 secs).
+:skin1:processDebugResources UP-TO-DATE
+:skin1:processDebugResources (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:generateDebugSources (Thread[Task worker for ':',5,main]) started.
+:skin1:generateDebugSources
+Skipping task ':skin1:generateDebugSources' as it has no actions.
+:skin1:generateDebugSources UP-TO-DATE
+:skin1:generateDebugSources (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:javaPreCompileDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:javaPreCompileDebug
+Putting task artifact state for task ':skin1:javaPreCompileDebug' into context took 0.0 secs.
+Skipping task ':skin1:javaPreCompileDebug' as it is up-to-date (took 0.0 secs).
+:skin1:javaPreCompileDebug UP-TO-DATE
+:skin1:javaPreCompileDebug (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:compileDebugJavaWithJavac (Thread[Task worker for ':',5,main]) started.
+:skin1:compileDebugJavaWithJavac
+Putting task artifact state for task ':skin1:compileDebugJavaWithJavac' into context took 0.0 secs.
+file or directory '/Users/seven/github.com/Lanayru/skin1/src/debug/java', not found
+file or directory '/Users/seven/github.com/Lanayru/skin1/src/debug/java', not found
+Skipping task ':skin1:compileDebugJavaWithJavac' as it is up-to-date (took 0.001 secs).
+:skin1:compileDebugJavaWithJavac UP-TO-DATE
+:skin1:compileDebugJavaWithJavac (Thread[Task worker for ':',5,main]) completed. Took 0.002 secs.
+:skin1:compileDebugNdk (Thread[Task worker for ':',5,main]) started.
+:skin1:compileDebugNdk
+Putting task artifact state for task ':skin1:compileDebugNdk' into context took 0.0 secs.
+Skipping task ':skin1:compileDebugNdk' as it has no source files and no previous output files.
+:skin1:compileDebugNdk NO-SOURCE
+:skin1:compileDebugNdk (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:compileDebugSources (Thread[Task worker for ':',5,main]) started.
+:skin1:compileDebugSources
+Skipping task ':skin1:compileDebugSources' as it has no actions.
+:skin1:compileDebugSources UP-TO-DATE
+:skin1:compileDebugSources (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:mergeDebugShaders (Thread[Task worker for ':',5,main]) started.
+:skin1:mergeDebugShaders
+Putting task artifact state for task ':skin1:mergeDebugShaders' into context took 0.0 secs.
+Skipping task ':skin1:mergeDebugShaders' as it is up-to-date (took 0.0 secs).
+:skin1:mergeDebugShaders UP-TO-DATE
+:skin1:mergeDebugShaders (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:compileDebugShaders (Thread[Task worker for ':',5,main]) started.
+:skin1:compileDebugShaders
+Putting task artifact state for task ':skin1:compileDebugShaders' into context took 0.0 secs.
+Skipping task ':skin1:compileDebugShaders' as it is up-to-date (took 0.0 secs).
+:skin1:compileDebugShaders UP-TO-DATE
+:skin1:compileDebugShaders (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:generateDebugAssets (Thread[Task worker for ':',5,main]) started.
+:skin1:generateDebugAssets
+Skipping task ':skin1:generateDebugAssets' as it has no actions.
+:skin1:generateDebugAssets UP-TO-DATE
+:skin1:generateDebugAssets (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:mergeDebugAssets (Thread[Task worker for ':',5,main]) started.
+:skin1:mergeDebugAssets
+Putting task artifact state for task ':skin1:mergeDebugAssets' into context took 0.0 secs.
+Skipping task ':skin1:mergeDebugAssets' as it is up-to-date (took 0.0 secs).
+:skin1:mergeDebugAssets UP-TO-DATE
+:skin1:mergeDebugAssets (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:transformClassesWithDexBuilderForDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:transformClassesWithDexBuilderForDebug
+Putting task artifact state for task ':skin1:transformClassesWithDexBuilderForDebug' into context took 0.0 secs.
+Skipping task ':skin1:transformClassesWithDexBuilderForDebug' as it is up-to-date (took 0.001 secs).
+:skin1:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:skin1:transformClassesWithDexBuilderForDebug (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:transformDexArchiveWithExternalLibsDexMergerForDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:transformDexArchiveWithExternalLibsDexMergerForDebug
+Putting task artifact state for task ':skin1:transformDexArchiveWithExternalLibsDexMergerForDebug' into context took 0.0 secs.
+Skipping task ':skin1:transformDexArchiveWithExternalLibsDexMergerForDebug' as it is up-to-date (took 0.0 secs).
+:skin1:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:skin1:transformDexArchiveWithExternalLibsDexMergerForDebug (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:transformDexArchiveWithDexMergerForDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:transformDexArchiveWithDexMergerForDebug
+Putting task artifact state for task ':skin1:transformDexArchiveWithDexMergerForDebug' into context took 0.0 secs.
+Skipping task ':skin1:transformDexArchiveWithDexMergerForDebug' as it is up-to-date (took 0.001 secs).
+:skin1:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:skin1:transformDexArchiveWithDexMergerForDebug (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:mergeDebugJniLibFolders (Thread[Task worker for ':',5,main]) started.
+:skin1:mergeDebugJniLibFolders
+Putting task artifact state for task ':skin1:mergeDebugJniLibFolders' into context took 0.0 secs.
+Skipping task ':skin1:mergeDebugJniLibFolders' as it is up-to-date (took 0.0 secs).
+:skin1:mergeDebugJniLibFolders UP-TO-DATE
+:skin1:mergeDebugJniLibFolders (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:transformNativeLibsWithMergeJniLibsForDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:transformNativeLibsWithMergeJniLibsForDebug
+Putting task artifact state for task ':skin1:transformNativeLibsWithMergeJniLibsForDebug' into context took 0.0 secs.
+Skipping task ':skin1:transformNativeLibsWithMergeJniLibsForDebug' as it is up-to-date (took 0.001 secs).
+:skin1:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:skin1:transformNativeLibsWithMergeJniLibsForDebug (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:transformNativeLibsWithStripDebugSymbolForDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:transformNativeLibsWithStripDebugSymbolForDebug
+Putting task artifact state for task ':skin1:transformNativeLibsWithStripDebugSymbolForDebug' into context took 0.0 secs.
+Skipping task ':skin1:transformNativeLibsWithStripDebugSymbolForDebug' as it is up-to-date (took 0.0 secs).
+:skin1:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:skin1:transformNativeLibsWithStripDebugSymbolForDebug (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:processDebugJavaRes (Thread[Task worker for ':',5,main]) started.
+:skin1:processDebugJavaRes
+Putting task artifact state for task ':skin1:processDebugJavaRes' into context took 0.0 secs.
+Skipping task ':skin1:processDebugJavaRes' as it has no source files and no previous output files.
+:skin1:processDebugJavaRes NO-SOURCE
+:skin1:processDebugJavaRes (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:transformResourcesWithMergeJavaResForDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:transformResourcesWithMergeJavaResForDebug
+Putting task artifact state for task ':skin1:transformResourcesWithMergeJavaResForDebug' into context took 0.0 secs.
+Skipping task ':skin1:transformResourcesWithMergeJavaResForDebug' as it is up-to-date (took 0.001 secs).
+:skin1:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:skin1:transformResourcesWithMergeJavaResForDebug (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:validateSigningDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:validateSigningDebug
+Putting task artifact state for task ':skin1:validateSigningDebug' into context took 0.0 secs.
+Skipping task ':skin1:validateSigningDebug' as it is up-to-date (took 0.0 secs).
+:skin1:validateSigningDebug UP-TO-DATE
+:skin1:validateSigningDebug (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:packageDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:packageDebug
+Putting task artifact state for task ':skin1:packageDebug' into context took 0.0 secs.
+Skipping task ':skin1:packageDebug' as it is up-to-date (took 0.002 secs).
+:skin1:packageDebug UP-TO-DATE
+:skin1:packageDebug (Thread[Task worker for ':',5,main]) completed. Took 0.002 secs.
+:skin1:assembleDebug (Thread[Task worker for ':',5,main]) started.
+:skin1:assembleDebug
+Skipping task ':skin1:assembleDebug' as it has no actions.
+:skin1:assembleDebug UP-TO-DATE
+:skin1:assembleDebug (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:preReleaseBuild (Thread[Task worker for ':',5,main]) started.
+:skin1:preReleaseBuild
+Putting task artifact state for task ':skin1:preReleaseBuild' into context took 0.0 secs.
+Skipping task ':skin1:preReleaseBuild' as it is up-to-date (took 0.001 secs).
+:skin1:preReleaseBuild UP-TO-DATE
+:skin1:preReleaseBuild (Thread[Task worker for ':',5,main]) completed. Took 0.002 secs.
+:skin1:compileReleaseAidl (Thread[Task worker for ':',5,main]) started.
+:skin1:compileReleaseAidl
+Putting task artifact state for task ':skin1:compileReleaseAidl' into context took 0.0 secs.
+Skipping task ':skin1:compileReleaseAidl' as it is up-to-date (took 0.0 secs).
+:skin1:compileReleaseAidl UP-TO-DATE
+:skin1:compileReleaseAidl (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:compileReleaseRenderscript (Thread[Task worker for ':',5,main]) started.
+:skin1:compileReleaseRenderscript
+Putting task artifact state for task ':skin1:compileReleaseRenderscript' into context took 0.0 secs.
+Skipping task ':skin1:compileReleaseRenderscript' as it is up-to-date (took 0.0 secs).
+:skin1:compileReleaseRenderscript UP-TO-DATE
+:skin1:compileReleaseRenderscript (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:checkReleaseManifest (Thread[Task worker for ':',5,main]) started.
+:skin1:checkReleaseManifest
+Putting task artifact state for task ':skin1:checkReleaseManifest' into context took 0.0 secs.
+Skipping task ':skin1:checkReleaseManifest' as it is up-to-date (took 0.0 secs).
+:skin1:checkReleaseManifest UP-TO-DATE
+:skin1:checkReleaseManifest (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:generateReleaseBuildConfig (Thread[Task worker for ':',5,main]) started.
+:skin1:generateReleaseBuildConfig
+Putting task artifact state for task ':skin1:generateReleaseBuildConfig' into context took 0.0 secs.
+Skipping task ':skin1:generateReleaseBuildConfig' as it is up-to-date (took 0.0 secs).
+:skin1:generateReleaseBuildConfig UP-TO-DATE
+:skin1:generateReleaseBuildConfig (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:mainApkListPersistenceRelease (Thread[Task worker for ':',5,main]) started.
+:skin1:mainApkListPersistenceRelease
+Putting task artifact state for task ':skin1:mainApkListPersistenceRelease' into context took 0.0 secs.
+Skipping task ':skin1:mainApkListPersistenceRelease' as it is up-to-date (took 0.0 secs).
+:skin1:mainApkListPersistenceRelease UP-TO-DATE
+:skin1:mainApkListPersistenceRelease (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:generateReleaseResValues (Thread[Task worker for ':',5,main]) started.
+:skin1:generateReleaseResValues
+Putting task artifact state for task ':skin1:generateReleaseResValues' into context took 0.0 secs.
+Skipping task ':skin1:generateReleaseResValues' as it is up-to-date (took 0.0 secs).
+:skin1:generateReleaseResValues UP-TO-DATE
+:skin1:generateReleaseResValues (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:generateReleaseResources (Thread[Task worker for ':',5,main]) started.
+:skin1:generateReleaseResources
+Skipping task ':skin1:generateReleaseResources' as it has no actions.
+:skin1:generateReleaseResources UP-TO-DATE
+:skin1:generateReleaseResources (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:mergeReleaseResources (Thread[Task worker for ':',5,main]) started.
+:skin1:mergeReleaseResources
+Putting task artifact state for task ':skin1:mergeReleaseResources' into context took 0.0 secs.
+Skipping task ':skin1:mergeReleaseResources' as it is up-to-date (took 0.0 secs).
+:skin1:mergeReleaseResources UP-TO-DATE
+:skin1:mergeReleaseResources (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:createReleaseCompatibleScreenManifests (Thread[Task worker for ':',5,main]) started.
+:skin1:createReleaseCompatibleScreenManifests
+Putting task artifact state for task ':skin1:createReleaseCompatibleScreenManifests' into context took 0.0 secs.
+Skipping task ':skin1:createReleaseCompatibleScreenManifests' as it is up-to-date (took 0.0 secs).
+:skin1:createReleaseCompatibleScreenManifests UP-TO-DATE
+:skin1:createReleaseCompatibleScreenManifests (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:processReleaseManifest (Thread[Task worker for ':',5,main]) started.
+:skin1:processReleaseManifest
+Putting task artifact state for task ':skin1:processReleaseManifest' into context took 0.0 secs.
+Skipping task ':skin1:processReleaseManifest' as it is up-to-date (took 0.0 secs).
+:skin1:processReleaseManifest UP-TO-DATE
+:skin1:processReleaseManifest (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:splitsDiscoveryTaskRelease (Thread[Task worker for ':',5,main]) started.
+:skin1:splitsDiscoveryTaskRelease
+Putting task artifact state for task ':skin1:splitsDiscoveryTaskRelease' into context took 0.0 secs.
+Skipping task ':skin1:splitsDiscoveryTaskRelease' as it is up-to-date (took 0.0 secs).
+:skin1:splitsDiscoveryTaskRelease UP-TO-DATE
+:skin1:splitsDiscoveryTaskRelease (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:processReleaseResources (Thread[Task worker for ':',5,main]) started.
+:skin1:processReleaseResources
+Putting task artifact state for task ':skin1:processReleaseResources' into context took 0.0 secs.
+Skipping task ':skin1:processReleaseResources' as it is up-to-date (took 0.001 secs).
+:skin1:processReleaseResources UP-TO-DATE
+:skin1:processReleaseResources (Thread[Task worker for ':',5,main]) completed. Took 0.001 secs.
+:skin1:generateReleaseSources (Thread[Task worker for ':',5,main]) started.
+:skin1:generateReleaseSources
+Skipping task ':skin1:generateReleaseSources' as it has no actions.
+:skin1:generateReleaseSources UP-TO-DATE
+:skin1:generateReleaseSources (Thread[Task worker for ':',5,main]) completed. Took 0.0 secs.
+:skin1:javaPreCompileRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:javaPreCompileRelease
+Putting task artifact state for task ':skin1:javaPreCompileRelease' into context took 0.0 secs.
+Skipping task ':skin1:javaPreCompileRelease' as it is up-to-date (took 0.0 secs).
+:skin1:javaPreCompileRelease UP-TO-DATE
+:skin1:javaPreCompileRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:compileReleaseJavaWithJavac (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:compileReleaseJavaWithJavac
+Putting task artifact state for task ':skin1:compileReleaseJavaWithJavac' into context took 0.0 secs.
+file or directory '/Users/seven/github.com/Lanayru/skin1/src/release/java', not found
+file or directory '/Users/seven/github.com/Lanayru/skin1/src/release/java', not found
+Skipping task ':skin1:compileReleaseJavaWithJavac' as it is up-to-date (took 0.002 secs).
+:skin1:compileReleaseJavaWithJavac UP-TO-DATE
+:skin1:compileReleaseJavaWithJavac (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.003 secs.
+:skin1:compileReleaseNdk (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:compileReleaseNdk
+Putting task artifact state for task ':skin1:compileReleaseNdk' into context took 0.0 secs.
+Skipping task ':skin1:compileReleaseNdk' as it has no source files and no previous output files.
+:skin1:compileReleaseNdk NO-SOURCE
+:skin1:compileReleaseNdk (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:compileReleaseSources (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:compileReleaseSources
+Skipping task ':skin1:compileReleaseSources' as it has no actions.
+:skin1:compileReleaseSources UP-TO-DATE
+:skin1:compileReleaseSources (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:lintVitalRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:lintVitalRelease
+Skipping task ':skin1:lintVitalRelease' as task onlyIf is false.
+:skin1:lintVitalRelease SKIPPED
+:skin1:lintVitalRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:mergeReleaseShaders (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:mergeReleaseShaders
+Putting task artifact state for task ':skin1:mergeReleaseShaders' into context took 0.0 secs.
+Skipping task ':skin1:mergeReleaseShaders' as it is up-to-date (took 0.0 secs).
+:skin1:mergeReleaseShaders UP-TO-DATE
+:skin1:mergeReleaseShaders (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:compileReleaseShaders (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:compileReleaseShaders
+Putting task artifact state for task ':skin1:compileReleaseShaders' into context took 0.0 secs.
+Skipping task ':skin1:compileReleaseShaders' as it is up-to-date (took 0.0 secs).
+:skin1:compileReleaseShaders UP-TO-DATE
+:skin1:compileReleaseShaders (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:generateReleaseAssets (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:generateReleaseAssets
+Skipping task ':skin1:generateReleaseAssets' as it has no actions.
+:skin1:generateReleaseAssets UP-TO-DATE
+:skin1:generateReleaseAssets (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:mergeReleaseAssets (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:mergeReleaseAssets
+Putting task artifact state for task ':skin1:mergeReleaseAssets' into context took 0.0 secs.
+Skipping task ':skin1:mergeReleaseAssets' as it is up-to-date (took 0.0 secs).
+:skin1:mergeReleaseAssets UP-TO-DATE
+:skin1:mergeReleaseAssets (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:skin1:transformClassesWithDexBuilderForRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:transformClassesWithDexBuilderForRelease
+Putting task artifact state for task ':skin1:transformClassesWithDexBuilderForRelease' into context took 0.0 secs.
+Skipping task ':skin1:transformClassesWithDexBuilderForRelease' as it is up-to-date (took 0.002 secs).
+:skin1:transformClassesWithDexBuilderForRelease UP-TO-DATE
+:skin1:transformClassesWithDexBuilderForRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.002 secs.
+:skin1:transformDexArchiveWithExternalLibsDexMergerForRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:transformDexArchiveWithExternalLibsDexMergerForRelease
+Putting task artifact state for task ':skin1:transformDexArchiveWithExternalLibsDexMergerForRelease' into context took 0.0 secs.
+Skipping task ':skin1:transformDexArchiveWithExternalLibsDexMergerForRelease' as it is up-to-date (took 0.001 secs).
+:skin1:transformDexArchiveWithExternalLibsDexMergerForRelease UP-TO-DATE
+:skin1:transformDexArchiveWithExternalLibsDexMergerForRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:skin1:transformDexArchiveWithDexMergerForRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:transformDexArchiveWithDexMergerForRelease
+Putting task artifact state for task ':skin1:transformDexArchiveWithDexMergerForRelease' into context took 0.0 secs.
+Skipping task ':skin1:transformDexArchiveWithDexMergerForRelease' as it is up-to-date (took 0.001 secs).
+:skin1:transformDexArchiveWithDexMergerForRelease UP-TO-DATE
+:skin1:transformDexArchiveWithDexMergerForRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:skin1:mergeReleaseJniLibFolders (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:mergeReleaseJniLibFolders
+Putting task artifact state for task ':skin1:mergeReleaseJniLibFolders' into context took 0.0 secs.
+Skipping task ':skin1:mergeReleaseJniLibFolders' as it is up-to-date (took 0.0 secs).
+:skin1:mergeReleaseJniLibFolders UP-TO-DATE
+:skin1:mergeReleaseJniLibFolders (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:transformNativeLibsWithMergeJniLibsForRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:transformNativeLibsWithMergeJniLibsForRelease
+Putting task artifact state for task ':skin1:transformNativeLibsWithMergeJniLibsForRelease' into context took 0.0 secs.
+Skipping task ':skin1:transformNativeLibsWithMergeJniLibsForRelease' as it is up-to-date (took 0.0 secs).
+:skin1:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:skin1:transformNativeLibsWithMergeJniLibsForRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:skin1:transformNativeLibsWithStripDebugSymbolForRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:transformNativeLibsWithStripDebugSymbolForRelease
+Putting task artifact state for task ':skin1:transformNativeLibsWithStripDebugSymbolForRelease' into context took 0.0 secs.
+Skipping task ':skin1:transformNativeLibsWithStripDebugSymbolForRelease' as it is up-to-date (took 0.0 secs).
+:skin1:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:skin1:transformNativeLibsWithStripDebugSymbolForRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:processReleaseJavaRes (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:processReleaseJavaRes
+Putting task artifact state for task ':skin1:processReleaseJavaRes' into context took 0.0 secs.
+Skipping task ':skin1:processReleaseJavaRes' as it has no source files and no previous output files.
+:skin1:processReleaseJavaRes NO-SOURCE
+:skin1:processReleaseJavaRes (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:transformResourcesWithMergeJavaResForRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:transformResourcesWithMergeJavaResForRelease
+Putting task artifact state for task ':skin1:transformResourcesWithMergeJavaResForRelease' into context took 0.0 secs.
+Skipping task ':skin1:transformResourcesWithMergeJavaResForRelease' as it is up-to-date (took 0.0 secs).
+:skin1:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:skin1:transformResourcesWithMergeJavaResForRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:skin1:packageRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:packageRelease
+Putting task artifact state for task ':skin1:packageRelease' into context took 0.0 secs.
+Skipping task ':skin1:packageRelease' as it is up-to-date (took 0.002 secs).
+:skin1:packageRelease UP-TO-DATE
+:skin1:packageRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.003 secs.
+:skin1:assembleRelease (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:assembleRelease
+Skipping task ':skin1:assembleRelease' as it has no actions.
+:skin1:assembleRelease UP-TO-DATE
+:skin1:assembleRelease (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:assemble (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:assemble
+Skipping task ':skin1:assemble' as it has no actions.
+:skin1:assemble UP-TO-DATE
+:skin1:assemble (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:lint (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:lint
+Putting task artifact state for task ':skin1:lint' into context took 0.0 secs.
+Up-to-date check for task ':skin1:lint' took 0.0 secs. It is not up-to-date because:
+  Task has not declared any outputs.
+Creating new cache for metadata-2.36/module-artifacts, path /Users/seven/.gradle/caches/modules-2/metadata-2.36/module-artifacts.bin, access org.gradle.cache.internal.DefaultCacheAccess@2ae10151
+Ran lint on variant debug: 4 issues found
+Ran lint on variant release: 4 issues found
+Wrote HTML report to file:///Users/seven/github.com/Lanayru/skin1/build/reports/lint-results.html
+Wrote XML report to file:///Users/seven/github.com/Lanayru/skin1/build/reports/lint-results.xml
+:skin1:lint (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 2.974 secs.
+:skin1:preDebugUnitTestBuild (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:preDebugUnitTestBuild
+Skipping task ':skin1:preDebugUnitTestBuild' as it has no actions.
+:skin1:preDebugUnitTestBuild UP-TO-DATE
+:skin1:preDebugUnitTestBuild (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:javaPreCompileDebugUnitTest (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:javaPreCompileDebugUnitTest
+Putting task artifact state for task ':skin1:javaPreCompileDebugUnitTest' into context took 0.0 secs.
+Skipping task ':skin1:javaPreCompileDebugUnitTest' as it is up-to-date (took 0.001 secs).
+:skin1:javaPreCompileDebugUnitTest UP-TO-DATE
+:skin1:javaPreCompileDebugUnitTest (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:skin1:compileDebugUnitTestJavaWithJavac (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:compileDebugUnitTestJavaWithJavac
+Putting task artifact state for task ':skin1:compileDebugUnitTestJavaWithJavac' into context took 0.0 secs.
+file or directory '/Users/seven/github.com/Lanayru/skin1/src/testDebug/java', not found
+Skipping task ':skin1:compileDebugUnitTestJavaWithJavac' as it is up-to-date (took 0.001 secs).
+:skin1:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:skin1:compileDebugUnitTestJavaWithJavac (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.002 secs.
+:skin1:mockableAndroidJar (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:mockableAndroidJar
+Putting task artifact state for task ':skin1:mockableAndroidJar' into context took 0.0 secs.
+Skipping task ':skin1:mockableAndroidJar' as it is up-to-date (took 0.0 secs).
+:skin1:mockableAndroidJar UP-TO-DATE
+:skin1:mockableAndroidJar (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:processDebugUnitTestJavaRes (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:processDebugUnitTestJavaRes
+Putting task artifact state for task ':skin1:processDebugUnitTestJavaRes' into context took 0.0 secs.
+Skipping task ':skin1:processDebugUnitTestJavaRes' as it has no source files and no previous output files.
+:skin1:processDebugUnitTestJavaRes NO-SOURCE
+:skin1:processDebugUnitTestJavaRes (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:testDebugUnitTest (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:testDebugUnitTest
+Putting task artifact state for task ':skin1:testDebugUnitTest' into context took 0.0 secs.
+Skipping task ':skin1:testDebugUnitTest' as it is up-to-date (took 0.002 secs).
+:skin1:testDebugUnitTest UP-TO-DATE
+:skin1:testDebugUnitTest (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.003 secs.
+:skin1:preReleaseUnitTestBuild (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:preReleaseUnitTestBuild
+Skipping task ':skin1:preReleaseUnitTestBuild' as it has no actions.
+:skin1:preReleaseUnitTestBuild UP-TO-DATE
+:skin1:preReleaseUnitTestBuild (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:javaPreCompileReleaseUnitTest (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:javaPreCompileReleaseUnitTest
+Putting task artifact state for task ':skin1:javaPreCompileReleaseUnitTest' into context took 0.0 secs.
+Skipping task ':skin1:javaPreCompileReleaseUnitTest' as it is up-to-date (took 0.001 secs).
+:skin1:javaPreCompileReleaseUnitTest UP-TO-DATE
+:skin1:javaPreCompileReleaseUnitTest (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.001 secs.
+:skin1:compileReleaseUnitTestJavaWithJavac (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:compileReleaseUnitTestJavaWithJavac
+Putting task artifact state for task ':skin1:compileReleaseUnitTestJavaWithJavac' into context took 0.0 secs.
+file or directory '/Users/seven/github.com/Lanayru/skin1/src/testRelease/java', not found
+Skipping task ':skin1:compileReleaseUnitTestJavaWithJavac' as it is up-to-date (took 0.001 secs).
+:skin1:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:skin1:compileReleaseUnitTestJavaWithJavac (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.002 secs.
+:skin1:processReleaseUnitTestJavaRes (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:processReleaseUnitTestJavaRes
+Putting task artifact state for task ':skin1:processReleaseUnitTestJavaRes' into context took 0.0 secs.
+Skipping task ':skin1:processReleaseUnitTestJavaRes' as it has no source files and no previous output files.
+:skin1:processReleaseUnitTestJavaRes NO-SOURCE
+:skin1:processReleaseUnitTestJavaRes (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:testReleaseUnitTest (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:testReleaseUnitTest
+Putting task artifact state for task ':skin1:testReleaseUnitTest' into context took 0.0 secs.
+Skipping task ':skin1:testReleaseUnitTest' as it is up-to-date (took 0.003 secs).
+:skin1:testReleaseUnitTest UP-TO-DATE
+:skin1:testReleaseUnitTest (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.003 secs.
+:skin1:test (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:test
+Skipping task ':skin1:test' as it has no actions.
+:skin1:test UP-TO-DATE
+:skin1:test (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:check (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:check
+Skipping task ':skin1:check' as it has no actions.
+:skin1:check (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+:skin1:build (Thread[Task worker for ':' Thread 5,5,main]) started.
+:skin1:build
+Skipping task ':skin1:build' as it has no actions.
+:skin1:build (Thread[Task worker for ':' Thread 5,5,main]) completed. Took 0.0 secs.
+
+BUILD SUCCESSFUL in 3s
+60 actionable tasks: 1 executed, 59 up-to-date

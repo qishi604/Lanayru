@@ -1,0 +1,32 @@
+//android.aaptOptions.additionalParameters("-P", project.buildDir.absolutePath + "/outputs/generated_exported_all_resouces.xml")
+// https://fucknmb.com/2017/11/15/aapt2%E9%80%82%E9%85%8D%E4%B9%8B%E8%B5%84%E6%BA%90id%E5%9B%BA%E5%AE%9A/
+afterEvaluate {
+
+    if (project.plugins.hasPlugin('com.android.application')) {
+
+        def android = project.extensions.getByName('android')
+
+        android.aaptoption
+
+
+        for (variant in android.applicationVariants) {
+            def processResourcesTask = project.tasks.getByName("process${Variant.name.capitalize()}Resources")
+            if (processResourcesTask) {
+                def aaptOptions = processResourcesTask.aaptOptions
+                File publicTxtFile = project.rootProject.file('public.txt')
+                //public文件存在，则应用，不存在则生成
+                if (publicTxtFile.exists()) {
+                    project.logger.error "${publicTxtFile} exists, apply it."
+                    //aapt2添加--stable-ids参数应用
+                    aaptOptions.additionalParameters("--stable-ids", "${publicTxtFile}")
+                    aaptOptions.additionalParameters("--emit-ids", "${publicTxtFile}")
+                } else {
+                    project.logger.error "${publicTxtFile} not exists, generate it."
+                    //aapt2添加--emit-ids参数生成
+                    aaptOptions.additionalParameters("--emit-ids", "${publicTxtFile}")
+                }
+            }
+        }
+    }
+
+}

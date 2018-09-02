@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="color" name="colorAccent" id="0x7f3a0001" />
+    <public type="color" name="colorPrimary" id="0x7f3a0002" />
+    <public type="color" name="colorPrimaryDark" id="0x7f3a0003" />
+</resources>

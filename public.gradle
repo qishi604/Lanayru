@@ -1,0 +1,32 @@
+//android.aaptOptions.additionalParameters("-P", project.buildDir.absolutePath + "/outputs/generated_exported_all_resouces.xml")
+
+afterEvaluate {
+
+    if (project.plugins.hasPlugin('com.android.application')) {
+
+        def android = project.extensions.getByName('android')
+        for (variant in android.applicationVariants) {
+
+            def mergeTask = variant.getMergeResources()
+
+            mergeTask.doLast {
+                def destPath = mergeTask.outputDir.absolutePath + '/values/'
+
+                println "destPath: $destPath"
+
+                def parentDir = buildscript.sourceFile.parentFile
+                def publicXmlPath = parentDir.absolutePath + '/public.xml'
+                println '编译宿主资源时插入' + publicXmlPath + ' 到 ' + destPath + ', 用来控制宿主资源id分组'
+
+                copy {
+                    from(parentDir) {
+                        include 'public.xml'
+                    }
+                    into(destPath)
+
+                }
+            }
+        }
+    }
+
+}
