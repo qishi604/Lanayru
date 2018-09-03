@@ -39,6 +39,7 @@
         <activity android:name=".ui.SpansActivity"/>
         <activity android:name=".ui.custom.GridLayoutActivity"/>
         <activity android:name=".ui.eth.EthWalletActivity"/>
+        <activity android:name=".ui.MusicPlayerActivity" />
     </application>
 
 </manifest>
