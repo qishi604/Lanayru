@@ -1,10 +1,12 @@
 package com.lanayru.app.ui
 
-import android.media.MediaPlayer
+import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.os.Environment
 import com.lanayru.app.R
 import com.lanayru.app.ui.base.BaseActivity
-import com.lanayru.util.Files
+import com.lanayru.player.FlacPlayer
+import com.lanayru.util.getField
 import kotlinx.android.synthetic.main.activity_music_player.*
 import java.io.File
 
@@ -17,7 +19,7 @@ import java.io.File
  **/
 class MusicPlayerActivity: BaseActivity() {
 
-    private lateinit var mMediaPlayer: MediaPlayer
+    private lateinit var mPlayer: FlacPlayer
 
     private var mIsPlay = false
 
@@ -27,41 +29,57 @@ class MusicPlayerActivity: BaseActivity() {
         prepare()
 
         iv_play.setOnClickListener {
-            mIsPlay = !mIsPlay
             if (mIsPlay) {
                 pause()
             } else {
                 play()
             }
         }
+
+
     }
 
     private fun prepare() {
-        mMediaPlayer = MediaPlayer()
-        mMediaPlayer.setOnCompletionListener {
-            mIsPlay = mMediaPlayer.isPlaying
-            renderPlay()
-        }
+        mPlayer = FlacPlayer()
 
-        val file = Files.getPublicDir("music").let {
+
+        val file = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC).let {
             File(it, "zelda.flac")
         }
 
-        mMediaPlayer.setDataSource(file.path)
+        mPlayer.open(file)
 
-        mMediaPlayer.prepareAsync()
+        mPlayer.callback = {current, total ->
+            progress.progress = (current * 100 / total).toInt()
+        }
+
+        renderAlbum()
     }
 
     private fun renderPlay() {
         iv_play.setImageResource(if (mIsPlay) R.drawable.ic_pause else R.drawable.ic_play)
     }
 
+    private fun renderAlbum() {
+        mPlayer.picture?.let {
+            val image = getField(it, "image") as? ByteArray
+            image?.let {data->
+
+                val bm = BitmapFactory.decodeByteArray(data, 0, data.size)
+                iv_album.setImageBitmap(bm)
+            }
+        }
+
+        tv_info.text = "${mPlayer.bps()}bps duration: ${mPlayer.duration()}"
+    }
+
     private fun play() {
         if (mIsPlay) {
             return
         }
+        mIsPlay = true
 
-        mMediaPlayer.start()
+        mPlayer.play()
         renderPlay()
     }
 
@@ -69,14 +87,14 @@ class MusicPlayerActivity: BaseActivity() {
         if (!mIsPlay) {
             return
         }
-        mMediaPlayer.pause()
+        mIsPlay = false
+
+        mPlayer.pause()
         renderPlay()
     }
 
-
-
     override fun onDestroy() {
         super.onDestroy()
-        mMediaPlayer.release()
+        mPlayer.stop()
     }
 }

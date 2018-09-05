@@ -6,7 +6,7 @@ package com.lanayru.util
  * @since 2018/7/23
  * @version V1.0
  */
-class Logs {
+object Logs {
 
     fun i(s: String) = println(s)
 }
