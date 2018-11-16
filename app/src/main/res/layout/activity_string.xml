@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:gravity="right|center"
+        android:ellipsize="end"
+        android:hint="please input a text"
+        android:textCursorDrawable="@null"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/format_text"
+        />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="46dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/invite_friend_des_"
+        />
+
+</LinearLayout>

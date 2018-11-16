@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanayru.view.RelativeRoot xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottm"
+        android:src="@drawable/zelda"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/bottm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eee"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="input something"
+            android:padding="8dp" />
+
+    </RelativeLayout>
+
+</com.lanayru.view.RelativeRoot>

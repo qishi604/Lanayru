@@ -9,4 +9,10 @@ package com.lanayru.util
 object Logs {
 
     fun i(s: String) = println(s)
+
+    fun duration(tag: String = "", m: ()->Unit) {
+        val last = System.currentTimeMillis()
+        m()
+        i( "$tag duration: ${System.currentTimeMillis() - last}" )
+    }
 }

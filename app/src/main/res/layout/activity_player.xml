@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#999"
+        android:lineSpacingMultiplier="1.4"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/iv_album"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:maxHeight="4dp"
+            />
+
+        <ImageButton
+            android:id="@+id/iv_pre"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@+id/iv_play"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/ic_pre"
+            android:background="@drawable/item_background_borderless"
+            />
+
+        <ImageButton
+            android:id="@+id/iv_play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_play"
+            android:background="@drawable/item_background_borderless"
+            />
+
+        <ImageButton
+            android:id="@+id/iv_next"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/iv_play"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/ic_next"
+            android:background="@drawable/item_background_borderless"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -42,6 +42,11 @@ android {
                 '--main-dex-list=multidex-config.txt'
         ]
     }
+    externalNativeBuild {
+        cmake {
+            path file('CMakeLists.txt')
+        }
+    }
 
 //    aaptOptions {
 //        def publicFile = project.rootProject.file('public.txt')
@@ -75,6 +80,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:support-compat:$support_version"
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
@@ -100,4 +106,10 @@ dependencies {
     implementation 'android.arch.paging:runtime:1.0.0-rc1'
     // eth web3j
     implementation 'org.web3j:core:3.3.1-android'
+
+    // rxpermission
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    // gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
 }

@@ -4,6 +4,18 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 注意7.0以上需要定位权限才能获扫描到蓝牙设备 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
 
     <application
         android:name=".App"
@@ -40,6 +52,27 @@
         <activity android:name=".ui.custom.GridLayoutActivity"/>
         <activity android:name=".ui.eth.EthWalletActivity"/>
         <activity android:name=".ui.MusicPlayerActivity" />
+        <activity android:name=".ui.anim.NumberAnimActivity" />
+        <activity android:name=".ui.StringActivity" />
+        <activity android:name=".ui.AutoSizingTextViewActivity" />
+        <activity android:name=".ui.custom.RuleViewActivity" />
+        <activity android:name=".ui.InternationalActivity" />
+        <activity android:name=".ui.jni.JniDemoActivity" />
+        <activity android:name=".ui.anim.FrameAnimActivity" />
+        <activity android:name=".ui.anim.AnimActivity" />
+        <activity android:name=".ui.bug.SoftKeyboardActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".ui.bug.SoftKeyboardDialogActivity" />
+        <activity android:name=".ui.bluetooth.ScanActivity" />
+        <activity android:name=".ui.bluetooth.BLEScanActivity" />
+        <activity android:name=".ui.bluetooth.BtClientActivity" />
+        <activity android:name=".ui.bluetooth.BtServerActivity" />
+        <activity android:name=".ui.bluetooth.HeadsetInfoActivity" />
+        <activity android:name=".ui.PlayActivity" />
+        <activity android:name=".ui.bluetooth.BluetoothDeviceActivity" />
+        <activity android:name=".ui.ams.AMSActivity" />
+        <activity android:name=".ui.GifActivity" />
     </application>
 
 </manifest>

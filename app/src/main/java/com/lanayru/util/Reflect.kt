@@ -46,3 +46,40 @@ fun setField(obj: Any, fieldName: String, value: Any) {
         cls = cls.superclass
     }
 }
+
+fun invokeMethod(obj: Any, m: String, p1: Any? = null): Any? {
+    var cls: Class<in Any> = obj.javaClass
+    while (null != cls) {
+
+        try {
+            val m = if (null != p1 ) {
+                cls.getDeclaredMethod(m, p1.javaClass)
+
+            } else {
+                cls.getDeclaredMethod(m)
+            }
+
+            if (!m.isAccessible) {
+                m.isAccessible = true
+            }
+
+            return if (null != p1) {
+                m.invoke(obj, p1)
+
+            } else {
+                m.invoke(obj)
+            }
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+            // ignore and search next
+        }
+        try {
+            cls = cls.superclass
+        } catch (e: Exception) {
+            e.printStackTrace()
+            return null
+        }
+    }
+    return null
+}
