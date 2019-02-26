@@ -31,8 +31,6 @@ class ProcessActivity: BaseActivity() {
         }
 
         setContentView(root)
-
-
     }
 
     private fun sleepAWhile() {

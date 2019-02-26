@@ -5,8 +5,10 @@ import java.lang.reflect.Method;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("hello");
-		testClassLoader();
+//		System.out.println("hello");
+//		testClassLoader();
+
+		new VolatileTest().test();
 	}
 
 	private static void testClassLoader() {

@@ -134,4 +134,25 @@ class NumberTest {
     fun testAnd() {
 
     }
+
+    /**
+     * copy from [java.util.HashMap]
+     */
+    private fun tableSizeFor(cap: Int): Int {
+        val MAXIMUM_CAPACITY = 100
+        var n = cap - 1
+        n = n or n.ushr(1)
+        n = n or n.ushr(2)
+        n = n or n.ushr(4)
+        n = n or n.ushr(8)
+        n = n or n.ushr(16)
+        return if (n < 0) 1 else if (n >= MAXIMUM_CAPACITY) MAXIMUM_CAPACITY else n + 1
+    }
+
+    @Test
+    fun testHashMapThreshold() {
+        println(tableSizeFor(16))
+        println(tableSizeFor(3))
+        println(tableSizeFor(9))
+    }
 }

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/l_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/link"
+        />
+
+    <com.lanayru.view.SLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.lanayru.view.SImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/link"
+            />
+
+    </com.lanayru.view.SLayout>
+
+    <com.lanayru.view.SLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#200"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:src="#808"
+            />
+
+    </com.lanayru.view.SLayout>
+
+    <RelativeLayout
+        android:layout_width="700dp"
+        android:background="#990"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="slkfalsdjflasjdflsjflsjflsdjfsljfsldjfsljfslfjssdklfjsldfjsldfjsdjf"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

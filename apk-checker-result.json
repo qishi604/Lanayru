@@ -1,0 +1,2875 @@
+[{
+  "taskType": 1,
+  "taskDescription": "Unzip the apk file to dest path.",
+  "total-size": 7300400,
+  "start-time": "2018-12-26 10:49:15:004",
+  "end-time": "2018-12-26 10:49:15:494",
+  "entries": [
+    {
+      "suffix": ".dex",
+      "total-size": 3875488,
+      "files": [
+        {
+          "entry-name": "classes.dex",
+          "entry-size": 173735
+        },
+        {
+          "entry-name": "classes2.dex",
+          "entry-size": 71605
+        },
+        {
+          "entry-name": "classes3.dex",
+          "entry-size": 3524756
+        },
+        {
+          "entry-name": "classes4.dex",
+          "entry-size": 105392
+        }
+      ]
+    },
+    {
+      "suffix": ".so",
+      "total-size": 1622497,
+      "files": [
+        {
+          "entry-name": "lib/arm64-v8a/libbitmap-lib.so",
+          "entry-size": 274024
+        },
+        {
+          "entry-name": "lib/arm64-v8a/libpl_droidsonroids_gif.so",
+          "entry-size": 19231
+        },
+        {
+          "entry-name": "lib/arm64-v8a/libutil-lib.so",
+          "entry-size": 106547
+        },
+        {
+          "entry-name": "lib/armeabi-v7a/libbitmap-lib.so",
+          "entry-size": 192072
+        },
+        {
+          "entry-name": "lib/armeabi-v7a/libpl_droidsonroids_gif.so",
+          "entry-size": 20404
+        },
+        {
+          "entry-name": "lib/armeabi-v7a/libutil-lib.so",
+          "entry-size": 70205
+        },
+        {
+          "entry-name": "lib/armeabi/libpl_droidsonroids_gif.so",
+          "entry-size": 40847
+        },
+        {
+          "entry-name": "lib/x86/libbitmap-lib.so",
+          "entry-size": 311682
+        },
+        {
+          "entry-name": "lib/x86/libpl_droidsonroids_gif.so",
+          "entry-size": 19484
+        },
+        {
+          "entry-name": "lib/x86/libutil-lib.so",
+          "entry-size": 119026
+        },
+        {
+          "entry-name": "lib/x86_64/libbitmap-lib.so",
+          "entry-size": 311227
+        },
+        {
+          "entry-name": "lib/x86_64/libpl_droidsonroids_gif.so",
+          "entry-size": 19238
+        },
+        {
+          "entry-name": "lib/x86_64/libutil-lib.so",
+          "entry-size": 118510
+        }
+      ]
+    },
+    {
+      "suffix": ".gif",
+      "total-size": 761527,
+      "files": [
+        {
+          "entry-name": "assets/musiclens_discovery_1.gif",
+          "entry-size": 284395
+        },
+        {
+          "entry-name": "assets/musiclens_discovery_2.gif",
+          "entry-size": 477132
+        }
+      ]
+    },
+    {
+      "suffix": ".arsc",
+      "total-size": 232748,
+      "files": [
+        {
+          "entry-name": "resources.arsc",
+          "entry-size": 232748
+        }
+      ]
+    },
+    {
+      "suffix": ".png",
+      "total-size": 190695,
+      "files": [
+        {
+          "entry-name": "res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+          "entry-size": 325
+        },
+        {
+          "entry-name": "res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+          "entry-size": 905
+        },
+        {
+          "entry-name": "res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+          "entry-size": 437
+        },
+        {
+          "entry-name": "res/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+          "entry-size": 221
+        },
+        {
+          "entry-name": "res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+          "entry-size": 252
+        },
+        {
+          "entry-name": "res/drawable-xhdpi-v4/notification_bg_normal.9.png",
+          "entry-size": 221
+        },
+        {
+          "entry-name": "res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+          "entry-size": 247
+        },
+        {
+          "entry-name": "res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+          "entry-size": 138
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+          "entry-size": 286
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+          "entry-size": 237
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+          "entry-size": 224
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+          "entry-size": 171
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png",
+          "entry-size": 245
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png",
+          "entry-size": 221
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png",
+          "entry-size": 212
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png",
+          "entry-size": 212
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
+          "entry-size": 260
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+          "entry-size": 258
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+          "entry-size": 1779
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png",
+          "entry-size": 2305
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+          "entry-size": 322
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
+          "entry-size": 210
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+          "entry-size": 207
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png",
+          "entry-size": 752
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_light.png",
+          "entry-size": 753
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+          "entry-size": 199
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+          "entry-size": 200
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+          "entry-size": 187
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
+          "entry-size": 186
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/avatar_default.png",
+          "entry-size": 4754
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/f0.png",
+          "entry-size": 1645
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/f1.png",
+          "entry-size": 2454
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/f2.png",
+          "entry-size": 2970
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/f3.png",
+          "entry-size": 3656
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/f4.png",
+          "entry-size": 4252
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/f5.png",
+          "entry-size": 4710
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_1.png",
+          "entry-size": 531
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_10.png",
+          "entry-size": 5222
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_11.png",
+          "entry-size": 5634
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_12.png",
+          "entry-size": 5428
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_13.png",
+          "entry-size": 5623
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_14.png",
+          "entry-size": 5670
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_2.png",
+          "entry-size": 1564
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_3.png",
+          "entry-size": 3108
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_4.png",
+          "entry-size": 3690
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_5.png",
+          "entry-size": 3873
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_6.png",
+          "entry-size": 4273
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_7.png",
+          "entry-size": 4422
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_8.png",
+          "entry-size": 4849
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/ic_pull_anim_9.png",
+          "entry-size": 5051
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/img_d.png",
+          "entry-size": 3523
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/rect_music_selected.9.png",
+          "entry-size": 735
+        },
+        {
+          "entry-name": "res/drawable-xxhdpi-v4/rect_music_unselect.9.png",
+          "entry-size": 769
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+          "entry-size": 275
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+          "entry-size": 476
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+          "entry-size": 785
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+          "entry-size": 946
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+          "entry-size": 2505
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+          "entry-size": 2816
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+          "entry-size": 327
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+          "entry-size": 910
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+          "entry-size": 461
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+          "entry-size": 305
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+          "entry-size": 899
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_star_black_16dp.png",
+          "entry-size": 599
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png",
+          "entry-size": 1269
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png",
+          "entry-size": 1680
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png",
+          "entry-size": 376
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png",
+          "entry-size": 760
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png",
+          "entry-size": 991
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+          "entry-size": 415
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+          "entry-size": 631
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+          "entry-size": 430
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+          "entry-size": 813
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+          "entry-size": 202
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png",
+          "entry-size": 513
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png",
+          "entry-size": 513
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png",
+          "entry-size": 513
+        },
+        {
+          "entry-name": "res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png",
+          "entry-size": 513
+        },
+        {
+          "entry-name": "res/drawable-zh-xxhdpi-v4/img_d.png",
+          "entry-size": 2580
+        },
+        {
+          "entry-name": "res/mipmap-hdpi-v4/ic_launcher.png",
+          "entry-size": 3056
+        },
+        {
+          "entry-name": "res/mipmap-hdpi-v4/ic_launcher_round.png",
+          "entry-size": 5024
+        },
+        {
+          "entry-name": "res/mipmap-mdpi-v4/ic_launcher.png",
+          "entry-size": 2096
+        },
+        {
+          "entry-name": "res/mipmap-mdpi-v4/ic_launcher_round.png",
+          "entry-size": 2858
+        },
+        {
+          "entry-name": "res/mipmap-xhdpi-v4/ic_launcher.png",
+          "entry-size": 4569
+        },
+        {
+          "entry-name": "res/mipmap-xhdpi-v4/ic_launcher_round.png",
+          "entry-size": 7098
+        },
+        {
+          "entry-name": "res/mipmap-xxhdpi-v4/ic_launcher.png",
+          "entry-size": 6464
+        },
+        {
+          "entry-name": "res/mipmap-xxhdpi-v4/ic_launcher_round.png",
+          "entry-size": 10676
+        },
+        {
+          "entry-name": "res/mipmap-xxxhdpi-v4/ic_launcher.png",
+          "entry-size": 9250
+        },
+        {
+          "entry-name": "res/mipmap-xxxhdpi-v4/ic_launcher_round.png",
+          "entry-size": 15523
+        }
+      ]
+    },
+    {
+      "suffix": ".jpg",
+      "total-size": 136041,
+      "files": [
+        {
+          "entry-name": "res/drawable-nodpi-v4/link.jpg",
+          "entry-size": 94114
+        },
+        {
+          "entry-name": "res/drawable-nodpi-v4/zelda.jpg",
+          "entry-size": 41927
+        }
+      ]
+    },
+    {
+      "suffix": ".kotlin_metadata",
+      "total-size": 80569,
+      "files": [
+        {
+          "entry-name": "kotlin/ArithmeticException.kotlin_metadata",
+          "entry-size": 170
+        },
+        {
+          "entry-name": "kotlin/AssertionError.kotlin_metadata",
+          "entry-size": 118
+        },
+        {
+          "entry-name": "kotlin/BuilderInference.kotlin_metadata",
+          "entry-size": 306
+        },
+        {
+          "entry-name": "kotlin/ClassCastException.kotlin_metadata",
+          "entry-size": 133
+        },
+        {
+          "entry-name": "kotlin/Comparator.kotlin_metadata",
+          "entry-size": 135
+        },
+        {
+          "entry-name": "kotlin/ConcurrentModificationException.kotlin_metadata",
+          "entry-size": 308
+        },
+        {
+          "entry-name": "kotlin/Error.kotlin_metadata",
+          "entry-size": 142
+        },
+        {
+          "entry-name": "kotlin/Exception.kotlin_metadata",
+          "entry-size": 145
+        },
+        {
+          "entry-name": "kotlin/Experimental.kotlin_metadata",
+          "entry-size": 335
+        },
+        {
+          "entry-name": "kotlin/ExperimentalMultiplatform.kotlin_metadata",
+          "entry-size": 353
+        },
+        {
+          "entry-name": "kotlin/ExperimentalUnsignedTypes.kotlin_metadata",
+          "entry-size": 381
+        },
+        {
+          "entry-name": "kotlin/HashCodeKt.kotlin_metadata",
+          "entry-size": 163
+        },
+        {
+          "entry-name": "kotlin/IllegalArgumentException.kotlin_metadata",
+          "entry-size": 169
+        },
+        {
+          "entry-name": "kotlin/IllegalStateException.kotlin_metadata",
+          "entry-size": 166
+        },
+        {
+          "entry-name": "kotlin/IndexOutOfBoundsException.kotlin_metadata",
+          "entry-size": 140
+        },
+        {
+          "entry-name": "kotlin/InitializedLazyImpl.kotlin_metadata",
+          "entry-size": 205
+        },
+        {
+          "entry-name": "kotlin/KotlinHKt.kotlin_metadata",
+          "entry-size": 636
+        },
+        {
+          "entry-name": "kotlin/KotlinVersion.kotlin_metadata",
+          "entry-size": 423
+        },
+        {
+          "entry-name": "kotlin/LateinitKt.kotlin_metadata",
+          "entry-size": 197
+        },
+        {
+          "entry-name": "kotlin/Lazy.kotlin_metadata",
+          "entry-size": 139
+        },
+        {
+          "entry-name": "kotlin/LazyKt.kotlin_metadata",
+          "entry-size": 209
+        },
+        {
+          "entry-name": "kotlin/LazyThreadSafetyMode.kotlin_metadata",
+          "entry-size": 144
+        },
+        {
+          "entry-name": "kotlin/NoSuchElementException.kotlin_metadata",
+          "entry-size": 137
+        },
+        {
+          "entry-name": "kotlin/NoWhenBranchMatchedException.kotlin_metadata",
+          "entry-size": 284
+        },
+        {
+          "entry-name": "kotlin/NotImplementedError.kotlin_metadata",
+          "entry-size": 116
+        },
+        {
+          "entry-name": "kotlin/NullPointerException.kotlin_metadata",
+          "entry-size": 135
+        },
+        {
+          "entry-name": "kotlin/NumberFormatException.kotlin_metadata",
+          "entry-size": 143
+        },
+        {
+          "entry-name": "kotlin/OptionalExpectation.kotlin_metadata",
+          "entry-size": 253
+        },
+        {
+          "entry-name": "kotlin/Pair.kotlin_metadata",
+          "entry-size": 301
+        },
+        {
+          "entry-name": "kotlin/PreconditionsKt.kotlin_metadata",
+          "entry-size": 308
+        },
+        {
+          "entry-name": "kotlin/Result.kotlin_metadata",
+          "entry-size": 530
+        },
+        {
+          "entry-name": "kotlin/ResultKt.kotlin_metadata",
+          "entry-size": 640
+        },
+        {
+          "entry-name": "kotlin/RuntimeException.kotlin_metadata",
+          "entry-size": 157
+        },
+        {
+          "entry-name": "kotlin/StandardKt.kotlin_metadata",
+          "entry-size": 489
+        },
+        {
+          "entry-name": "kotlin/SuccessOrFailureKt.kotlin_metadata",
+          "entry-size": 261
+        },
+        {
+          "entry-name": "kotlin/SuspendKt.kotlin_metadata",
+          "entry-size": 255
+        },
+        {
+          "entry-name": "kotlin/Triple.kotlin_metadata",
+          "entry-size": 333
+        },
+        {
+          "entry-name": "kotlin/TuplesKt.kotlin_metadata",
+          "entry-size": 181
+        },
+        {
+          "entry-name": "kotlin/UByte.kotlin_metadata",
+          "entry-size": 776
+        },
+        {
+          "entry-name": "kotlin/UByteArray.kotlin_metadata",
+          "entry-size": 572
+        },
+        {
+          "entry-name": "kotlin/UByteArrayKt.kotlin_metadata",
+          "entry-size": 268
+        },
+        {
+          "entry-name": "kotlin/UByteKt.kotlin_metadata",
+          "entry-size": 236
+        },
+        {
+          "entry-name": "kotlin/UInt.kotlin_metadata",
+          "entry-size": 813
+        },
+        {
+          "entry-name": "kotlin/UIntArray.kotlin_metadata",
+          "entry-size": 569
+        },
+        {
+          "entry-name": "kotlin/UIntArrayKt.kotlin_metadata",
+          "entry-size": 265
+        },
+        {
+          "entry-name": "kotlin/UIntKt.kotlin_metadata",
+          "entry-size": 236
+        },
+        {
+          "entry-name": "kotlin/ULong.kotlin_metadata",
+          "entry-size": 809
+        },
+        {
+          "entry-name": "kotlin/ULongArray.kotlin_metadata",
+          "entry-size": 572
+        },
+        {
+          "entry-name": "kotlin/ULongArrayKt.kotlin_metadata",
+          "entry-size": 268
+        },
+        {
+          "entry-name": "kotlin/ULongKt.kotlin_metadata",
+          "entry-size": 237
+        },
+        {
+          "entry-name": "kotlin/UNINITIALIZED_VALUE.kotlin_metadata",
+          "entry-size": 93
+        },
+        {
+          "entry-name": "kotlin/UShort.kotlin_metadata",
+          "entry-size": 780
+        },
+        {
+          "entry-name": "kotlin/UShortArray.kotlin_metadata",
+          "entry-size": 574
+        },
+        {
+          "entry-name": "kotlin/UShortArrayKt.kotlin_metadata",
+          "entry-size": 269
+        },
+        {
+          "entry-name": "kotlin/UShortKt.kotlin_metadata",
+          "entry-size": 237
+        },
+        {
+          "entry-name": "kotlin/UninitializedPropertyAccessException.kotlin_metadata",
+          "entry-size": 288
+        },
+        {
+          "entry-name": "kotlin/UnsafeLazyImpl.kotlin_metadata",
+          "entry-size": 279
+        },
+        {
+          "entry-name": "kotlin/UnsignedUtilsKt.kotlin_metadata",
+          "entry-size": 274
+        },
+        {
+          "entry-name": "kotlin/UnsupportedOperationException.kotlin_metadata",
+          "entry-size": 174
+        },
+        {
+          "entry-name": "kotlin/UseExperimental.kotlin_metadata",
+          "entry-size": 427
+        },
+        {
+          "entry-name": "kotlin/WasExperimental.kotlin_metadata",
+          "entry-size": 308
+        },
+        {
+          "entry-name": "kotlin/collections/AbstractCollection.kotlin_metadata",
+          "entry-size": 364
+        },
+        {
+          "entry-name": "kotlin/collections/AbstractIterator.kotlin_metadata",
+          "entry-size": 265
+        },
+        {
+          "entry-name": "kotlin/collections/AbstractList.kotlin_metadata",
+          "entry-size": 779
+        },
+        {
+          "entry-name": "kotlin/collections/AbstractMap.kotlin_metadata",
+          "entry-size": 589
+        },
+        {
+          "entry-name": "kotlin/collections/AbstractMutableList.kotlin_metadata",
+          "entry-size": 405
+        },
+        {
+          "entry-name": "kotlin/collections/AbstractMutableMap.kotlin_metadata",
+          "entry-size": 178
+        },
+        {
+          "entry-name": "kotlin/collections/AbstractMutableSet.kotlin_metadata",
+          "entry-size": 170
+        },
+        {
+          "entry-name": "kotlin/collections/AbstractSet.kotlin_metadata",
+          "entry-size": 332
+        },
+        {
+          "entry-name": "kotlin/collections/ArrayAsCollection.kotlin_metadata",
+          "entry-size": 310
+        },
+        {
+          "entry-name": "kotlin/collections/ArrayList.kotlin_metadata",
+          "entry-size": 524
+        },
+        {
+          "entry-name": "kotlin/collections/ArraysKt.kotlin_metadata",
+          "entry-size": 593
+        },
+        {
+          "entry-name": "kotlin/collections/CollectionsHKt.kotlin_metadata",
+          "entry-size": 616
+        },
+        {
+          "entry-name": "kotlin/collections/CollectionsKt.kotlin_metadata",
+          "entry-size": 1021
+        },
+        {
+          "entry-name": "kotlin/collections/EmptyIterator.kotlin_metadata",
+          "entry-size": 224
+        },
+        {
+          "entry-name": "kotlin/collections/EmptyList.kotlin_metadata",
+          "entry-size": 517
+        },
+        {
+          "entry-name": "kotlin/collections/EmptyMap.kotlin_metadata",
+          "entry-size": 458
+        },
+        {
+          "entry-name": "kotlin/collections/EmptySet.kotlin_metadata",
+          "entry-size": 407
+        },
+        {
+          "entry-name": "kotlin/collections/Grouping.kotlin_metadata",
+          "entry-size": 218
+        },
+        {
+          "entry-name": "kotlin/collections/GroupingKt.kotlin_metadata",
+          "entry-size": 580
+        },
+        {
+          "entry-name": "kotlin/collections/HashMap.kotlin_metadata",
+          "entry-size": 459
+        },
+        {
+          "entry-name": "kotlin/collections/HashSet.kotlin_metadata",
+          "entry-size": 367
+        },
+        {
+          "entry-name": "kotlin/collections/IndexedValue.kotlin_metadata",
+          "entry-size": 283
+        },
+        {
+          "entry-name": "kotlin/collections/IndexingIterable.kotlin_metadata",
+          "entry-size": 211
+        },
+        {
+          "entry-name": "kotlin/collections/IndexingIterator.kotlin_metadata",
+          "entry-size": 219
+        },
+        {
+          "entry-name": "kotlin/collections/IterablesKt.kotlin_metadata",
+          "entry-size": 421
+        },
+        {
+          "entry-name": "kotlin/collections/IteratorsKt.kotlin_metadata",
+          "entry-size": 234
+        },
+        {
+          "entry-name": "kotlin/collections/LinkedHashMap.kotlin_metadata",
+          "entry-size": 464
+        },
+        {
+          "entry-name": "kotlin/collections/LinkedHashSet.kotlin_metadata",
+          "entry-size": 372
+        },
+        {
+          "entry-name": "kotlin/collections/MapAccessorsKt.kotlin_metadata",
+          "entry-size": 511
+        },
+        {
+          "entry-name": "kotlin/collections/MapWithDefault.kotlin_metadata",
+          "entry-size": 185
+        },
+        {
+          "entry-name": "kotlin/collections/MapWithDefaultImpl.kotlin_metadata",
+          "entry-size": 488
+        },
+        {
+          "entry-name": "kotlin/collections/MapWithDefaultKt.kotlin_metadata",
+          "entry-size": 307
+        },
+        {
+          "entry-name": "kotlin/collections/MapsKt.kotlin_metadata",
+          "entry-size": 1477
+        },
+        {
+          "entry-name": "kotlin/collections/MovingSubList.kotlin_metadata",
+          "entry-size": 275
+        },
+        {
+          "entry-name": "kotlin/collections/MutableCollectionsKt.kotlin_metadata",
+          "entry-size": 772
+        },
+        {
+          "entry-name": "kotlin/collections/MutableMapWithDefault.kotlin_metadata",
+          "entry-size": 171
+        },
+        {
+          "entry-name": "kotlin/collections/MutableMapWithDefaultImpl.kotlin_metadata",
+          "entry-size": 567
+        },
+        {
+          "entry-name": "kotlin/collections/RandomAccess.kotlin_metadata",
+          "entry-size": 104
+        },
+        {
+          "entry-name": "kotlin/collections/ReversedList.kotlin_metadata",
+          "entry-size": 281
+        },
+        {
+          "entry-name": "kotlin/collections/ReversedListReadOnly.kotlin_metadata",
+          "entry-size": 216
+        },
+        {
+          "entry-name": "kotlin/collections/ReversedViewsKt.kotlin_metadata",
+          "entry-size": 242
+        },
+        {
+          "entry-name": "kotlin/collections/RingBuffer.kotlin_metadata",
+          "entry-size": 451
+        },
+        {
+          "entry-name": "kotlin/collections/SetsKt.kotlin_metadata",
+          "entry-size": 351
+        },
+        {
+          "entry-name": "kotlin/collections/SlidingWindowKt.kotlin_metadata",
+          "entry-size": 281
+        },
+        {
+          "entry-name": "kotlin/collections/State.kotlin_metadata",
+          "entry-size": 141
+        },
+        {
+          "entry-name": "kotlin/collections/UByteIterator.kotlin_metadata",
+          "entry-size": 221
+        },
+        {
+          "entry-name": "kotlin/collections/UIntIterator.kotlin_metadata",
+          "entry-size": 219
+        },
+        {
+          "entry-name": "kotlin/collections/ULongIterator.kotlin_metadata",
+          "entry-size": 222
+        },
+        {
+          "entry-name": "kotlin/collections/UShortIterator.kotlin_metadata",
+          "entry-size": 222
+        },
+        {
+          "entry-name": "kotlin/comparisons/ComparisonsKt.kotlin_metadata",
+          "entry-size": 600
+        },
+        {
+          "entry-name": "kotlin/comparisons/NaturalOrderComparator.kotlin_metadata",
+          "entry-size": 184
+        },
+        {
+          "entry-name": "kotlin/comparisons/ReverseOrderComparator.kotlin_metadata",
+          "entry-size": 178
+        },
+        {
+          "entry-name": "kotlin/comparisons/ReversedComparator.kotlin_metadata",
+          "entry-size": 179
+        },
+        {
+          "entry-name": "kotlin/contracts/CallsInPlace.kotlin_metadata",
+          "entry-size": 187
+        },
+        {
+          "entry-name": "kotlin/contracts/ConditionalEffect.kotlin_metadata",
+          "entry-size": 185
+        },
+        {
+          "entry-name": "kotlin/contracts/ContractBuilder.kotlin_metadata",
+          "entry-size": 343
+        },
+        {
+          "entry-name": "kotlin/contracts/ContractBuilderKt.kotlin_metadata",
+          "entry-size": 255
+        },
+        {
+          "entry-name": "kotlin/contracts/Effect.kotlin_metadata",
+          "entry-size": 179
+        },
+        {
+          "entry-name": "kotlin/contracts/ExperimentalContracts.kotlin_metadata",
+          "entry-size": 220
+        },
+        {
+          "entry-name": "kotlin/contracts/InvocationKind.kotlin_metadata",
+          "entry-size": 256
+        },
+        {
+          "entry-name": "kotlin/contracts/Returns.kotlin_metadata",
+          "entry-size": 189
+        },
+        {
+          "entry-name": "kotlin/contracts/ReturnsNotNull.kotlin_metadata",
+          "entry-size": 199
+        },
+        {
+          "entry-name": "kotlin/contracts/SimpleEffect.kotlin_metadata",
+          "entry-size": 244
+        },
+        {
+          "entry-name": "kotlin/coroutines/AbstractCoroutineContextElement.kotlin_metadata",
+          "entry-size": 189
+        },
+        {
+          "entry-name": "kotlin/coroutines/CombinedContext.kotlin_metadata",
+          "entry-size": 619
+        },
+        {
+          "entry-name": "kotlin/coroutines/Continuation.kotlin_metadata",
+          "entry-size": 236
+        },
+        {
+          "entry-name": "kotlin/coroutines/ContinuationInterceptor.kotlin_metadata",
+          "entry-size": 342
+        },
+        {
+          "entry-name": "kotlin/coroutines/ContinuationKt.kotlin_metadata",
+          "entry-size": 534
+        },
+        {
+          "entry-name": "kotlin/coroutines/CoroutineContext.kotlin_metadata",
+          "entry-size": 383
+        },
+        {
+          "entry-name": "kotlin/coroutines/EmptyCoroutineContext.kotlin_metadata",
+          "entry-size": 435
+        },
+        {
+          "entry-name": "kotlin/coroutines/RestrictsSuspension.kotlin_metadata",
+          "entry-size": 254
+        },
+        {
+          "entry-name": "kotlin/coroutines/SafeContinuation.kotlin_metadata",
+          "entry-size": 337
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/AbstractCoroutineContextElement.kotlin_metadata",
+          "entry-size": 208
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/CombinedContext.kotlin_metadata",
+          "entry-size": 414
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/Continuation.kotlin_metadata",
+          "entry-size": 268
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/ContinuationInterceptor.kotlin_metadata",
+          "entry-size": 262
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/CoroutineContext.kotlin_metadata",
+          "entry-size": 398
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/CoroutinesLibraryKt.kotlin_metadata",
+          "entry-size": 464
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/EmptyCoroutineContext.kotlin_metadata",
+          "entry-size": 363
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/RestrictsSuspension.kotlin_metadata",
+          "entry-size": 268
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/SafeContinuation.kotlin_metadata",
+          "entry-size": 331
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/SequenceBuilder.kotlin_metadata",
+          "entry-size": 340
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/SequenceBuilderIterator.kotlin_metadata",
+          "entry-size": 476
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/SequenceBuilderKt.kotlin_metadata",
+          "entry-size": 455
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/intrinsics/CoroutinesIntrinsicsExperimentalHKt.kotlin_metadata",
+          "entry-size": 360
+        },
+        {
+          "entry-name": "kotlin/coroutines/experimental/intrinsics/IntrinsicsKt.kotlin_metadata",
+          "entry-size": 349
+        },
+        {
+          "entry-name": "kotlin/coroutines/intrinsics/CoroutineSingletons.kotlin_metadata",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "kotlin/coroutines/intrinsics/CoroutinesIntrinsicsHKt.kotlin_metadata",
+          "entry-size": 373
+        },
+        {
+          "entry-name": "kotlin/coroutines/intrinsics/IntrinsicsKt.kotlin_metadata",
+          "entry-size": 298
+        },
+        {
+          "entry-name": "kotlin/experimental/BitwiseOperationsKt.kotlin_metadata",
+          "entry-size": 234
+        },
+        {
+          "entry-name": "kotlin/experimental/ExperimentalTypeInference.kotlin_metadata",
+          "entry-size": 298
+        },
+        {
+          "entry-name": "kotlin/internal/AccessibleLateinitPropertyLiteral.kotlin_metadata",
+          "entry-size": 277
+        },
+        {
+          "entry-name": "kotlin/internal/ContractsDsl.kotlin_metadata",
+          "entry-size": 202
+        },
+        {
+          "entry-name": "kotlin/internal/DynamicExtension.kotlin_metadata",
+          "entry-size": 232
+        },
+        {
+          "entry-name": "kotlin/internal/Exact.kotlin_metadata",
+          "entry-size": 211
+        },
+        {
+          "entry-name": "kotlin/internal/HidesMembers.kotlin_metadata",
+          "entry-size": 233
+        },
+        {
+          "entry-name": "kotlin/internal/InlineOnly.kotlin_metadata",
+          "entry-size": 248
+        },
+        {
+          "entry-name": "kotlin/internal/LowPriorityInOverloadResolution.kotlin_metadata",
+          "entry-size": 244
+        },
+        {
+          "entry-name": "kotlin/internal/NoInfer.kotlin_metadata",
+          "entry-size": 212
+        },
+        {
+          "entry-name": "kotlin/internal/OnlyInputTypes.kotlin_metadata",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "kotlin/internal/RequireKotlin.kotlin_metadata",
+          "entry-size": 425
+        },
+        {
+          "entry-name": "kotlin/internal/RequireKotlinVersionKind.kotlin_metadata",
+          "entry-size": 193
+        },
+        {
+          "entry-name": "kotlin/internal/UProgressionUtilKt.kotlin_metadata",
+          "entry-size": 282
+        },
+        {
+          "entry-name": "kotlin/io/IoHKt.kotlin_metadata",
+          "entry-size": 127
+        },
+        {
+          "entry-name": "kotlin/io/Serializable.kotlin_metadata",
+          "entry-size": 95
+        },
+        {
+          "entry-name": "kotlin/js/JsName.kotlin_metadata",
+          "entry-size": 272
+        },
+        {
+          "entry-name": "kotlin/jvm/JvmField.kotlin_metadata",
+          "entry-size": 209
+        },
+        {
+          "entry-name": "kotlin/jvm/JvmMultifileClass.kotlin_metadata",
+          "entry-size": 217
+        },
+        {
+          "entry-name": "kotlin/jvm/JvmName.kotlin_metadata",
+          "entry-size": 276
+        },
+        {
+          "entry-name": "kotlin/jvm/JvmOverloads.kotlin_metadata",
+          "entry-size": 233
+        },
+        {
+          "entry-name": "kotlin/jvm/JvmStatic.kotlin_metadata",
+          "entry-size": 247
+        },
+        {
+          "entry-name": "kotlin/jvm/JvmSuppressWildcards.kotlin_metadata",
+          "entry-size": 285
+        },
+        {
+          "entry-name": "kotlin/jvm/JvmSynthetic.kotlin_metadata",
+          "entry-size": 236
+        },
+        {
+          "entry-name": "kotlin/jvm/JvmWildcard.kotlin_metadata",
+          "entry-size": 213
+        },
+        {
+          "entry-name": "kotlin/jvm/Strictfp.kotlin_metadata",
+          "entry-size": 262
+        },
+        {
+          "entry-name": "kotlin/jvm/Synchronized.kotlin_metadata",
+          "entry-size": 246
+        },
+        {
+          "entry-name": "kotlin/jvm/Transient.kotlin_metadata",
+          "entry-size": 210
+        },
+        {
+          "entry-name": "kotlin/jvm/Volatile.kotlin_metadata",
+          "entry-size": 207
+        },
+        {
+          "entry-name": "kotlin/math/MathHKt.kotlin_metadata",
+          "entry-size": 765
+        },
+        {
+          "entry-name": "kotlin/properties/Delegates.kotlin_metadata",
+          "entry-size": 353
+        },
+        {
+          "entry-name": "kotlin/properties/NotNullVar.kotlin_metadata",
+          "entry-size": 255
+        },
+        {
+          "entry-name": "kotlin/properties/ObservableProperty.kotlin_metadata",
+          "entry-size": 323
+        },
+        {
+          "entry-name": "kotlin/properties/ReadOnlyProperty.kotlin_metadata",
+          "entry-size": 188
+        },
+        {
+          "entry-name": "kotlin/properties/ReadWriteProperty.kotlin_metadata",
+          "entry-size": 221
+        },
+        {
+          "entry-name": "kotlin/random/Random.kotlin_metadata",
+          "entry-size": 617
+        },
+        {
+          "entry-name": "kotlin/random/RandomKt.kotlin_metadata",
+          "entry-size": 445
+        },
+        {
+          "entry-name": "kotlin/random/URandomKt.kotlin_metadata",
+          "entry-size": 415
+        },
+        {
+          "entry-name": "kotlin/random/XorWowRandom.kotlin_metadata",
+          "entry-size": 222
+        },
+        {
+          "entry-name": "kotlin/ranges/ClosedDoubleRange.kotlin_metadata",
+          "entry-size": 341
+        },
+        {
+          "entry-name": "kotlin/ranges/ClosedFloatingPointRange.kotlin_metadata",
+          "entry-size": 269
+        },
+        {
+          "entry-name": "kotlin/ranges/ComparableRange.kotlin_metadata",
+          "entry-size": 267
+        },
+        {
+          "entry-name": "kotlin/ranges/RangesKt.kotlin_metadata",
+          "entry-size": 406
+        },
+        {
+          "entry-name": "kotlin/ranges/UIntProgression.kotlin_metadata",
+          "entry-size": 473
+        },
+        {
+          "entry-name": "kotlin/ranges/UIntProgressionIterator.kotlin_metadata",
+          "entry-size": 318
+        },
+        {
+          "entry-name": "kotlin/ranges/UIntRange.kotlin_metadata",
+          "entry-size": 424
+        },
+        {
+          "entry-name": "kotlin/ranges/ULongProgression.kotlin_metadata",
+          "entry-size": 482
+        },
+        {
+          "entry-name": "kotlin/ranges/ULongProgressionIterator.kotlin_metadata",
+          "entry-size": 321
+        },
+        {
+          "entry-name": "kotlin/ranges/ULongRange.kotlin_metadata",
+          "entry-size": 426
+        },
+        {
+          "entry-name": "kotlin/reflect/KCallable.kotlin_metadata",
+          "entry-size": 135
+        },
+        {
+          "entry-name": "kotlin/reflect/KClass.kotlin_metadata",
+          "entry-size": 144
+        },
+        {
+          "entry-name": "kotlin/reflect/KMutableProperty.kotlin_metadata",
+          "entry-size": 116
+        },
+        {
+          "entry-name": "kotlin/reflect/KMutableProperty0.kotlin_metadata",
+          "entry-size": 172
+        },
+        {
+          "entry-name": "kotlin/reflect/KMutableProperty1.kotlin_metadata",
+          "entry-size": 197
+        },
+        {
+          "entry-name": "kotlin/reflect/KMutableProperty2.kotlin_metadata",
+          "entry-size": 216
+        },
+        {
+          "entry-name": "kotlin/reflect/KProperty.kotlin_metadata",
+          "entry-size": 117
+        },
+        {
+          "entry-name": "kotlin/reflect/KProperty0.kotlin_metadata",
+          "entry-size": 148
+        },
+        {
+          "entry-name": "kotlin/reflect/KProperty1.kotlin_metadata",
+          "entry-size": 175
+        },
+        {
+          "entry-name": "kotlin/reflect/KProperty2.kotlin_metadata",
+          "entry-size": 200
+        },
+        {
+          "entry-name": "kotlin/sequences/ConstrainedOnceSequence.kotlin_metadata",
+          "entry-size": 179
+        },
+        {
+          "entry-name": "kotlin/sequences/DistinctIterator.kotlin_metadata",
+          "entry-size": 270
+        },
+        {
+          "entry-name": "kotlin/sequences/DistinctSequence.kotlin_metadata",
+          "entry-size": 221
+        },
+        {
+          "entry-name": "kotlin/sequences/DropSequence.kotlin_metadata",
+          "entry-size": 241
+        },
+        {
+          "entry-name": "kotlin/sequences/DropTakeSequence.kotlin_metadata",
+          "entry-size": 157
+        },
+        {
+          "entry-name": "kotlin/sequences/DropWhileSequence.kotlin_metadata",
+          "entry-size": 226
+        },
+        {
+          "entry-name": "kotlin/sequences/EmptySequence.kotlin_metadata",
+          "entry-size": 220
+        },
+        {
+          "entry-name": "kotlin/sequences/FilteringSequence.kotlin_metadata",
+          "entry-size": 243
+        },
+        {
+          "entry-name": "kotlin/sequences/FlatteningSequence.kotlin_metadata",
+          "entry-size": 245
+        },
+        {
+          "entry-name": "kotlin/sequences/GeneratorSequence.kotlin_metadata",
+          "entry-size": 249
+        },
+        {
+          "entry-name": "kotlin/sequences/IndexingSequence.kotlin_metadata",
+          "entry-size": 196
+        },
+        {
+          "entry-name": "kotlin/sequences/MergingSequence.kotlin_metadata",
+          "entry-size": 250
+        },
+        {
+          "entry-name": "kotlin/sequences/Sequence.kotlin_metadata",
+          "entry-size": 153
+        },
+        {
+          "entry-name": "kotlin/sequences/SequenceBuilderIterator.kotlin_metadata",
+          "entry-size": 472
+        },
+        {
+          "entry-name": "kotlin/sequences/SequenceBuilderKt.kotlin_metadata",
+          "entry-size": 735
+        },
+        {
+          "entry-name": "kotlin/sequences/SequenceScope.kotlin_metadata",
+          "entry-size": 325
+        },
+        {
+          "entry-name": "kotlin/sequences/SequencesKt.kotlin_metadata",
+          "entry-size": 619
+        },
+        {
+          "entry-name": "kotlin/sequences/SubSequence.kotlin_metadata",
+          "entry-size": 266
+        },
+        {
+          "entry-name": "kotlin/sequences/TakeSequence.kotlin_metadata",
+          "entry-size": 240
+        },
+        {
+          "entry-name": "kotlin/sequences/TakeWhileSequence.kotlin_metadata",
+          "entry-size": 225
+        },
+        {
+          "entry-name": "kotlin/sequences/TransformingIndexedSequence.kotlin_metadata",
+          "entry-size": 243
+        },
+        {
+          "entry-name": "kotlin/sequences/TransformingSequence.kotlin_metadata",
+          "entry-size": 265
+        },
+        {
+          "entry-name": "kotlin/text/Appendable.kotlin_metadata",
+          "entry-size": 192
+        },
+        {
+          "entry-name": "kotlin/text/CharKt.kotlin_metadata",
+          "entry-size": 197
+        },
+        {
+          "entry-name": "kotlin/text/DelimitedRangesSequence.kotlin_metadata",
+          "entry-size": 357
+        },
+        {
+          "entry-name": "kotlin/text/IndentKt.kotlin_metadata",
+          "entry-size": 319
+        },
+        {
+          "entry-name": "kotlin/text/MatchGroup.kotlin_metadata",
+          "entry-size": 125
+        },
+        {
+          "entry-name": "kotlin/text/MatchGroupCollection.kotlin_metadata",
+          "entry-size": 164
+        },
+        {
+          "entry-name": "kotlin/text/MatchNamedGroupCollection.kotlin_metadata",
+          "entry-size": 191
+        },
+        {
+          "entry-name": "kotlin/text/MatchResult.kotlin_metadata",
+          "entry-size": 414
+        },
+        {
+          "entry-name": "kotlin/text/Regex.kotlin_metadata",
+          "entry-size": 539
+        },
+        {
+          "entry-name": "kotlin/text/RegexExtensionsKt.kotlin_metadata",
+          "entry-size": 199
+        },
+        {
+          "entry-name": "kotlin/text/RegexOption.kotlin_metadata",
+          "entry-size": 133
+        },
+        {
+          "entry-name": "kotlin/text/StringBuilder.kotlin_metadata",
+          "entry-size": 324
+        },
+        {
+          "entry-name": "kotlin/text/StringBuilderKt.kotlin_metadata",
+          "entry-size": 422
+        },
+        {
+          "entry-name": "kotlin/text/StringNumberConversionsKt.kotlin_metadata",
+          "entry-size": 283
+        },
+        {
+          "entry-name": "kotlin/text/StringsKt.kotlin_metadata",
+          "entry-size": 1690
+        },
+        {
+          "entry-name": "kotlin/text/TextHKt.kotlin_metadata",
+          "entry-size": 959
+        },
+        {
+          "entry-name": "kotlin/text/Typography.kotlin_metadata",
+          "entry-size": 613
+        },
+        {
+          "entry-name": "kotlin/text/UStringsKt.kotlin_metadata",
+          "entry-size": 373
+        }
+      ]
+    },
+    {
+      "suffix": ".xml",
+      "total-size": 61228,
+      "files": [
+        {
+          "entry-name": "AndroidManifest.xml",
+          "entry-size": 2410
+        },
+        {
+          "entry-name": "res/anim/abc_fade_in.xml",
+          "entry-size": 217
+        },
+        {
+          "entry-name": "res/anim/abc_fade_out.xml",
+          "entry-size": 218
+        },
+        {
+          "entry-name": "res/anim/abc_grow_fade_in_from_bottom.xml",
+          "entry-size": 376
+        },
+        {
+          "entry-name": "res/anim/abc_popup_enter.xml",
+          "entry-size": 258
+        },
+        {
+          "entry-name": "res/anim/abc_popup_exit.xml",
+          "entry-size": 260
+        },
+        {
+          "entry-name": "res/anim/abc_shrink_fade_out_from_bottom.xml",
+          "entry-size": 376
+        },
+        {
+          "entry-name": "res/anim/abc_slide_in_bottom.xml",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "res/anim/abc_slide_in_top.xml",
+          "entry-size": 229
+        },
+        {
+          "entry-name": "res/anim/abc_slide_out_bottom.xml",
+          "entry-size": 227
+        },
+        {
+          "entry-name": "res/anim/abc_slide_out_top.xml",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "res/anim/abc_tooltip_enter.xml",
+          "entry-size": 217
+        },
+        {
+          "entry-name": "res/anim/abc_tooltip_exit.xml",
+          "entry-size": 217
+        },
+        {
+          "entry-name": "res/color-v21/abc_btn_colored_borderless_text_material.xml",
+          "entry-size": 229
+        },
+        {
+          "entry-name": "res/color-v23/abc_btn_colored_borderless_text_material.xml",
+          "entry-size": 242
+        },
+        {
+          "entry-name": "res/color-v23/abc_btn_colored_text_material.xml",
+          "entry-size": 242
+        },
+        {
+          "entry-name": "res/color-v23/abc_color_highlight_material.xml",
+          "entry-size": 258
+        },
+        {
+          "entry-name": "res/color-v23/abc_tint_btn_checkable.xml",
+          "entry-size": 274
+        },
+        {
+          "entry-name": "res/color-v23/abc_tint_default.xml",
+          "entry-size": 369
+        },
+        {
+          "entry-name": "res/color-v23/abc_tint_edittext.xml",
+          "entry-size": 284
+        },
+        {
+          "entry-name": "res/color-v23/abc_tint_seek_thumb.xml",
+          "entry-size": 242
+        },
+        {
+          "entry-name": "res/color-v23/abc_tint_spinner.xml",
+          "entry-size": 284
+        },
+        {
+          "entry-name": "res/color-v23/abc_tint_switch_track.xml",
+          "entry-size": 282
+        },
+        {
+          "entry-name": "res/color/abc_background_cache_hint_selector_material_dark.xml",
+          "entry-size": 229
+        },
+        {
+          "entry-name": "res/color/abc_background_cache_hint_selector_material_light.xml",
+          "entry-size": 230
+        },
+        {
+          "entry-name": "res/color/abc_btn_colored_text_material.xml",
+          "entry-size": 272
+        },
+        {
+          "entry-name": "res/color/abc_hint_foreground_material_dark.xml",
+          "entry-size": 260
+        },
+        {
+          "entry-name": "res/color/abc_hint_foreground_material_light.xml",
+          "entry-size": 259
+        },
+        {
+          "entry-name": "res/color/abc_primary_text_disable_only_material_dark.xml",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "res/color/abc_primary_text_disable_only_material_light.xml",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "res/color/abc_primary_text_material_dark.xml",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "res/color/abc_primary_text_material_light.xml",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "res/color/abc_search_url_text.xml",
+          "entry-size": 250
+        },
+        {
+          "entry-name": "res/color/abc_secondary_text_material_dark.xml",
+          "entry-size": 227
+        },
+        {
+          "entry-name": "res/color/abc_secondary_text_material_light.xml",
+          "entry-size": 227
+        },
+        {
+          "entry-name": "res/color/abc_tint_btn_checkable.xml",
+          "entry-size": 307
+        },
+        {
+          "entry-name": "res/color/abc_tint_default.xml",
+          "entry-size": 403
+        },
+        {
+          "entry-name": "res/color/abc_tint_edittext.xml",
+          "entry-size": 315
+        },
+        {
+          "entry-name": "res/color/abc_tint_seek_thumb.xml",
+          "entry-size": 272
+        },
+        {
+          "entry-name": "res/color/abc_tint_spinner.xml",
+          "entry-size": 314
+        },
+        {
+          "entry-name": "res/color/abc_tint_switch_track.xml",
+          "entry-size": 311
+        },
+        {
+          "entry-name": "res/color/switch_thumb_material_dark.xml",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "res/color/switch_thumb_material_light.xml",
+          "entry-size": 228
+        },
+        {
+          "entry-name": "res/drawable-v21/abc_action_bar_item_background_material.xml",
+          "entry-size": 154
+        },
+        {
+          "entry-name": "res/drawable-v21/abc_btn_colored_material.xml",
+          "entry-size": 552
+        },
+        {
+          "entry-name": "res/drawable-v21/abc_edit_text_material.xml",
+          "entry-size": 461
+        },
+        {
+          "entry-name": "res/drawable-v21/notification_action_background.xml",
+          "entry-size": 470
+        },
+        {
+          "entry-name": "res/drawable-v23/abc_control_background_material.xml",
+          "entry-size": 174
+        },
+        {
+          "entry-name": "res/drawable-v24/$ic_launcher_foreground__0.xml",
+          "entry-size": 337
+        },
+        {
+          "entry-name": "res/drawable-v24/ic_launcher_foreground.xml",
+          "entry-size": 744
+        },
+        {
+          "entry-name": "res/drawable-watch-v20/abc_dialog_material_background.xml",
+          "entry-size": 182
+        },
+        {
+          "entry-name": "res/drawable/abc_btn_borderless_material.xml",
+          "entry-size": 252
+        },
+        {
+          "entry-name": "res/drawable/abc_btn_check_material.xml",
+          "entry-size": 230
+        },
+        {
+          "entry-name": "res/drawable/abc_btn_default_mtrl_shape.xml",
+          "entry-size": 394
+        },
+        {
+          "entry-name": "res/drawable/abc_btn_radio_material.xml",
+          "entry-size": 231
+        },
+        {
+          "entry-name": "res/drawable/abc_cab_background_internal_bg.xml",
+          "entry-size": 184
+        },
+        {
+          "entry-name": "res/drawable/abc_cab_background_top_material.xml",
+          "entry-size": 174
+        },
+        {
+          "entry-name": "res/drawable/abc_dialog_material_background.xml",
+          "entry-size": 321
+        },
+        {
+          "entry-name": "res/drawable/abc_ic_ab_back_material.xml",
+          "entry-size": 380
+        },
+        {
+          "entry-name": "res/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+          "entry-size": 492
+        },
+        {
+          "entry-name": "res/drawable/abc_ic_clear_material.xml",
+          "entry-size": 359
+        },
+        {
+          "entry-name": "res/drawable/abc_ic_go_search_api_material.xml",
+          "entry-size": 340
+        },
+        {
+          "entry-name": "res/drawable/abc_ic_menu_overflow_material.xml",
+          "entry-size": 389
+        },
+        {
+          "entry-name": "res/drawable/abc_ic_search_api_material.xml",
+          "entry-size": 451
+        },
+        {
+          "entry-name": "res/drawable/abc_ic_voice_search_api_material.xml",
+          "entry-size": 456
+        },
+        {
+          "entry-name": "res/drawable/abc_item_background_holo_dark.xml",
+          "entry-size": 317
+        },
+        {
+          "entry-name": "res/drawable/abc_item_background_holo_light.xml",
+          "entry-size": 318
+        },
+        {
+          "entry-name": "res/drawable/abc_list_selector_background_transition_holo_dark.xml",
+          "entry-size": 199
+        },
+        {
+          "entry-name": "res/drawable/abc_list_selector_background_transition_holo_light.xml",
+          "entry-size": 199
+        },
+        {
+          "entry-name": "res/drawable/abc_list_selector_holo_dark.xml",
+          "entry-size": 337
+        },
+        {
+          "entry-name": "res/drawable/abc_list_selector_holo_light.xml",
+          "entry-size": 338
+        },
+        {
+          "entry-name": "res/drawable/abc_ratingbar_indicator_material.xml",
+          "entry-size": 298
+        },
+        {
+          "entry-name": "res/drawable/abc_ratingbar_material.xml",
+          "entry-size": 297
+        },
+        {
+          "entry-name": "res/drawable/abc_ratingbar_small_material.xml",
+          "entry-size": 298
+        },
+        {
+          "entry-name": "res/drawable/abc_seekbar_thumb_material.xml",
+          "entry-size": 352
+        },
+        {
+          "entry-name": "res/drawable/abc_seekbar_tick_mark_material.xml",
+          "entry-size": 246
+        },
+        {
+          "entry-name": "res/drawable/abc_seekbar_track_material.xml",
+          "entry-size": 424
+        },
+        {
+          "entry-name": "res/drawable/abc_spinner_textfield_background_material.xml",
+          "entry-size": 408
+        },
+        {
+          "entry-name": "res/drawable/abc_switch_thumb_material.xml",
+          "entry-size": 230
+        },
+        {
+          "entry-name": "res/drawable/abc_tab_indicator_material.xml",
+          "entry-size": 233
+        },
+        {
+          "entry-name": "res/drawable/abc_text_cursor_material.xml",
+          "entry-size": 241
+        },
+        {
+          "entry-name": "res/drawable/abc_textfield_search_material.xml",
+          "entry-size": 293
+        },
+        {
+          "entry-name": "res/drawable/abc_vector_test.xml",
+          "entry-size": 332
+        },
+        {
+          "entry-name": "res/drawable/edittext.xml",
+          "entry-size": 242
+        },
+        {
+          "entry-name": "res/drawable/f_gif.xml",
+          "entry-size": 305
+        },
+        {
+          "entry-name": "res/drawable/ic_launcher_background.xml",
+          "entry-size": 307
+        },
+        {
+          "entry-name": "res/drawable/ic_next.xml",
+          "entry-size": 314
+        },
+        {
+          "entry-name": "res/drawable/ic_pause.xml",
+          "entry-size": 317
+        },
+        {
+          "entry-name": "res/drawable/ic_play.xml",
+          "entry-size": 299
+        },
+        {
+          "entry-name": "res/drawable/ic_pre.xml",
+          "entry-size": 313
+        },
+        {
+          "entry-name": "res/drawable/item_background.xml",
+          "entry-size": 240
+        },
+        {
+          "entry-name": "res/drawable/item_background_accent.xml",
+          "entry-size": 240
+        },
+        {
+          "entry-name": "res/drawable/item_background_borderless.xml",
+          "entry-size": 152
+        },
+        {
+          "entry-name": "res/drawable/notification_bg.xml",
+          "entry-size": 253
+        },
+        {
+          "entry-name": "res/drawable/notification_bg_low.xml",
+          "entry-size": 253
+        },
+        {
+          "entry-name": "res/drawable/notification_icon_background.xml",
+          "entry-size": 184
+        },
+        {
+          "entry-name": "res/drawable/notification_tile_bg.xml",
+          "entry-size": 172
+        },
+        {
+          "entry-name": "res/drawable/seek.xml",
+          "entry-size": 418
+        },
+        {
+          "entry-name": "res/drawable/splash.xml",
+          "entry-size": 257
+        },
+        {
+          "entry-name": "res/drawable/tooltip_frame_dark.xml",
+          "entry-size": 224
+        },
+        {
+          "entry-name": "res/drawable/tooltip_frame_light.xml",
+          "entry-size": 224
+        },
+        {
+          "entry-name": "res/layout-v21/notification_action.xml",
+          "entry-size": 485
+        },
+        {
+          "entry-name": "res/layout-v21/notification_action_tombstone.xml",
+          "entry-size": 533
+        },
+        {
+          "entry-name": "res/layout-v21/notification_template_custom_big.xml",
+          "entry-size": 788
+        },
+        {
+          "entry-name": "res/layout-v21/notification_template_icon_group.xml",
+          "entry-size": 418
+        },
+        {
+          "entry-name": "res/layout-v22/abc_alert_dialog_button_bar_material.xml",
+          "entry-size": 613
+        },
+        {
+          "entry-name": "res/layout-v22/activity_custom_test.xml",
+          "entry-size": 562
+        },
+        {
+          "entry-name": "res/layout-v26/abc_screen_toolbar.xml",
+          "entry-size": 649
+        },
+        {
+          "entry-name": "res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+          "entry-size": 472
+        },
+        {
+          "entry-name": "res/layout-watch-v20/abc_alert_dialog_title_material.xml",
+          "entry-size": 552
+        },
+        {
+          "entry-name": "res/layout/abc_action_bar_title_item.xml",
+          "entry-size": 386
+        },
+        {
+          "entry-name": "res/layout/abc_action_bar_up_container.xml",
+          "entry-size": 250
+        },
+        {
+          "entry-name": "res/layout/abc_action_menu_item_layout.xml",
+          "entry-size": 394
+        },
+        {
+          "entry-name": "res/layout/abc_action_menu_layout.xml",
+          "entry-size": 297
+        },
+        {
+          "entry-name": "res/layout/abc_action_mode_bar.xml",
+          "entry-size": 269
+        },
+        {
+          "entry-name": "res/layout/abc_action_mode_close_item_material.xml",
+          "entry-size": 424
+        },
+        {
+          "entry-name": "res/layout/abc_activity_chooser_view.xml",
+          "entry-size": 597
+        },
+        {
+          "entry-name": "res/layout/abc_activity_chooser_view_list_item.xml",
+          "entry-size": 564
+        },
+        {
+          "entry-name": "res/layout/abc_alert_dialog_button_bar_material.xml",
+          "entry-size": 582
+        },
+        {
+          "entry-name": "res/layout/abc_alert_dialog_material.xml",
+          "entry-size": 772
+        },
+        {
+          "entry-name": "res/layout/abc_alert_dialog_title_material.xml",
+          "entry-size": 638
+        },
+        {
+          "entry-name": "res/layout/abc_dialog_title_material.xml",
+          "entry-size": 509
+        },
+        {
+          "entry-name": "res/layout/abc_expanded_menu_layout.xml",
+          "entry-size": 233
+        },
+        {
+          "entry-name": "res/layout/abc_list_menu_item_checkbox.xml",
+          "entry-size": 283
+        },
+        {
+          "entry-name": "res/layout/abc_list_menu_item_icon.xml",
+          "entry-size": 352
+        },
+        {
+          "entry-name": "res/layout/abc_list_menu_item_layout.xml",
+          "entry-size": 598
+        },
+        {
+          "entry-name": "res/layout/abc_list_menu_item_radio.xml",
+          "entry-size": 287
+        },
+        {
+          "entry-name": "res/layout/abc_popup_menu_header_item_layout.xml",
+          "entry-size": 431
+        },
+        {
+          "entry-name": "res/layout/abc_popup_menu_item_layout.xml",
+          "entry-size": 702
+        },
+        {
+          "entry-name": "res/layout/abc_screen_content_include.xml",
+          "entry-size": 297
+        },
+        {
+          "entry-name": "res/layout/abc_screen_simple.xml",
+          "entry-size": 398
+        },
+        {
+          "entry-name": "res/layout/abc_screen_simple_overlay_action_mode.xml",
+          "entry-size": 377
+        },
+        {
+          "entry-name": "res/layout/abc_screen_toolbar.xml",
+          "entry-size": 619
+        },
+        {
+          "entry-name": "res/layout/abc_search_dropdown_item_icons_2line.xml",
+          "entry-size": 665
+        },
+        {
+          "entry-name": "res/layout/abc_search_view.xml",
+          "entry-size": 1103
+        },
+        {
+          "entry-name": "res/layout/abc_select_dialog_material.xml",
+          "entry-size": 518
+        },
+        {
+          "entry-name": "res/layout/abc_tooltip.xml",
+          "entry-size": 497
+        },
+        {
+          "entry-name": "res/layout/activity_ams.xml",
+          "entry-size": 339
+        },
+        {
+          "entry-name": "res/layout/activity_anim.xml",
+          "entry-size": 326
+        },
+        {
+          "entry-name": "res/layout/activity_autosizing_textview.xml",
+          "entry-size": 587
+        },
+        {
+          "entry-name": "res/layout/activity_bluetooth_device.xml",
+          "entry-size": 644
+        },
+        {
+          "entry-name": "res/layout/activity_bt_client_activity.xml",
+          "entry-size": 501
+        },
+        {
+          "entry-name": "res/layout/activity_constraint.xml",
+          "entry-size": 696
+        },
+        {
+          "entry-name": "res/layout/activity_custom_test.xml",
+          "entry-size": 547
+        },
+        {
+          "entry-name": "res/layout/activity_draws.xml",
+          "entry-size": 416
+        },
+        {
+          "entry-name": "res/layout/activity_headset.xml",
+          "entry-size": 242
+        },
+        {
+          "entry-name": "res/layout/activity_international.xml",
+          "entry-size": 241
+        },
+        {
+          "entry-name": "res/layout/activity_main.xml",
+          "entry-size": 393
+        },
+        {
+          "entry-name": "res/layout/activity_music_player.xml",
+          "entry-size": 619
+        },
+        {
+          "entry-name": "res/layout/activity_player.xml",
+          "entry-size": 728
+        },
+        {
+          "entry-name": "res/layout/activity_press_scale.xml",
+          "entry-size": 594
+        },
+        {
+          "entry-name": "res/layout/activity_router_main.xml",
+          "entry-size": 393
+        },
+        {
+          "entry-name": "res/layout/activity_soft_keyboard.xml",
+          "entry-size": 500
+        },
+        {
+          "entry-name": "res/layout/activity_soft_keyboard_dialog.xml",
+          "entry-size": 308
+        },
+        {
+          "entry-name": "res/layout/activity_string.xml",
+          "entry-size": 487
+        },
+        {
+          "entry-name": "res/layout/activity_view_event.xml",
+          "entry-size": 281
+        },
+        {
+          "entry-name": "res/layout/notification_template_part_chronometer.xml",
+          "entry-size": 260
+        },
+        {
+          "entry-name": "res/layout/notification_template_part_time.xml",
+          "entry-size": 263
+        },
+        {
+          "entry-name": "res/layout/recycler_view_item.xml",
+          "entry-size": 354
+        },
+        {
+          "entry-name": "res/layout/select_dialog_item_material.xml",
+          "entry-size": 351
+        },
+        {
+          "entry-name": "res/layout/select_dialog_multichoice_material.xml",
+          "entry-size": 445
+        },
+        {
+          "entry-name": "res/layout/select_dialog_singlechoice_material.xml",
+          "entry-size": 445
+        },
+        {
+          "entry-name": "res/layout/support_simple_spinner_dropdown_item.xml",
+          "entry-size": 267
+        },
+        {
+          "entry-name": "res/menu/menu_main.xml",
+          "entry-size": 231
+        },
+        {
+          "entry-name": "res/mipmap-anydpi-v26/ic_launcher.xml",
+          "entry-size": 222
+        },
+        {
+          "entry-name": "res/mipmap-anydpi-v26/ic_launcher_round.xml",
+          "entry-size": 222
+        }
+      ]
+    },
+    {
+      "suffix": ".gz",
+      "total-size": 34000,
+      "files": [
+        {
+          "entry-name": "okhttp3/internal/publicsuffix/publicsuffixes.gz",
+          "entry-size": 34000
+        }
+      ]
+    },
+    {
+      "suffix": ".SF",
+      "total-size": 26818,
+      "files": [
+        {
+          "entry-name": "META-INF/CERT.SF",
+          "entry-size": 26818
+        }
+      ]
+    },
+    {
+      "suffix": ".MF",
+      "total-size": 26155,
+      "files": [
+        {
+          "entry-name": "META-INF/MANIFEST.MF",
+          "entry-size": 26155
+        }
+      ]
+    },
+    {
+      "suffix": ".kotlin_builtins",
+      "total-size": 9942,
+      "files": [
+        {
+          "entry-name": "kotlin/annotation/annotation.kotlin_builtins",
+          "entry-size": 559
+        },
+        {
+          "entry-name": "kotlin/collections/collections.kotlin_builtins",
+          "entry-size": 1521
+        },
+        {
+          "entry-name": "kotlin/coroutines/coroutines.kotlin_builtins",
+          "entry-size": 157
+        },
+        {
+          "entry-name": "kotlin/internal/internal.kotlin_builtins",
+          "entry-size": 457
+        },
+        {
+          "entry-name": "kotlin/kotlin.kotlin_builtins",
+          "entry-size": 4028
+        },
+        {
+          "entry-name": "kotlin/ranges/ranges.kotlin_builtins",
+          "entry-size": 956
+        },
+        {
+          "entry-name": "kotlin/reflect/reflect.kotlin_builtins",
+          "entry-size": 2264
+        }
+      ]
+    },
+    {
+      "suffix": ".kotlin_module",
+      "total-size": 3933,
+      "files": [
+        {
+          "entry-name": "META-INF/anko-appcompat-v7-coroutines_release.kotlin_module",
+          "entry-size": 85
+        },
+        {
+          "entry-name": "META-INF/anko-appcompat-v7_release.kotlin_module",
+          "entry-size": 76
+        },
+        {
+          "entry-name": "META-INF/anko-coroutines_release.kotlin_module",
+          "entry-size": 87
+        },
+        {
+          "entry-name": "META-INF/anko-sdk25-coroutines_release.kotlin_module",
+          "entry-size": 76
+        },
+        {
+          "entry-name": "META-INF/anko-sdk25_release.kotlin_module",
+          "entry-size": 74
+        },
+        {
+          "entry-name": "META-INF/anko-sqlite_release.kotlin_module",
+          "entry-size": 74
+        },
+        {
+          "entry-name": "META-INF/anko-support-v4_release.kotlin_module",
+          "entry-size": 73
+        },
+        {
+          "entry-name": "META-INF/app_debug.kotlin_module",
+          "entry-size": 120
+        },
+        {
+          "entry-name": "META-INF/appcompatV7_release.kotlin_module",
+          "entry-size": 70
+        },
+        {
+          "entry-name": "META-INF/commons_release.kotlin_module",
+          "entry-size": 293
+        },
+        {
+          "entry-name": "META-INF/kotlin-stdlib-common-coroutines.kotlin_module",
+          "entry-size": 113
+        },
+        {
+          "entry-name": "META-INF/kotlin-stdlib-common.kotlin_module",
+          "entry-size": 584
+        },
+        {
+          "entry-name": "META-INF/kotlin-stdlib-jdk7.kotlin_module",
+          "entry-size": 51
+        },
+        {
+          "entry-name": "META-INF/kotlin-stdlib.kotlin_module",
+          "entry-size": 1268
+        },
+        {
+          "entry-name": "META-INF/kotlin-stdlib_coroutines.kotlin_module",
+          "entry-size": 173
+        },
+        {
+          "entry-name": "META-INF/kotlinx-coroutines-android.kotlin_module",
+          "entry-size": 72
+        },
+        {
+          "entry-name": "META-INF/kotlinx-coroutines-core.kotlin_module",
+          "entry-size": 324
+        },
+        {
+          "entry-name": "META-INF/platform_release.kotlin_module",
+          "entry-size": 86
+        },
+        {
+          "entry-name": "META-INF/retrofit.kotlin_module",
+          "entry-size": 44
+        },
+        {
+          "entry-name": "META-INF/sqlite_release.kotlin_module",
+          "entry-size": 80
+        },
+        {
+          "entry-name": "META-INF/supportV4_release.kotlin_module",
+          "entry-size": 110
+        }
+      ]
+    },
+    {
+      "suffix": ".RSA",
+      "total-size": 603,
+      "files": [
+        {
+          "entry-name": "META-INF/CERT.RSA",
+          "entry-size": 603
+        }
+      ]
+    },
+    {
+      "suffix": ".version",
+      "total-size": 120,
+      "files": [
+        {
+          "entry-name": "META-INF/android.arch.core_runtime.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/android.arch.lifecycle_extensions.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/android.arch.lifecycle_livedata-core.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/android.arch.lifecycle_livedata.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/android.arch.lifecycle_runtime.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/android.arch.lifecycle_viewmodel.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/android.arch.paging_runtime.version",
+          "entry-size": 10
+        },
+        {
+          "entry-name": "META-INF/android.arch.persistence.room_runtime.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/android.arch.persistence_db-framework.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/android.arch.persistence_db.version",
+          "entry-size": 6
+        },
+        {
+          "entry-name": "META-INF/com.android.support_animated-vector-drawable.version",
+          "entry-size": 7
+        },
+        {
+          "entry-name": "META-INF/com.android.support_appcompat-v7.version",
+          "entry-size": 7
+        },
+        {
+          "entry-name": "META-INF/com.android.support_recyclerview-v7.version",
+          "entry-size": 7
+        },
+        {
+          "entry-name": "META-INF/com.android.support_support-compat.version",
+          "entry-size": 7
+        },
+        {
+          "entry-name": "META-INF/com.android.support_support-core-ui.version",
+          "entry-size": 7
+        },
+        {
+          "entry-name": "META-INF/com.android.support_support-core-utils.version",
+          "entry-size": 7
+        },
+        {
+          "entry-name": "META-INF/com.android.support_support-fragment.version",
+          "entry-size": 7
+        },
+        {
+          "entry-name": "META-INF/com.android.support_support-vector-drawable.version",
+          "entry-size": 7
+        }
+      ]
+    },
+    {
+      "suffix": ".txt",
+      "total-size": 53,
+      "files": [
+        {
+          "entry-name": "androidsupportmultidexversion.txt",
+          "entry-size": 53
+        }
+      ]
+    }
+  ]
+},
+{
+  "taskType": 2,
+  "taskDescription": "Read package info from the AndroidManifest.xml.",
+  "start-time": "2018-12-26 10:49:17:479",
+  "end-time": "2018-12-26 10:49:17:507",
+  "manifest": {
+    "package": "com.lanayru",
+    "android:minSdkVersion": "21",
+    "android:targetSdkVersion": "28",
+    "android:versionCode": "1",
+    "android:versionName": "1.0"
+  }
+},
+{
+  "taskType": 5,
+  "taskDescription": "Check if the apk handled by resguard.",
+  "hasResProguard": false,
+  "start-time": "2018-12-26 10:49:24:596",
+  "end-time": "2018-12-26 10:49:24:597"
+},
+{
+  "taskType": 6,
+  "taskDescription": "Find out the non-alpha png-format files whose size exceed limit size in desc order.",
+  "files": [],
+  "start-time": "2018-12-26 10:49:24:597",
+  "end-time": "2018-12-26 10:49:25:390"
+},
+{
+  "taskType": 8,
+  "taskDescription": "Show uncompressed file types.",
+  "files": [
+    {
+      "suffix": "jpg",
+      "total-size": 136041
+    },
+    {
+      "suffix": "gif",
+      "total-size": 761527
+    },
+    {
+      "suffix": "png",
+      "total-size": 173672
+    },
+    {
+      "suffix": "arsc",
+      "total-size": 232748
+    }
+  ],
+  "start-time": "2018-12-26 10:49:25:392",
+  "end-time": "2018-12-26 10:49:25:393"
+},
+{
+  "taskType": 10,
+  "taskDescription": "Find out the duplicated files.",
+  "files": [
+    {
+      "md5": "75630762b4ecafdddc2705b1ad6adbd5",
+      "size": 668,
+      "files": [
+        "res/color-v23/abc_tint_edittext.xml",
+        "res/color-v23/abc_tint_spinner.xml"
+      ]
+    },
+    {
+      "md5": "97df96e9eadd42500fe2578d8a02b38e",
+      "size": 448,
+      "files": [
+        "res/mipmap-anydpi-v26/ic_launcher.xml",
+        "res/mipmap-anydpi-v26/ic_launcher_round.xml"
+      ]
+    },
+    {
+      "md5": "0eb094c8e4cc4f609d4b6164dc79a8f7",
+      "size": 7,
+      "files": [
+        "META-INF/com.android.support_support-core-utils.version",
+        "META-INF/com.android.support_support-compat.version",
+        "META-INF/com.android.support_support-core-ui.version",
+        "META-INF/com.android.support_animated-vector-drawable.version",
+        "META-INF/com.android.support_support-vector-drawable.version",
+        "META-INF/com.android.support_appcompat-v7.version",
+        "META-INF/com.android.support_recyclerview-v7.version",
+        "META-INF/com.android.support_support-fragment.version"
+      ]
+    },
+    {
+      "md5": "375e8a39ec9331ddd89c8acbeb620028",
+      "size": 6,
+      "files": [
+        "META-INF/android.arch.persistence.room_runtime.version",
+        "META-INF/android.arch.persistence_db.version",
+        "META-INF/android.arch.core_runtime.version",
+        "META-INF/android.arch.lifecycle_livedata.version",
+        "META-INF/android.arch.persistence_db-framework.version",
+        "META-INF/android.arch.lifecycle_viewmodel.version",
+        "META-INF/android.arch.lifecycle_livedata-core.version",
+        "META-INF/android.arch.lifecycle_extensions.version",
+        "META-INF/android.arch.lifecycle_runtime.version"
+      ]
+    }
+  ],
+  "start-time": "2018-12-26 10:49:32:021",
+  "end-time": "2018-12-26 10:49:32:412"
+},
+{
+  "taskType": 12,
+  "taskDescription": "Find out the unused resources.",
+  "unused-resources": [
+    "R.dimen.notification_content_margin_start",
+    "R.dimen.abc_text_size_body_2_material",
+    "R.string.search_menu_title",
+    "R.dimen.highlight_alpha_material_dark",
+    "R.anim.abc_slide_out_bottom",
+    "R.drawable.rect_music_selected",
+    "R.dimen.abc_text_size_headline_material",
+    "R.string.abc_font_family_display_4_material",
+    "R.string.abc_font_family_display_2_material",
+    "R.dimen.disabled_alpha_material_light",
+    "R.dimen.disabled_alpha_material_dark",
+    "R.string.abc_font_family_headline_material",
+    "R.string.abc_font_family_body_2_material",
+    "R.color.dim_foreground_disabled_material_dark",
+    "R.dimen.abc_disabled_alpha_material_dark",
+    "R.dimen.notification_main_column_padding_top",
+    "R.dimen.abc_text_size_button_material",
+    "R.color.material_blue_grey_800",
+    "R.dimen.abc_text_size_display_3_material",
+    "R.string.abc_action_bar_home_description",
+    "R.string.abc_font_family_button_material",
+    "R.color.bright_foreground_inverse_material_dark",
+    "R.dimen.abc_text_size_medium_material",
+    "R.color.bright_foreground_inverse_material_light",
+    "R.color.dim_foreground_material_dark",
+    "R.dimen.abc_text_size_large_material",
+    "R.dimen.abc_text_size_small_material",
+    "R.dimen.abc_action_bar_subtitle_bottom_margin_material",
+    "R.string.abc_font_family_display_3_material",
+    "R.dimen.abc_text_size_body_1_material",
+    "R.dimen.abc_action_bar_progress_bar_size",
+    "R.anim.abc_slide_in_top",
+    "R.layout.activity_constraint",
+    "R.string.abc_font_family_body_1_material",
+    "R.anim.abc_fade_out",
+    "R.layout.activity_main",
+    "R.string.abc_font_family_caption_material",
+    "R.layout.recycler_view_item",
+    "R.drawable.notify_panel_notification_icon_bg",
+    "R.dimen.abc_action_button_min_height_material",
+    "R.drawable.rect_music_unselect",
+    "R.layout.abc_action_bar_up_container",
+    "R.string.abc_searchview_description_query",
+    "R.string.abc_action_menu_overflow_description",
+    "R.anim.abc_slide_in_bottom",
+    "R.dimen.abc_text_size_display_2_material",
+    "R.color.ripple_dark",
+    "R.anim.abc_slide_out_top",
+    "R.dimen.abc_text_size_caption_material",
+    "R.dimen.highlight_alpha_material_light",
+    "R.color.material_blue_grey_950",
+    "R.dimen.abc_seekbar_track_background_height_material",
+    "R.dimen.abc_disabled_alpha_material_light",
+    "R.dimen.abc_text_size_title_material",
+    "R.dimen.abc_text_size_display_4_material",
+    "R.drawable.item_background_accent",
+    "R.anim.abc_fade_in",
+    "R.dimen.abc_action_bar_icon_vertical_padding_material",
+    "R.dimen.abc_text_size_title_material_toolbar",
+    "R.string.abc_font_family_menu_material",
+    "R.dimen.abc_text_size_subhead_material",
+    "R.string.abc_font_family_display_1_material",
+    "R.dimen.abc_action_button_min_width_overflow_material",
+    "R.color.material_grey_300",
+    "R.dimen.abc_seekbar_track_progress_height_material",
+    "R.dimen.abc_text_size_subtitle_material_toolbar",
+    "R.bool.abc_allow_stacked_button_bar",
+    "R.string.abc_font_family_subhead_material",
+    "R.dimen.abc_action_button_min_width_material",
+    "R.dimen.abc_text_size_menu_material",
+    "R.dimen.notification_media_narrow_margin",
+    "R.color.dim_foreground_material_light",
+    "R.color.material_blue_grey_900",
+    "R.color.dim_foreground_disabled_material_light",
+    "R.integer.cancel_button_image_alpha",
+    "R.dimen.abc_text_size_display_1_material",
+    "R.drawable.notification_tile_bg",
+    "R.drawable.abc_ic_menu_overflow_material"
+  ],
+  "start-time": "2018-12-26 10:49:32:913",
+  "end-time": "2018-12-26 10:49:42:127"
+},
+{
+  "taskType": 13,
+  "taskDescription": "Find out the unused assets.",
+  "unused-assets": [],
+  "start-time": "2018-12-26 10:49:42:127",
+  "end-time": "2018-12-26 10:49:44:974"
+},
+{
+  "taskType": 14,
+  "taskDescription": "Find out the unstripped shared library files.",
+  "unstripped-lib": [
+    "libpl_droidsonroids_gif.so",
+    "libbitmap-lib.so",
+    "libutil-lib.so",
+    "libpl_droidsonroids_gif.so",
+    "libpl_droidsonroids_gif.so",
+    "libbitmap-lib.so",
+    "libutil-lib.so"
+  ],
+  "start-time": "2018-12-26 10:49:44:974",
+  "end-time": "2018-12-26 10:49:45:170"
+},
+{
+  "taskType": 3,
+  "taskDescription": "Show files whose size exceed limit size in order.",
+  "files": [
+    {
+      "entry-name": "assets/musiclens_discovery_2.gif",
+      "entry-size": 477132
+    },
+    {
+      "entry-name": "assets/musiclens_discovery_1.gif",
+      "entry-size": 284395
+    },
+    {
+      "entry-name": "resources.arsc",
+      "entry-size": 232748
+    },
+    {
+      "entry-name": "res/drawable-nodpi-v4/link.jpg",
+      "entry-size": 94114
+    },
+    {
+      "entry-name": "res/drawable-nodpi-v4/zelda.jpg",
+      "entry-size": 41927
+    },
+    {
+      "entry-name": "res/mipmap-xxxhdpi-v4/ic_launcher_round.png",
+      "entry-size": 15523
+    },
+    {
+      "entry-name": "res/mipmap-xxhdpi-v4/ic_launcher_round.png",
+      "entry-size": 10676
+    }
+  ],
+  "start-time": "2018-12-26 10:49:17:507",
+  "end-time": "2018-12-26 10:49:17:509"
+},
+{
+  "taskType": 4,
+  "taskDescription": "Count methods in dex file, output results group by class name or package name.",
+  "start-time": "2018-12-26 10:49:17:509",
+  "end-time": "2018-12-26 10:49:24:595",
+  "total-methods": 52463,
+  "groups": [
+    {
+      "name": "[others]",
+      "method-count": 31081
+    },
+    {
+      "name": "Android System",
+      "method-count": 18365
+    },
+    {
+      "name": "java system",
+      "method-count": 1829
+    },
+    {
+      "name": "com.lanayru.app",
+      "method-count": 726
+    },
+    {
+      "name": "com.lanayru.view",
+      "method-count": 279
+    },
+    {
+      "name": "com.lanayru.util",
+      "method-count": 65
+    },
+    {
+      "name": "com.lanayru.player",
+      "method-count": 37
+    },
+    {
+      "name": "com.lanayru.theme",
+      "method-count": 32
+    },
+    {
+      "name": "com.lanayru.model",
+      "method-count": 19
+    },
+    {
+      "name": "com.lanayru.data",
+      "method-count": 15
+    },
+    {
+      "name": "com.lanayru.extention",
+      "method-count": 9
+    },
+    {
+      "name": "com.lanayru.dao",
+      "method-count": 6
+    }
+  ]
+},
+{
+  "taskType": 7,
+  "taskDescription": "Check if there are more than one library dir in the \u0027lib\u0027.",
+  "lib-dirs": [
+    "armeabi-v7a",
+    "x86",
+    "arm64-v8a",
+    "armeabi",
+    "x86_64"
+  ],
+  "multi-lib": true,
+  "start-time": "2018-12-26 10:49:25:391",
+  "end-time": "2018-12-26 10:49:25:391"
+},
+{
+  "taskType": 9,
+  "taskDescription": "Count the R class.",
+  "R-count": 29,
+  "Field-counts": 11158,
+  "start-time": "2018-12-26 10:49:25:393",
+  "end-time": "2018-12-26 10:49:32:021",
+  "R-classes": [
+    {
+      "name": "com.lanayru.app.R",
+      "field-count": 4288
+    },
+    {
+      "name": "android.support.v7.appcompat.R",
+      "field-count": 2998
+    },
+    {
+      "name": "android.support.constraint.R",
+      "field-count": 432
+    },
+    {
+      "name": "com.scwang.smartrefresh.layout.R",
+      "field-count": 318
+    },
+    {
+      "name": "android.arch.paging.runtime.R",
+      "field-count": 314
+    },
+    {
+      "name": "android.support.v7.recyclerview.R",
+      "field-count": 314
+    },
+    {
+      "name": "com.bumptech.glide.R",
+      "field-count": 260
+    },
+    {
+      "name": "android.support.graphics.drawable.animated.R",
+      "field-count": 258
+    },
+    {
+      "name": "android.support.coreui.R",
+      "field-count": 258
+    },
+    {
+      "name": "android.support.fragment.R",
+      "field-count": 258
+    },
+    {
+      "name": "com.tbruyelle.rxpermissions2.R",
+      "field-count": 258
+    },
+    {
+      "name": "android.support.coreutils.R",
+      "field-count": 202
+    },
+    {
+      "name": "android.support.compat.R",
+      "field-count": 202
+    },
+    {
+      "name": "android.support.graphics.drawable.R",
+      "field-count": 202
+    },
+    {
+      "name": "android.arch.lifecycle.extensions.R",
+      "field-count": 200
+    },
+    {
+      "name": "android.arch.persistence.room.R",
+      "field-count": 200
+    },
+    {
+      "name": "com.scwang.smartrefresh.header.R",
+      "field-count": 176
+    },
+    {
+      "name": "pl.droidsonroids.gif.R",
+      "field-count": 20
+    },
+    {
+      "name": "android.arch.lifecycle.R",
+      "field-count": 0
+    },
+    {
+      "name": "com.bumptech.glide.gifdecoder.R",
+      "field-count": 0
+    },
+    {
+      "name": "android.arch.lifecycle.livedata.core.R",
+      "field-count": 0
+    },
+    {
+      "name": "com.chenenyu.router.R",
+      "field-count": 0
+    },
+    {
+      "name": "io.reactivex.android.R",
+      "field-count": 0
+    },
+    {
+      "name": "android.arch.lifecycle.viewmodel.R",
+      "field-count": 0
+    },
+    {
+      "name": "android.arch.persistence.db.framework.R",
+      "field-count": 0
+    },
+    {
+      "name": "android.arch.persistence.db.R",
+      "field-count": 0
+    },
+    {
+      "name": "android.support.multidex.R",
+      "field-count": 0
+    },
+    {
+      "name": "android.arch.lifecycle.livedata.R",
+      "field-count": 0
+    },
+    {
+      "name": "android.arch.core.R",
+      "field-count": 0
+    }
+  ]
+},
+{
+  "taskType": 11,
+  "taskDescription": "Check if there are more than one shared library statically linked the STL.",
+  "stl-lib": [
+    "libbitmap-lib.so",
+    "libutil-lib.so",
+    "libbitmap-lib.so",
+    "libutil-lib.so"
+  ],
+  "multi-stl": true,
+  "start-time": "2018-12-26 10:49:32:413",
+  "end-time": "2018-12-26 10:49:32:913"
+}]

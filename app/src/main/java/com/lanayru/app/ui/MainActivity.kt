@@ -11,6 +11,9 @@ import com.lanayru.app.R
 import com.lanayru.app.ui.base.BaseActivity
 import com.lanayru.app.ui.base.RvAdapter
 import com.lanayru.view.ActivityItemView
+import com.scwang.smartrefresh.layout.SmartRefreshLayout
+import com.scwang.smartrefresh.layout.footer.ClassicsFooter
+import com.scwang.smartrefresh.layout.header.ClassicsHeader
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 import org.jetbrains.anko.startActivity
@@ -24,8 +27,6 @@ class MainActivity : BaseActivity(), AnkoLogger {
     }
 
     override fun render(savedInstanceState: Bundle?) {
-        Thread.sleep(1000)
-
         logClassLoader()
 
         val adapter = object : RvAdapter<ActivityInfo>() {
@@ -53,11 +54,21 @@ class MainActivity : BaseActivity(), AnkoLogger {
 
         adapter.data = data
 
-        RecyclerView(_this).apply {
+        val rv = RecyclerView(_this).apply {
             layoutManager = LinearLayoutManager(_this, LinearLayoutManager.VERTICAL, false)
             this.adapter = adapter
-        }.run {
-            setContentView(this)
+        }
+
+        val root = applyRefresh()
+        root.addView(rv)
+
+        setContentView(root)
+    }
+
+    private fun applyRefresh(): ViewGroup {
+        return SmartRefreshLayout(this).apply {
+            setRefreshHeader(ClassicsHeader(_this))
+            setRefreshFooter(ClassicsFooter(_this))
         }
     }
 

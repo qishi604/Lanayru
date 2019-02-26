@@ -1,13 +1,17 @@
 package com.lanayru.app.ui
 
+import android.Manifest
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.Environment
+import com.chenenyu.router.annotation.Route
 import com.lanayru.app.R
 import com.lanayru.app.ui.base.BaseActivity
 import com.lanayru.player.FlacPlayer
 import com.lanayru.util.getField
+import com.tbruyelle.rxpermissions2.RxPermissions
 import kotlinx.android.synthetic.main.activity_music_player.*
+import org.jetbrains.anko.toast
 import java.io.File
 
 /**
@@ -17,16 +21,20 @@ import java.io.File
  * @since 2018/9/3
  *
  **/
+@Route("music/player")
 class MusicPlayerActivity: BaseActivity() {
 
     private lateinit var mPlayer: FlacPlayer
 
+    private lateinit var mPermissions: RxPermissions
+
     private var mIsPlay = false
 
     override fun render(savedInstanceState: Bundle?) {
+        mPermissions = RxPermissions(this)
         setContentView(R.layout.activity_music_player)
 
-        prepare()
+        checkFile()
 
         iv_play.setOnClickListener {
             if (mIsPlay) {
@@ -35,8 +43,23 @@ class MusicPlayerActivity: BaseActivity() {
                 play()
             }
         }
+    }
 
+    private fun checkFile() {
+        mPermissions.request(Manifest.permission.READ_EXTERNAL_STORAGE).subscribe(
+                {
+                    if (it) {
+                        prepare()
 
+                    } else {
+                        toast("获取不到sdcard权限")
+                    }
+                },
+                {
+                    toast("需要读取sdcard权限")
+                    finish()
+                }
+        )
     }
 
     private fun prepare() {

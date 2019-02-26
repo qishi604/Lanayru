@@ -1,6 +1,8 @@
 package com.lanayru.app.ui
 
 import android.os.Bundle
+import com.bumptech.glide.Glide
+import com.lanayru.GlideApp
 import com.lanayru.app.ui.base.BaseActivity
 import org.jetbrains.anko.verticalLayout
 import pl.droidsonroids.gif.GifDrawable
@@ -42,5 +44,10 @@ class GifActivity: BaseActivity() {
 
         mIv1.setImageDrawable(g1)
         mIv2.setImageDrawable(g2)
+    }
+
+    private fun testGlide() {
+        GlideApp.with(this).load("").into(mIv1)
+        Glide.with(this).load("").into(mIv1)
     }
 }

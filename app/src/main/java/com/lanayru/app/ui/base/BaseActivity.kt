@@ -52,7 +52,8 @@ abstract class BaseActivity: AppCompatActivity(), Observer {
             lp.topMargin = toolbarHeight
         }
         vg.addView(_toolbar, ViewGroup.LayoutParams(matchParent, toolbarHeight))
-        _toolbar!!.title = title
+        val titleStr = "$title-${_this.javaClass.simpleName}"
+        _toolbar!!.title = titleStr
     }
 
     override fun onResume() {

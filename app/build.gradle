@@ -6,19 +6,31 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
+apply plugin: 'com.chenenyu.router'
+
 //apply from: '../aapt2public.gradle'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.lanayru"
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         multiDexEnabled true
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+
+        // 只生成一个平台的so，测试单个平台的时候可以打开
+//        ndk {
+//            abiFilters "armeabi-v7a"
+//        }
     }
     buildTypes {
         release {
@@ -35,17 +47,21 @@ android {
         abortOnError false
     }
 
-    dexOptions {
-        additionalParameters = [
-                '--multi-dex',
-                '--set-max-idx-number=20000',
-                '--main-dex-list=multidex-config.txt'
-        ]
-    }
+//    dexOptions {
+//        additionalParameters = [
+//                '--multi-dex',
+//                '--set-max-idx-number=20000',
+//                '--main-dex-list=multidex-config.txt'
+//        ]
+//    }
     externalNativeBuild {
         cmake {
-            path file('CMakeLists.txt')
+            path 'CMakeLists.txt'
         }
+    }
+
+    dexOptions {
+        javaMaxHeapSize '1g'
     }
 
 //    aaptOptions {
@@ -105,11 +121,26 @@ dependencies {
     // Paging
     implementation 'android.arch.paging:runtime:1.0.0-rc1'
     // eth web3j
-    implementation 'org.web3j:core:3.3.1-android'
+//    implementation 'org.web3j:core:3.3.1-android'
 
     // rxpermission
     implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
 
     // gif
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    kapt 'com.github.bumptech.glide:compiler:4.8.0'
+
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-16'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-16'//没有使用特殊Header，可以不加这行
+
+    // rxjava
+    implementation "io.reactivex.rxjava2:rxjava:2.2.4"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    // eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
 }
