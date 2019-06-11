@@ -6,18 +6,20 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import com.lanayru.app.ui.ImageDetailActivity
 import com.lanayru.app.ui.base.BaseActivity
 import com.lanayru.app.ui.base.RvAdapter
 import com.lanayru.extention.dp
 import com.lanayru.view.ImageItemView
+import org.jetbrains.anko.startActivity
 
 /**
  * 测试横竖嵌套的 RecyclerView
  */
-class RvNestActivity: BaseActivity() {
+class RvNestActivity : BaseActivity() {
 
     override fun render(savedInstanceState: Bundle?) {
-        val adapter= object : RvAdapter<String>() {
+        val adapter = object : RvAdapter<String>() {
             override fun onCreateView(parent: ViewGroup?, viewType: Int): View {
                 return renderNestRv()
             }
@@ -36,11 +38,16 @@ class RvNestActivity: BaseActivity() {
         setContentView(rv)
     }
 
+    private var adapter: RvAdapter<String>? = null
+
     private fun renderNestRv(): RecyclerView {
-        val adapter= object : RvAdapter<String>() {
+        adapter = object : RvAdapter<String>() {
             override fun onCreateView(parent: ViewGroup?, viewType: Int): View {
                 val itemView = ImageItemView(_this).apply {
                     setBackgroundColor(Color.BLUE)
+                    setOnClickListener {
+                        startActivity<ImageDetailActivity>()
+                    }
                 }
 
                 itemView.layoutParams = RecyclerView.LayoutParams(100.dp, 100.dp).apply {
@@ -56,12 +63,11 @@ class RvNestActivity: BaseActivity() {
             "$it"
         }
 
-        adapter.data = data
+        adapter!!.data = data
         return RecyclerView(_this).apply {
             layoutManager = LinearLayoutManager(_this, LinearLayoutManager.HORIZONTAL, false)
             this.adapter = adapter
         }
 
     }
-
 }

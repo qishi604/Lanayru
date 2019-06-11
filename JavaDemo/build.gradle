@@ -1,10 +1,19 @@
-apply plugin: 'java'
+//apply plugin: 'java'
+
+// Add plugin https://plugins.gradle.org/plugin/net.ltgt.apt
+plugins {
+    id 'java'
+    id "net.ltgt.apt" version "0.10"
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.squareup.okio:okio:1.15.0'
 
+    compile 'com.google.dagger:dagger:2.21'
+    apt 'com.google.dagger:dagger-compiler:2.21'
+
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

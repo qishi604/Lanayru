@@ -8,9 +8,10 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0-rc03'
+        classpath 'com.android.tools.build:gradle:3.3.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.chenenyu.router:gradle-plugin:$router_version"
 
@@ -23,10 +24,41 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
         maven { url 'https://jitpack.io' }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+apply plugin: DebugPlugin
+
+import com.android.build.gradle.api.TestVariant
+import com.android.build.gradle.api.UnitTestVariant
+import com.android.build.gradle.internal.variant.ApplicationVariantData
+import com.android.build.gradle.internal.api.ApplicationVariantImpl
+
+class DebugPlugin implements Plugin<Project> {
+
+    @Override
+    void apply(Project project) {
+        project.afterEvaluate {
+            println("debug gradle====================")
+            println("after evaluate")
+            println("after debug gradle====================")
+
+            if (project.plugins.hasPlugin("com.android.application")) {
+                def android = project.extensions.getByName("android")
+                android.applicationVariants.all {ApplicationVariantImpl variant ->
+                    project.logger.error "DebuggerPlugin:${variant}"
+                    ApplicationVariantData apkVariantData = variant.getApkVariantData()
+                    ApplicationVariantData variantData = variant.getVariantData()
+                    TestVariant testVariant = variant.getTestVariant()
+                    UnitTestVariant unitTestVariant = variant.getUnitTestVariant()
+                }
+            }
+        }
+    }
 }

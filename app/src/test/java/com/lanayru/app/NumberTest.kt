@@ -155,4 +155,7 @@ class NumberTest {
         println(tableSizeFor(3))
         println(tableSizeFor(9))
     }
+
+
+
 }

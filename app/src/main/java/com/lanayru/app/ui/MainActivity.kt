@@ -10,6 +10,8 @@ import android.view.ViewGroup
 import com.lanayru.app.R
 import com.lanayru.app.ui.base.BaseActivity
 import com.lanayru.app.ui.base.RvAdapter
+import com.lanayru.model.Event
+import com.lanayru.util.Logs
 import com.lanayru.view.ActivityItemView
 import com.scwang.smartrefresh.layout.SmartRefreshLayout
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter
@@ -17,19 +19,27 @@ import com.scwang.smartrefresh.layout.header.ClassicsHeader
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 
 class MainActivity : BaseActivity(), AnkoLogger {
 
+    companion object {
+        var sMainActivity: MainActivity? = null
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        sMainActivity = this
         // 恢复默认主题
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
     }
 
+    private lateinit var mAdapter: RvAdapter<ActivityInfo>
+
     override fun render(savedInstanceState: Bundle?) {
         logClassLoader()
 
-        val adapter = object : RvAdapter<ActivityInfo>() {
+        mAdapter = object : RvAdapter<ActivityInfo>() {
             override fun onCreateView(parent: ViewGroup?, viewType: Int) = ActivityItemView(_this)
         }.apply {
             onItemClick = { _, d ->
@@ -52,11 +62,11 @@ class MainActivity : BaseActivity(), AnkoLogger {
                     reverse()
                 }
 
-        adapter.data = data
+        mAdapter.data = data
 
         val rv = RecyclerView(_this).apply {
             layoutManager = LinearLayoutManager(_this, LinearLayoutManager.VERTICAL, false)
-            this.adapter = adapter
+            this.adapter = mAdapter
         }
 
         val root = applyRefresh()
@@ -98,5 +108,11 @@ class MainActivity : BaseActivity(), AnkoLogger {
             classLoader = classLoader.parent
         }
 
+    }
+
+    fun onEvent(ev: Event) {
+        toast(ev.data.toString())
+        Logs.i("event ${ev.data.toString()}")
+        mAdapter.notifyDataSetChanged()
     }
 }

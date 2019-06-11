@@ -11,6 +11,9 @@ import org.junit.Test
  **/
 class NullTest {
 
+    /**
+     * [help](http://www.baidu.com)
+     */
     @Test
     fun testNull() {
         var s : String? = null

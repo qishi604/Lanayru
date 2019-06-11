@@ -61,7 +61,7 @@
         <activity android:name=".ui.anim.FrameAnimActivity" />
         <activity android:name=".ui.anim.AnimActivity" />
         <activity android:name=".ui.bug.SoftKeyboardActivity"
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             />
         <activity android:name=".ui.bug.SoftKeyboardDialogActivity" />
         <activity android:name=".ui.bluetooth.ScanActivity" />
@@ -97,6 +97,15 @@
         <activity android:name=".ui.TraceActivity" />
         <activity android:name=".ui.LeakActivity" />
         <activity android:name=".ui.RxJavaTestActivity" />
+        <activity android:name=".ui.LayoutActivity" />
+        <activity android:name=".ui.rv.LoadMoreRvActivity" />
+        <activity android:name=".ui.DialogActivity" />
+        <activity android:name=".ui.ImageDetailActivity" />
+        <activity android:name=".ui.PopupActivity" />
+        <activity android:name=".ui.KeyboardTestActivity" />
+        <activity android:name=".ui.image.ImagePreviewActivity"
+            />
+        <activity android:name=".ui.ChronometerActivity" />
     </application>
 
 </manifest>

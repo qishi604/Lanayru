@@ -8,7 +8,9 @@ public class Main {
 //		System.out.println("hello");
 //		testClassLoader();
 
-		new VolatileTest().test();
+//		new VolatileTest().test();
+
+		testDagger();
 	}
 
 	private static void testClassLoader() {
@@ -25,6 +27,10 @@ public class Main {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+	}
+
+	private static void testDagger() {
 
 	}
 }

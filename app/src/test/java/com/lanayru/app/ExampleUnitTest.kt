@@ -2,6 +2,7 @@ package com.lanayru.app
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
+import java.util.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -34,5 +35,13 @@ class ExampleUnitTest {
         println(3/2f)
         println(Math.ceil(3/2.0).toInt())
 
+    }
+
+    @Test
+    fun testEquals() {
+        val s: String? = null
+        val s1: String? = null
+
+        println(Objects.equals(s, s1))
     }
 }

@@ -3,6 +3,7 @@ package com.lanayru.app
 import android.app.Application
 import android.content.Context
 import android.support.multidex.MultiDex
+import com.blankj.utilcode.util.Utils
 import com.lanayru.util.HotFix
 import kotlin.properties.Delegates
 
@@ -27,6 +28,7 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        Utils.init(this)
         sInstance = this
 
         HotFix.patch(this)

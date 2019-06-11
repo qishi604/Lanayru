@@ -1,0 +1,5 @@
+$ adb push /Users/seven/github.com/Lanayru/app/build/outputs/apk/debug/app-debug.apk /data/local/tmp/com.lanayru
+$ adb shell pm install -t -r "/data/local/tmp/com.lanayru"
+Success
+APK installed in 4 s 774 ms
+$ adb shell am start -n "com.lanayru/com.lanayru.app.ui.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
