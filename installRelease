@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+v=1
+
+if [ $v == 1 ];then
+       echo "=================== Install Success $? =================="
+fi

@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+./gradlew installDebug
+
+if [ $? == 0 ];then
+       echo "=================== Install Success =================="
+       adb shell am start -n "com.lanayru/com.lanayru.app.ui.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+fi
