@@ -42,7 +42,7 @@ class AndroidBug5497Workaround private constructor(activity: Activity) {
             val heightDifference = usableHeightSansKeyboard - usableHeightNow
 
             var h = 0
-            if (heightDifference > usableHeightSansKeyboard / 4) {
+            if (heightDifference > 40) {
                 // keyboard probably just became visible
                  h = usableHeightSansKeyboard - heightDifference
                 onShow?.invoke()

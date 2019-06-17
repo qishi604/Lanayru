@@ -1,10 +1,16 @@
 package com.lanayru.app.ui.bug
 
+import android.opengl.Visibility
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
+import com.blankj.utilcode.util.KeyboardUtils
 import com.lanayru.app.R
 import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.util.Logs
+import com.lanayru.util.hideSoftKeyboard
 import com.lanayru.view.AndroidBug5497Workaround
+import kotlinx.android.synthetic.main.layout_keyboard.*
 
 /**
  *
@@ -24,6 +30,27 @@ class SoftKeyboardActivity: BaseActivity() {
 
         setContentView(R.layout.activity_soft_keyboard)
 
-        AndroidBug5497Workaround.assistActivity(this)
+        AndroidBug5497Workaround.assistActivity(this).apply {
+            onShow = {
+                l_add.visibility = View.GONE
+                l_face.visibility = View.GONE
+            }
+
+            onHide = {
+
+            }
+        }
+
+        iv_face.setOnClickListener {
+            KeyboardUtils.hideSoftInput(_this)
+            l_add.visibility = View.GONE
+            l_face.visibility = View.VISIBLE
+        }
+
+        iv_add.setOnClickListener {
+            KeyboardUtils.hideSoftInput(_this)
+            l_face.visibility = View.GONE
+            l_add.visibility = View.VISIBLE
+        }
     }
 }

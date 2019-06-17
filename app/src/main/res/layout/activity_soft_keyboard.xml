@@ -7,28 +7,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bottm"
-        android:src="@drawable/zelda"
-        />
+        android:layout_above="@+id/keyboard"
+        android:src="@drawable/zelda" />
 
-
-    <RelativeLayout
-        android:id="@+id/bottm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#eee"
-        android:padding="12dp">
-
-        <EditText
-            android:id="@+id/et_content"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@drawable/edittext"
-            android:imeOptions="flagNoExtractUi"
-            android:hint="input something"
-            android:padding="8dp" />
-
-    </RelativeLayout>
+    <include layout="@layout/layout_keyboard" />
 
 </com.lanayru.view.RelativeRoot>

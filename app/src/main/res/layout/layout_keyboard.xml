@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_soft_keyboard">
+
+    <LinearLayout
+        android:id="@+id/bottm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/item_background_borderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_keyboard_voice" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext"
+            android:hint="input something"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLines="4"
+            android:minHeight="40dp"
+            android:padding="8dp"
+            android:text="sdkfjsf" />
+
+
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/item_background_borderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_tag_faces" />
+
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/item_background_borderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add" />
+
+    </LinearLayout>
+
+    <!-- 表情或者其他 -->
+
+    <FrameLayout
+        android:id="@+id/l_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:text="face" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/l_add"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:text="add" />
+
+    </FrameLayout>
+
+</LinearLayout>
