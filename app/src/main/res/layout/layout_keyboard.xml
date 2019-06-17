@@ -10,7 +10,7 @@
     tools:showIn="@layout/activity_soft_keyboard">
 
     <LinearLayout
-        android:id="@+id/bottm"
+        android:id="@+id/bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -33,12 +33,22 @@
             android:layout_marginRight="8dp"
             android:layout_weight="1"
             android:background="@drawable/edittext"
-            android:hint="input something"
-            android:imeOptions="flagNoExtractUi"
+            android:hint="input"
             android:maxLines="4"
             android:minHeight="40dp"
             android:padding="8dp"
-            android:text="sdkfjsf" />
+            />
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/edittext"
+            android:minHeight="40dp"
+            android:visibility="gone"
+            android:text="按住 说话" />
 
 
         <ImageView
@@ -63,32 +73,39 @@
     <!-- 表情或者其他 -->
 
     <FrameLayout
-        android:id="@+id/l_face"
+        android:id="@+id/l_holder"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:visibility="gone"
         >
 
-        <TextView
+        <FrameLayout
+            android:id="@+id/l_face"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:gravity="center"
-            android:text="face" />
+            android:layout_height="match_parent"
+            android:background="#080">
 
-    </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="face" />
 
-    <FrameLayout
-        android:id="@+id/l_add"
-        android:layout_width="match_parent"
-        android:visibility="gone"
-        android:layout_height="wrap_content">
+        </FrameLayout>
 
-        <TextView
+        <FrameLayout
+            android:id="@+id/l_add"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:gravity="center"
-            android:text="add" />
+            android:layout_height="match_parent"
+            android:background="#800"
+            android:visibility="gone">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="add" />
+
+        </FrameLayout>
     </FrameLayout>
-
 </LinearLayout>

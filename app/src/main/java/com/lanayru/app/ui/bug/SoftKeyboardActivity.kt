@@ -1,14 +1,10 @@
 package com.lanayru.app.ui.bug
 
-import android.opengl.Visibility
 import android.os.Bundle
 import android.view.View
-import android.view.WindowManager
 import com.blankj.utilcode.util.KeyboardUtils
 import com.lanayru.app.R
 import com.lanayru.app.ui.base.BaseActivity
-import com.lanayru.util.Logs
-import com.lanayru.util.hideSoftKeyboard
 import com.lanayru.view.AndroidBug5497Workaround
 import kotlinx.android.synthetic.main.layout_keyboard.*
 
@@ -26,7 +22,7 @@ class SoftKeyboardActivity: BaseActivity() {
     }
 
     override fun render(savedInstanceState: Bundle?) {
-        window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+//        window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         setContentView(R.layout.activity_soft_keyboard)
 

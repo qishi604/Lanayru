@@ -3,6 +3,7 @@ package com.lanayru.app.ui.keyboard
 import android.os.Bundle
 import com.lanayru.app.R
 import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.view.Keyboard
 
 /**
  * @author 郑齐
@@ -12,10 +13,14 @@ import com.lanayru.app.ui.base.BaseActivity
  */
 class KeyboardActivity: BaseActivity() {
 
-
-
-    override fun render(savedInstanceState: Bundle?) {
-        setContentView(R.layout.activity_soft_keyboard)
+    override fun renderToolbar() {
+//        super.renderToolbar()
     }
 
+    override fun render(savedInstanceState: Bundle?) {
+        setContentView(R.layout.activity_keyboard)
+
+        var keyboard = Keyboard()
+        keyboard.assistActivity(_this, findViewById(R.id.keyboard))
+    }
 }
