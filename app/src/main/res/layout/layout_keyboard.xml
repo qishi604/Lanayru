@@ -23,7 +23,7 @@
             android:layout_height="40dp"
             android:background="@drawable/item_background_borderless"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_keyboard_voice" />
+            android:src="@drawable/ic_voice" />
 
         <EditText
             android:id="@+id/et_content"
@@ -43,6 +43,8 @@
             android:id="@+id/tv_record"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_weight="1"
             android:gravity="center"
             android:background="@drawable/edittext"
@@ -57,7 +59,7 @@
             android:layout_height="40dp"
             android:background="@drawable/item_background_borderless"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_tag_faces" />
+            android:src="@drawable/ic_faces" />
 
 
         <ImageView

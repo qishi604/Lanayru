@@ -80,7 +80,11 @@ public class Keyboard {
         mIvRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showRecord();
+                if (isFlag(FLAG_RECORD)) {
+                    showKeyboard();
+                } else {
+                    showRecord();
+                }
             }
         });
 
@@ -94,14 +98,23 @@ public class Keyboard {
         mIvFace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showFace();
+                if (isFlag(FLAG_FACE)) {
+                    showKeyboard();
+                } else {
+                    showFace();
+                }
             }
         });
 
         mIvAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAdd();
+                if (isFlag(FLAG_ADD)) {
+                    showKeyboard();
+
+                } else {
+                    showAdd();
+                }
             }
         });
     }
@@ -137,6 +150,7 @@ public class Keyboard {
     }
 
     private void showKeyboard() {
+        mShowFlag = 0;
         KeyboardUtils.showSoftInput(mEtMessage);
     }
 
@@ -147,6 +161,7 @@ public class Keyboard {
     private void hideViews() {
         mShowFlag = 0;
 
+        mTvRecord.setVisibility(View.GONE);
         mLPlaceHolder.setVisibility(View.GONE);
         mLFace.setVisibility(View.GONE);
         mLAdd.setVisibility(View.GONE);
@@ -177,13 +192,6 @@ public class Keyboard {
             }
             mUsableHeightPrevious = usableHeightNow;
 
-//            mContentLp.height = (r.bottom - r.top); // 不能直接这样设置，页面会抖动
-
-//            mContentLp.bottomMargin = heightDifference;
-//            mContentChild.requestLayout();
-
-//            mContentChild.setTranslationY(-heightDifference); // 这种方式页面会抖动
-
             // 试试padding，居然没抖动 ~~~
             mContentChild.setPadding(0, 0, 0, heightDifference);
 
@@ -191,8 +199,9 @@ public class Keyboard {
     }
 
     private void onKeyboardShow(int keyboardHeight) {
+        mEtMessage.setVisibility(View.VISIBLE);
         hideViews();
-
+        updateIcons();
         mLPlaceHolder.getLayoutParams().height = keyboardHeight;
     }
 
@@ -220,6 +229,27 @@ public class Keyboard {
 
         } else {
             mLPlaceHolder.setVisibility(View.GONE);
+        }
+
+        updateIcons();
+    }
+
+    private void updateIcons() {
+        if (isFlag(FLAG_RECORD)) {
+
+            mIvRecord.setImageResource(R.drawable.ic_keyboard);
+            mIvFace.setImageResource(R.drawable.ic_faces);
+            mIvAdd.setImageResource(R.drawable.ic_add);
+
+        } else if (isFlag(FLAG_FACE)) {
+            mIvRecord.setImageResource(R.drawable.ic_voice);
+            mIvFace.setImageResource(R.drawable.ic_keyboard);
+            mIvAdd.setImageResource(R.drawable.ic_add);
+
+        } else  {
+            mIvRecord.setImageResource(R.drawable.ic_voice);
+            mIvFace.setImageResource(R.drawable.ic_faces);
+            mIvAdd.setImageResource(R.drawable.ic_add);
         }
     }
 
