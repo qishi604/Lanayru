@@ -11,12 +11,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.KeyboardUtils;
+import com.blankj.utilcode.util.ScreenUtils;
 import com.blankj.utilcode.util.SizeUtils;
 import com.lanayru.app.R;
 
 public class Keyboard {
 
-    private static final int HEIGHT_MIN = SizeUtils.dp2px(40);
+    private static final int HEIGHT_MIN = SizeUtils.dp2px(10);
+
+    private static final int PANEL_HEIGHT_MIN = SizeUtils.dp2px(200);
+
+    private static final int PANEL_HEIGHT_MAX = ScreenUtils.getScreenHeight() / 2;
 
     private Activity mActivity;
 
@@ -53,6 +58,8 @@ public class Keyboard {
     private int FLAG_ADD = 1 << 2;
 
     private int mShowFlag = 0;
+
+    private boolean mKeyboardShow = false;
 
     public void assistActivity(Activity activity, View keyboardView) {
         mActivity = activity;
@@ -119,6 +126,31 @@ public class Keyboard {
         });
     }
 
+    public boolean isPanelVisible() {
+        return mLPlaceHolder.getVisibility() == View.VISIBLE;
+    }
+
+    /**
+     * 隐藏系统键盘或者其他功能键盘。可以用来监听 Activity 返回键
+     * @return true 隐藏成功，false 键盘未显示
+     */
+    public boolean hidePanel() {
+        if (isPanelVisible()) {
+            clearFlags();
+            onKeyboardHide();
+            return true;
+        } else if (isKeyboardVisible()) {
+            hideKeyboard();
+            return true;
+        }
+
+        return false;
+    }
+
+    private void clearFlags() {
+        mShowFlag = 0;
+    }
+
     private void showRecord() {
         mShowFlag = FLAG_RECORD;
 
@@ -150,7 +182,7 @@ public class Keyboard {
     }
 
     private void showKeyboard() {
-        mShowFlag = 0;
+        clearFlags();
         KeyboardUtils.showSoftInput(mEtMessage);
     }
 
@@ -159,7 +191,7 @@ public class Keyboard {
     }
 
     private void hideViews() {
-        mShowFlag = 0;
+        clearFlags();
 
         mTvRecord.setVisibility(View.GONE);
         mLPlaceHolder.setVisibility(View.GONE);
@@ -182,17 +214,19 @@ public class Keyboard {
                 // keyboard probably just became visible
                 h = usableHeightSansKeyboard - heightDifference;
 
+                mKeyboardShow = true;
+
                 mKeyboardHeight = heightDifference;
                 onKeyboardShow(mKeyboardHeight);
             } else {
                 // keyboard probably just became hidden
                 h = usableHeightSansKeyboard;
+                mKeyboardShow = false;
 
                 onKeyboardHide();
             }
             mUsableHeightPrevious = usableHeightNow;
 
-            // 试试padding，居然没抖动 ~~~
             mContentChild.setPadding(0, 0, 0, heightDifference);
 
         }
@@ -202,6 +236,11 @@ public class Keyboard {
         mEtMessage.setVisibility(View.VISIBLE);
         hideViews();
         updateIcons();
+
+        // 对 keyboardHeight 做个处理，小于最小高度，或者大于屏幕一半，用自带的 height
+        if (keyboardHeight > PANEL_HEIGHT_MAX || keyboardHeight < PANEL_HEIGHT_MIN) {
+            return;
+        }
         mLPlaceHolder.getLayoutParams().height = keyboardHeight;
     }
 
@@ -236,7 +275,6 @@ public class Keyboard {
 
     private void updateIcons() {
         if (isFlag(FLAG_RECORD)) {
-
             mIvRecord.setImageResource(R.drawable.ic_keyboard);
             mIvFace.setImageResource(R.drawable.ic_faces);
             mIvAdd.setImageResource(R.drawable.ic_add);
@@ -254,7 +292,7 @@ public class Keyboard {
     }
 
     private boolean isKeyboardVisible() {
-        return KeyboardUtils.isSoftInputVisible(mActivity);
+        return mKeyboardShow;
     }
 
     private boolean isFlag(int flag) {

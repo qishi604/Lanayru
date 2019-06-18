@@ -21,6 +21,9 @@ import org.jetbrains.anko.startActivity
  */
 class KeyboardActivity: BaseActivity() {
 
+    private var mKeyboard: Keyboard? = null
+
+
     override fun renderToolbar() {
         super.renderToolbar()
 
@@ -32,7 +35,15 @@ class KeyboardActivity: BaseActivity() {
     override fun render(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_keyboard)
 
-        var keyboard = Keyboard()
-        keyboard.assistActivity(_this, findViewById(R.id.keyboard))
+        mKeyboard = Keyboard()
+        mKeyboard!!.assistActivity(_this, findViewById(R.id.keyboard))
+    }
+
+    override fun onBackPressed() {
+        if (null != mKeyboard && mKeyboard!!.hidePanel()) {
+            return
+        }
+
+        super.onBackPressed()
     }
 }
