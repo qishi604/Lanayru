@@ -26,4 +26,9 @@ class StringTest {
         println("array: $array length ${array.size}")
     }
 
+    @Test
+    fun testFormat() {
+        println(String.format("%.2f M", 0.2345f))
+    }
+
 }

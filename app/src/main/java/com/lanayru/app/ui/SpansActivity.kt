@@ -6,6 +6,7 @@ import android.widget.TextView
 import com.lanayru.app.ui.base.BaseActivity
 import com.lanayru.extention.dp
 import com.lanayru.util.Spans
+import com.lanayru.view.emoji.EmojiSpan
 import org.jetbrains.anko.*
 
 /**
@@ -18,11 +19,21 @@ class SpansActivity : BaseActivity() {
 
     private lateinit var mTvContent: TextView
 
+    private lateinit var mTvContent1: TextView
+
     override fun render(savedInstanceState: Bundle?) {
 
         val root = verticalLayout() {
 
             mTvContent = textView() {
+                textColor = Color.GRAY
+                textSize = 18f
+                padding = 16.dp
+
+
+            }
+
+            mTvContent1 = textView() {
                 textColor = Color.GRAY
                 textSize = 18f
                 padding = 16.dp
@@ -43,5 +54,7 @@ class SpansActivity : BaseActivity() {
         val s3 = Spans(" Demo", color = Color.GREEN)
 
         Spans.setSpans(mTvContent, s1, s2, s3)
+
+        mTvContent1.text = EmojiSpan.getTestCharSequence()
     }
 }
