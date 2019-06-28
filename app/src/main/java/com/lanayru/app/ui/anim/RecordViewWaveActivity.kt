@@ -8,7 +8,9 @@ import kotlinx.android.synthetic.main.activity_record_wave.*
 
 class RecordViewWaveActivity : BaseActivity() {
 
-    val handler = Handler()
+//    lateinit var mInterval: Disposable
+
+    private val handler = Handler()
 
     override fun render(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_record_wave)
@@ -21,15 +23,22 @@ class RecordViewWaveActivity : BaseActivity() {
     }
 
     private fun update() {
+//        mInterval = Observable.interval(1, TimeUnit.SECONDS).subscribe {
+//            random()
+//        }
+
         handler.removeCallbacks(callback)
+        random()
+        handler.postDelayed(callback, 400)
+    }
 
-        var d = Math.random() * 100 + 20
+    private fun random() {
+        var d = Math.random() * 100
         wave.setBase(d.toInt())
-
-        handler.postDelayed(callback, 50)
     }
 
     override fun onDestroy() {
+//        mInterval.dispose()
         handler.removeCallbacks(callback)
         super.onDestroy()
     }

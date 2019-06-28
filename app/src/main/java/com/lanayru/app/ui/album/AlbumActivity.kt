@@ -15,6 +15,7 @@ import com.lanayru.app.ui.base.RvAdapter
 import com.lanayru.data.AlbumProvider
 import com.lanayru.extention.dp
 import com.lanayru.model.Media
+import com.lanayru.util.Logs
 import com.lanayru.util.MemoryLog
 import com.lanayru.view.IDateView
 import com.tbruyelle.rxpermissions2.RxPermissions
@@ -22,7 +23,11 @@ import io.reactivex.Observable
 import io.reactivex.disposables.Disposable
 import java.util.concurrent.TimeUnit
 
-class AlbumActivity: BaseActivity() {
+class AlbumActivity : BaseActivity() {
+
+    companion object {
+        val SPACE = 4.dp
+    }
 
     lateinit var mInterval: Disposable
 
@@ -30,16 +35,21 @@ class AlbumActivity: BaseActivity() {
 
     override fun render(savedInstanceState: Bundle?) {
 
-        allocMemory()
+        Logs.duration {
+            allocMemory()
+        }
 
-        val adapter= object : RvAdapter<Media>() {
+        val adapter = object : RvAdapter<Media>() {
             override fun onCreateView(parent: ViewGroup?, viewType: Int): View {
                 return ItemView(parent!!.context)
             }
         }
 
         val rv = RecyclerView(_this).apply {
+            setPadding(0,0, SPACE,0)
+            clipToPadding = false
             layoutManager = GridLayoutManager(_this, 4)
+
             this.adapter = adapter
         }
 
@@ -62,9 +72,11 @@ class AlbumActivity: BaseActivity() {
 
         init {
             scaleType = ScaleType.CENTER_CROP
-            val size = ScreenUtils.getScreenWidth() / 4
+
+            val size = (ScreenUtils.getScreenWidth() - 5 * SPACE) / 4
             layoutParams = ViewGroup.MarginLayoutParams(size, size).apply {
-                bottomMargin = 4.dp
+                leftMargin = SPACE
+                bottomMargin = SPACE
             }
         }
 
@@ -75,10 +87,13 @@ class AlbumActivity: BaseActivity() {
             }
     }
 
+    /**
+     * 申请了这么多内存，再加载图片都没有 OOM，车信的有可能是图片加载库，或者后台闪退
+     */
     private fun allocMemory() {
-        val size = 1000 * 1000 * 100
+        val size = 1000 * 1000 * 10
         mAlloc = ArrayList(size)
-        for (i in 0 .. size) {
+        for (i in 0..size) {
             mAlloc.add(i)
         }
     }

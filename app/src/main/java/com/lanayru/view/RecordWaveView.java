@@ -1,27 +1,36 @@
 package com.lanayru.view;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
 
 import com.blankj.utilcode.util.SizeUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 变化太直接显得动画比较生硬，可以做个过渡
+ */
 public class RecordWaveView extends View {
+
+    private static final int DEFAULT_SIZE = 30;
 
     private Paint mPaint;
 
-    private int mBase = 20;
+//    private int mBase = 20;
+
+    private int mAnimBase = 20;
 
     private int w = SizeUtils.dp2px(4);
 
     private int space = SizeUtils.dp2px(4);
 
-
+    private ValueAnimator valueAnimator;
 
     public RecordWaveView(Context context) {
         this(context, null);
@@ -44,7 +53,30 @@ public class RecordWaveView extends View {
     }
 
     public void setBase(int base) {
-        mBase = base;
+        if (null == valueAnimator) {
+            valueAnimator = ValueAnimator.ofInt(mAnimBase, base);
+            valueAnimator.setDuration(400);
+            valueAnimator.setInterpolator(new LinearInterpolator());
+            valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                @Override
+                public void onAnimationUpdate(ValueAnimator animation) {
+                    final int f = (int) animation.getAnimatedValue();
+                    refresh(f);
+                }
+            });
+
+        } else {
+
+            valueAnimator.cancel();
+            final int animatedValue = (int) valueAnimator.getAnimatedValue();
+            valueAnimator.setIntValues(animatedValue, base);
+        }
+
+        valueAnimator.start();
+    }
+
+    private void refresh(int base) {
+        mAnimBase = base;
         invalidate();
     }
 
@@ -52,18 +84,29 @@ public class RecordWaveView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        drawLine(canvas);
+        drawLines(canvas);
     }
 
-    private void drawLine(Canvas canvas) {
-        List<Integer> list = random(mBase);
+    private void drawLines(Canvas canvas) {
+        List<Integer> list = random(mAnimBase);
         final int N = list.size();
         float x = 0;
+        float startY = 0;
         float endY = 0;
+        final int H = getHeight();
+
+        // for fun
+//        final int color = ColorUtils.getRandomColor(false);
+//        mPaint.setColor(color);
+
         for (int i = 0; i < N; i++) {
             x += w + space;
-            endY = y(list.get(i));
-            canvas.drawLine(x, 0, x, endY, mPaint);
+            float h = y(list.get(i));
+            startY = (H - h) / 2;
+            endY = startY + h;
+
+
+            canvas.drawLine(x, startY, x, endY, mPaint);
         }
     }
 
@@ -78,7 +121,7 @@ public class RecordWaveView extends View {
     }
 
     public static List<Integer> random(int base) {
-        final int size = 20;
+        final int size = DEFAULT_SIZE;
         List<Integer> list = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
             int v = base + (int) (Math.random() * base * 0.2);
