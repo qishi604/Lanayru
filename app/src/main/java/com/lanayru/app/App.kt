@@ -3,8 +3,11 @@ package com.lanayru.app
 import android.app.Application
 import android.content.Context
 import android.support.multidex.MultiDex
-import com.blankj.utilcode.util.Utils
+import com.lanayru.BaseApp
+import com.lanayru.emoji.EmojiManager
 import com.lanayru.util.HotFix
+import com.lanayru.util.XCrashUtils
+import com.silencedut.fpsviewer.FpsViewer
 import kotlin.properties.Delegates
 
 /**
@@ -13,10 +16,10 @@ import kotlin.properties.Delegates
  * @since 2018/7/24
  * @version V1.0
  */
-class App : Application() {
+class App : BaseApp() {
 
     companion object {
-        private var sInstance: App by Delegates.notNull()
+        private var sInstance: Application by Delegates.notNull()
 
         fun getApp() = sInstance
     }
@@ -28,12 +31,22 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        Utils.init(this)
         sInstance = this
-
         HotFix.patch(this)
 
         logDirs()
+
+        initCrash()
+
+        EmojiManager.install()
+
+        FpsViewer.getViewer().initViewer(this)
+    }
+
+    private fun initCrash() {
+//        CrashLogger.setUncaughtExceptionHandler()
+
+        XCrashUtils.init(this)
     }
 
     fun logDirs() {

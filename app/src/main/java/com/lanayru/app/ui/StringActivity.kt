@@ -3,7 +3,7 @@ package com.lanayru.app.ui
 import android.os.Bundle
 import android.text.Html
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_string.*
 
 /**

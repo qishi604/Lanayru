@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnSvg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="svg"
+        />
+
+    <Button
+        android:id="@+id/btnPng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="png"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

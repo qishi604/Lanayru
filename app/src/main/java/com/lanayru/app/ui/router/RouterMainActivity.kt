@@ -1,10 +1,9 @@
 package com.lanayru.app.ui.router
 
 import android.os.Bundle
-import com.chenenyu.router.RouteCallback
-import com.chenenyu.router.Router
-import com.lanayru.app.ui.base.BaseActivity
+import com.alibaba.android.arouter.launcher.ARouter
 import com.lanayru.app.R
+import com.lanayru.library.ui.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_router_main.*
 import org.jetbrains.anko.sdk25.coroutines.onClick
 
@@ -14,9 +13,7 @@ class RouterMainActivity : BaseActivity() {
         setContentView(R.layout.activity_router_main)
 
         btn_player.onClick {
-            Router.build("music/player").go(_this) { status, uri, message ->
-                println("status: $status uri: $uri message: $message")
-            }
+            ARouter.getInstance().build("/music/player").navigation(_this)
         }
     }
 }

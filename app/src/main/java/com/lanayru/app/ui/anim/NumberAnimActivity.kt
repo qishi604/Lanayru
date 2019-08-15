@@ -5,7 +5,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.TextView
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.extention.dp
 import com.lanayru.extention.moneyFormat
 import org.jetbrains.anko.padding

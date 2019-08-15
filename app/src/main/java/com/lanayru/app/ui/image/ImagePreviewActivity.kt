@@ -1,9 +1,12 @@
 package com.lanayru.app.ui.image
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import android.widget.ImageView
-import com.lanayru.app.ui.base.BaseActivity
+import com.blankj.utilcode.util.BarUtils
+import com.lanayru.library.ui.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_image_preview.*
 
 
@@ -22,6 +25,9 @@ class ImagePreviewActivity : BaseActivity() {
     lateinit var mIvImage: ImageView
 
     override fun render(savedInstanceState: Bundle?) {
+        window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        BarUtils.setStatusBarColor(this, Color.TRANSPARENT)
+
         setContentView(com.lanayru.app.R.layout.activity_image_preview)
         mDecorView = window.decorView
         toolbar.title = "Preview"
@@ -40,7 +46,8 @@ class ImagePreviewActivity : BaseActivity() {
             }
         }
 
-//        hideSystemUI()
+
+
         showSystemUI()
     }
 

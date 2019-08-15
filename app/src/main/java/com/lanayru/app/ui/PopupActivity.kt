@@ -11,7 +11,7 @@ import android.widget.Button
 import android.widget.PopupWindow
 import android.widget.RelativeLayout
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import org.jetbrains.anko.relativeLayout
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.wrapContent

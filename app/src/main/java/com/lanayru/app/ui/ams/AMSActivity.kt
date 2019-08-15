@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import com.lanayru.app.R
 import com.lanayru.app.ui.PlayActivity
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.util.ActivityUtil
 import kotlinx.android.synthetic.main.activity_ams.*
 import org.jetbrains.anko.toast

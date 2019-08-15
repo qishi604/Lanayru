@@ -6,16 +6,15 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
-apply plugin: 'com.chenenyu.router'
-
 //apply from: '../aapt2public.gradle'
+//apply plugin: 'com.didiglobal.booster'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion versions.compileSdk
     defaultConfig {
         applicationId "com.lanayru"
-        minSdkVersion 21
-        targetSdkVersion 28
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -27,11 +26,39 @@ android {
             }
         }
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+
         // 只生成一个平台的so，测试单个平台的时候可以打开
 //        ndk {
 //            abiFilters "armeabi-v7a"
 //        }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("../keystore/release.keystore")
+            keyAlias 'Lanayru'
+            keyPassword 'asdfjkl;'
+            storePassword 'asdfjkl;'
+        }
+
+        release {
+            storeFile file("../keystore/release.keystore")
+            keyAlias 'Lanayru'
+            keyPassword 'asdfjkl;'
+            storePassword 'asdfjkl;'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -94,64 +121,15 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "com.android.support:appcompat-v7:$support_version"
-    implementation "com.android.support:support-compat:$support_version"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    // anko
-    implementation "org.jetbrains.anko:anko:$anko_version"
-    implementation "org.jetbrains.anko:anko-commons:$anko_version"
-    // recyclerView
-    implementation "com.android.support:recyclerview-v7:$support_version"
-    // multidex
-    implementation 'com.android.support:multidex:1.0.3'
-    // ViewModel and LiveData
-    implementation 'android.arch.lifecycle:extensions:1.1.1'
-    // alternatively, just ViewModel
-    implementation 'android.arch.lifecycle:viewmodel:1.1.1'
-    // alternatively, just LiveData
-    implementation 'android.arch.lifecycle:livedata:1.1.1'
-    kapt "android.arch.lifecycle:compiler:1.1.1"
-    // Room (use 1.1.0-beta3 for latest beta)
-    implementation 'android.arch.persistence.room:runtime:1.1.1'
-    kapt "android.arch.persistence.room:compiler:1.1.1"
-    // Paging
-    implementation 'android.arch.paging:runtime:1.0.0-rc1'
-    // eth web3j
-//    implementation 'org.web3j:core:3.3.1-android'
 
-    // rxpermission
-    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    // library
+    implementation project(':lib_base')
 
-    // gif
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    kapt "com.alibaba:arouter-compiler:$versions.arouter_compiler"
 
-    // glide
-    implementation 'com.github.bumptech.glide:glide:4.8.0'
-    kapt 'com.github.bumptech.glide:compiler:4.8.0'
-
-    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-16'
-    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-16'//没有使用特殊Header，可以不加这行
-
-    // rxjava
-    implementation "io.reactivex.rxjava2:rxjava:2.2.4"
-    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
-    // retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
-    // eventbus
-    implementation 'org.greenrobot:eventbus:3.1.1'
-    //
-    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
-
-    // circle imageview
-    implementation 'de.hdodenhof:circleimageview:2.2.0'
-    //
-    implementation "com.squareup.okhttp3:logging-interceptor:3.9.0"
-
-    // utilcode
-    implementation 'com.blankj:utilcode:1.23.7'
-
+    debugImplementation "com.github.silencedut.fpsviewer:fpsviewer:0.8.2"
+    releaseImplementation "com.github.silencedut.fpsviewer:fpsviewer-no-op:0.8.2"
 }

@@ -6,8 +6,8 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import com.lanayru.app.ui.base.BaseActivity
-import com.lanayru.app.ui.base.RvAdapter
+import com.lanayru.library.ui.base.BaseActivity
+import com.lanayru.library.ui.base.RvAdapter
 import com.lanayru.extention.dp
 import com.lanayru.view.ImageItemView
 import com.lanayru.view.rv.BetterRecyclerView

@@ -3,7 +3,7 @@ package com.lanayru.app.ui
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.util.LeakBitmapList
 import org.jetbrains.anko.button
 import org.jetbrains.anko.linearLayout

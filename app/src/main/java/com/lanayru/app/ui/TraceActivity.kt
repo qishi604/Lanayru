@@ -2,7 +2,7 @@ package com.lanayru.app.ui
 
 import android.os.Bundle
 import android.os.Debug
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.util.Logs
 import org.jetbrains.anko.button
 import org.jetbrains.anko.linearLayout

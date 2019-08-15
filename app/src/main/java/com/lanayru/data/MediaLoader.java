@@ -13,7 +13,9 @@ import android.support.v4.content.Loader;
 import android.text.TextUtils;
 
 import com.lanayru.model.Media;
+import com.lanayru.util.Logs;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,21 +31,11 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 
-/**
- * @CreatedDesc: MediaLoader
- * @Author: 黄新朋
- * @CreatedDate: 2019/3/25
- * @Version: 1.0
- */
 public class MediaLoader implements LoaderManager.LoaderCallbacks {
-
-    interface Callback {
-
-        void call(ArrayList<Media> list);
-    }
 
     private static final String[] MEDIA_PROJECTION = {
             MediaStore.Files.FileColumns.DATA,
+            MediaStore.Images.ImageColumns.MINI_THUMB_MAGIC,
             MediaStore.Files.FileColumns.DISPLAY_NAME,
             MediaStore.Files.FileColumns.DATE_ADDED,
             MediaStore.Files.FileColumns.MEDIA_TYPE,
@@ -51,6 +43,7 @@ public class MediaLoader implements LoaderManager.LoaderCallbacks {
             MediaStore.Files.FileColumns._ID,
             MediaStore.Files.FileColumns.PARENT,
             MediaStore.Video.Media.DURATION
+
     };
 
     Context mContext;
@@ -122,6 +115,12 @@ public class MediaLoader implements LoaderManager.LoaderCallbacks {
         try {
             while (cursor.moveToNext()) {
                 String path = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Files.FileColumns.DATA));
+                Logs.INSTANCE.i("media data " + path);
+                if (!isExist(path)) {
+                    continue;
+                }
+
+                String thumb = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Images.ImageColumns.MINI_THUMB_MAGIC));
                 String name = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Files.FileColumns.DISPLAY_NAME));
                 long dateTime = cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.Files.FileColumns.DATE_ADDED));
                 int mediaType = cursor.getInt(cursor.getColumnIndexOrThrow(MediaStore.Files.FileColumns.MEDIA_TYPE));
@@ -130,7 +129,11 @@ public class MediaLoader implements LoaderManager.LoaderCallbacks {
                 if (TextUtils.isEmpty(path)) {
                     continue;
                 }
-                Media media = new Media(id, path, name, mediaType, dateTime, size, 0);
+                if (TextUtils.isEmpty(thumb)) {
+                    thumb = path;
+                }
+
+                Media media = new Media(id, path, thumb, name, mediaType, dateTime, size, 0);
 
                 medias.add(media);
             }
@@ -175,6 +178,19 @@ public class MediaLoader implements LoaderManager.LoaderCallbacks {
         }
 
         return duration;
+    }
+
+    private boolean isExist(String path) {
+        if (TextUtils.isEmpty(path)) {
+            return false;
+        }
+
+        File f = new File(path);
+        if (f.exists() && f.length() > 10) {
+            return true;
+        }
+
+        return false;
     }
 
     /**

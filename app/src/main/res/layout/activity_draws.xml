@@ -3,10 +3,23 @@
     android:id="@+id/l_content"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     >
 
-    <androidx.cardview.widget.CardView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="😨"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="😨"
         />
 
     <ImageView
@@ -15,15 +28,33 @@
         android:src="@drawable/link"
         />
 
+    <!--<com.gcssloop.widget.RCRelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:round_corner="20dp"-->
+        <!--android:layout_margin="16dp"-->
+        <!--&gt;-->
+
+        <!--<com.lanayru.view.SImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/link"-->
+            <!--/>-->
+
+    <!--</com.gcssloop.widget.RCRelativeLayout>-->
+
     <com.lanayru.view.SLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
 
         <com.lanayru.view.SImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:scaleType="centerCrop"
             android:src="@drawable/link"
             />
 

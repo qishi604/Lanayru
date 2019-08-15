@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
-import com.lanayru.app.ui.base.BaseActivity
-import com.lanayru.app.ui.base.RvAdapter
+import com.lanayru.library.ui.base.BaseActivity
+import com.lanayru.library.ui.base.RvAdapter
 import com.lanayru.extention.dp
 import com.lanayru.theme.Skin
 import com.lanayru.theme.ThemeHelper

@@ -2,7 +2,7 @@ package com.lanayru.app.ui.keyboard
 
 import android.os.Bundle
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.app.ui.bug.SoftKeyboardActivity
 import com.lanayru.view.Keyboard
 import org.jetbrains.anko.startActivity

@@ -5,7 +5,7 @@ import android.support.v7.app.AlertDialog
 import android.view.Gravity
 import android.widget.EditText
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.util.hideSoftKeyboard
 import com.lanayru.util.showSoftKeyboard
 import kotlinx.android.synthetic.main.activity_soft_keyboard_dialog.*

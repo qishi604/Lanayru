@@ -6,7 +6,7 @@ import android.media.AudioManager
 import android.os.Bundle
 import android.view.KeyEvent
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_player.*
 
 /**

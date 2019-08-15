@@ -4,9 +4,9 @@ import android.Manifest
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.Environment
-import com.chenenyu.router.annotation.Route
+import com.alibaba.android.arouter.facade.annotation.Route
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.player.FlacPlayer
 import com.lanayru.util.getField
 import com.tbruyelle.rxpermissions2.RxPermissions
@@ -21,7 +21,7 @@ import java.io.File
  * @since 2018/9/3
  *
  **/
-@Route("music/player")
+@Route(path = "music/player")
 class MusicPlayerActivity: BaseActivity() {
 
     private lateinit var mPlayer: FlacPlayer

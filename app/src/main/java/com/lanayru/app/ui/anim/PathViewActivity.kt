@@ -1,7 +1,7 @@
 package com.lanayru.app.ui.anim
 
 import android.os.Bundle
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.view.PathAnimView
 
 class PathViewActivity: BaseActivity() {

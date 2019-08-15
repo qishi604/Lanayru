@@ -1,22 +1,39 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+
+    ext.versions = [
+            minSdk: 21,
+            targetSdk: 28,
+            compileSdk: 28,
+            suppportLibrary: '27.1.1',
+            arouter: '1.5.0',
+            arouter_compiler: '1.2.2',
+            lottieVersion: '2.7.0'
+    ]
+
+    ext.booster_version = '0.22.0'
     ext.kotlin_version = '1.3.10'
     ext.anko_version='0.10.5'
     ext.support_version='27.1.1'
-    ext.router_version='1.6.0'
+    ext.router_version='1.5.0'
+
+
     repositories {
         google()
         jcenter()
         mavenCentral()
+//        maven { url 'https://oss.sonatype.org/content/repositories/public' } // booster
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.chenenyu.router:gradle-plugin:$router_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+//        classpath "com.didiglobal.booster:booster-gradle-plugin:$booster_version"
+//        classpath "com.didiglobal.booster:booster-task-all:$booster_version"
+//        classpath "com.didiglobal.booster:booster-transform-all:$booster_version"
     }
 }
 
@@ -26,6 +43,8 @@ allprojects {
         jcenter()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+//        maven { url 'https://oss.sonatype.org/content/repositories/public' }
+        maven { url "http://lib.gcssloop.com:8081/repository/gcssloop-central/" }
     }
 }
 

@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import android.view.Window
 import android.view.WindowManager
 import android.widget.TextView
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import org.jetbrains.anko.matchParent
 
 class ReplaceContentViewActivity: BaseActivity() {

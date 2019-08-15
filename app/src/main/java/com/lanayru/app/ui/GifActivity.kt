@@ -1,9 +1,11 @@
 package com.lanayru.app.ui
 
 import android.os.Bundle
+import android.view.ViewGroup
 import com.bumptech.glide.Glide
-import com.lanayru.GlideApp
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
+import com.lanayru.extention.dp
+import com.lanayru.util.AssetGifLoader
 import org.jetbrains.anko.verticalLayout
 import pl.droidsonroids.gif.GifDrawable
 import pl.droidsonroids.gif.GifImageView
@@ -30,12 +32,13 @@ class GifActivity: BaseActivity() {
         mIv1 = GifImageView(_this)
         mIv2 = GifImageView(_this)
 
-        root.addView(mIv1)
+        root.addView(mIv1, ViewGroup.MarginLayoutParams(120.dp, 120.dp))
         root.addView(mIv2)
 
         setContentView(root)
 
-        renderGif()
+//        renderGif()
+        renderGif1()
     }
 
     private fun renderGif() {
@@ -46,8 +49,15 @@ class GifActivity: BaseActivity() {
         mIv2.setImageDrawable(g2)
     }
 
+    private fun renderGif1() {
+        AssetGifLoader.load(mIv1, "g1_10.gif")
+        Glide.with(_this)
+                .load(AssetGifLoader.getPath("g1_10.gif"))
+                .into(mIv2)
+    }
+
     private fun testGlide() {
-        GlideApp.with(this).load("").into(mIv1)
-        Glide.with(this).load("").into(mIv1)
+//        GlideApp.with(this).load("").into(mIv1)
+//        Glide.with(this).load("").into(mIv1)
     }
 }

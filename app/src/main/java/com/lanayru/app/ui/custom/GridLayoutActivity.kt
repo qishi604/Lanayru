@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.Gravity
 import android.view.ViewGroup
 import android.widget.TextView
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.extention.dp
 import com.lanayru.view.GridLayout
 import org.jetbrains.anko.backgroundColor

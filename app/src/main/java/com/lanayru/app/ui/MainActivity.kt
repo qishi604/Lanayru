@@ -8,8 +8,8 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
-import com.lanayru.app.ui.base.RvAdapter
+import com.lanayru.library.ui.base.BaseActivity
+import com.lanayru.library.ui.base.RvAdapter
 import com.lanayru.model.Event
 import com.lanayru.util.Logs
 import com.lanayru.view.ActivityItemView

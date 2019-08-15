@@ -2,7 +2,7 @@
 //
 //import android.os.Bundle
 //import android.widget.TextView
-//import com.lanayru.app.ui.base.BaseActivity
+//import com.lanayru.library.ui.base.BaseActivity
 //import com.lanayru.extention.dp
 //import com.lanayru.util.Files
 //import com.lanayru.util.execute

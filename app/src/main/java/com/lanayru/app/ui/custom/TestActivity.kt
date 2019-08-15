@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.SeekBar
 import com.kibey.echo.ui.widget.BluetoothBatteryView
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.util.invokeMethod
 import kotlinx.android.synthetic.main.activity_custom_test.*
 

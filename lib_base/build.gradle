@@ -1,0 +1,109 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "com.android.support:appcompat-v7:$support_version"
+    api "com.android.support:support-compat:$support_version"
+    api 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    // anko
+    api "org.jetbrains.anko:anko:$anko_version"
+    api "org.jetbrains.anko:anko-commons:$anko_version"
+    // recyclerView
+    api "com.android.support:recyclerview-v7:$support_version"
+    // multidex
+    api 'com.android.support:multidex:1.0.3'
+    // ViewModel and LiveData
+    api 'android.arch.lifecycle:extensions:1.1.1'
+    // alternatively, just ViewModel
+    api 'android.arch.lifecycle:viewmodel:1.1.1'
+    // alternatively, just LiveData
+    api 'android.arch.lifecycle:livedata:1.1.1'
+    kapt "android.arch.lifecycle:compiler:1.1.1"
+    // Room (use 1.1.0-beta3 for latest beta)
+    api 'android.arch.persistence.room:runtime:1.1.1'
+    kapt "android.arch.persistence.room:compiler:1.1.1"
+    // Paging
+    api 'android.arch.paging:runtime:1.0.0-rc1'
+    // eth web3j
+//    implementation 'org.web3j:core:3.3.1-android'
+
+    // rxpermission
+    api 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    // gif
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-16'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-16'//没有使用特殊Header，可以不加这行
+
+    // rxjava
+    api "io.reactivex.rxjava2:rxjava:2.2.4"
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    // retrofit
+    api 'com.squareup.retrofit2:retrofit:2.5.0'
+    // eventbus
+    api 'org.greenrobot:eventbus:3.1.1'
+    //
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+
+    // circle imageview
+    api 'de.hdodenhof:circleimageview:2.2.0'
+    //
+    api "com.squareup.okhttp3:logging-interceptor:3.9.0"
+
+    // utilcode
+    api 'com.blankj:utilcode:1.23.7'
+
+    // glide
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    kapt 'com.github.bumptech.glide:compiler:4.8.0'
+
+    // arouter
+    api "com.alibaba:arouter-api:$versions.arouter_compiler"
+
+    // crash
+    implementation 'com.iqiyi.xcrash:xcrash-android-lib:2.1.9'
+
+    api "com.airbnb.android:lottie:$versions.lottieVersion"
+}

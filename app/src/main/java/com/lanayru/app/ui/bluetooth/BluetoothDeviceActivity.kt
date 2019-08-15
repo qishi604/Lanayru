@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.util.invokeMethod
 import kotlinx.android.synthetic.main.activity_bluetooth_device.*
 import org.jetbrains.anko.toast

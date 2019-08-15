@@ -15,7 +15,7 @@ class SpaceItemDecoration(size: Int): RecyclerView.ItemDecoration() {
 
     val size = size
 
-    override fun getItemOffsets(outRect: Rect?, view: View?, parent: RecyclerView?, state: RecyclerView.State?) {
+    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
         if (null == outRect || null == view || null == parent) {
             return
         }

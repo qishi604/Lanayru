@@ -3,7 +3,7 @@ package com.lanayru.app.ui.anim
 import android.os.Bundle
 import android.view.ViewGroup
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.extention.dp
 import com.lanayru.view.FrameAnimView
 import org.jetbrains.anko.verticalLayout

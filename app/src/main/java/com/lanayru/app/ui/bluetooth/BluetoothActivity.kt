@@ -9,7 +9,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.util.Logs
 import com.tbruyelle.rxpermissions2.RxPermissions
 import org.jetbrains.anko.toast

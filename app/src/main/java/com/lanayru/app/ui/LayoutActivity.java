@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.lanayru.app.R;
-import com.lanayru.app.ui.base.BaseActivity;
+import com.lanayru.library.ui.base.BaseActivity;
 import com.lanayru.extention.AndroidExtensionsKt;
 
 import org.jetbrains.annotations.Nullable;

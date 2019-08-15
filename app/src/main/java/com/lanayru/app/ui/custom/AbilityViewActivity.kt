@@ -3,7 +3,7 @@ package com.lanayru.app.ui.custom
 import android.os.Bundle
 import android.view.Choreographer
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.util.Logs
 
 class AbilityViewActivity: BaseActivity() {

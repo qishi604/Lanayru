@@ -3,7 +3,7 @@ package com.lanayru.app.ui.architecture
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.TextView
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.dao.UserDao
 import com.lanayru.data.UserDataBase
 import com.lanayru.extention.dp

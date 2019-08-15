@@ -68,11 +68,9 @@
         <activity android:name=".ui.PlayActivity" />
         <activity android:name=".ui.bluetooth.BluetoothDeviceActivity" />
         <activity android:name=".ui.ams.AMSActivity" />
-        <activity android:name=".ui.GifActivity" />
         <activity android:name=".ui.ViewEventActivity" />
         <activity android:name=".ui.custom.PressScaleViewActivity" />
         <activity android:name=".ui.router.RouterMainActivity" />
-        <activity android:name=".ui.custom.DrawViewsActivity" />
         <activity android:name=".ui.ReplaceContentViewActivity" />
         <activity android:name=".ui.custom.WaveViewActivity" />
         <activity android:name=".ui.rv.RvNestActivity" />
@@ -99,8 +97,7 @@
         <activity android:name=".ui.ImageDetailActivity" />
         <activity android:name=".ui.PopupActivity" />
         <activity android:name=".ui.KeyboardTestActivity" />
-        <activity android:name=".ui.image.ImagePreviewActivity"
-            />
+
         <activity android:name=".ui.ChronometerActivity" />
         <activity android:name=".ui.bug.SoftKeyboardActivity"
             android:screenOrientation="portrait"
@@ -112,7 +109,35 @@
             />
         <activity android:name=".ui.SpansActivity"/>
         <activity android:name=".ui.anim.RecordViewWaveActivity" />
-        <activity android:name=".ui.album.AlbumActivity" />
+        <activity android:name=".ui.GifActivity" />
+        <activity android:name=".ui.GifEmojiActivity" />
+        <activity android:name=".ui.album.VideosActivity" />
+        <activity android:name=".ui.album.AlbumActivity"/>
+        <activity android:name=".ui.album.AlbumActivity1" android:process=":album1" />
+        <activity android:name=".ui.album.AlbumActivity2" android:process=":album2" />
+        <activity android:name=".ui.album.AlbumActivity3" android:process=":album3" />
+        <activity android:name=".ui.album.AlbumActivity4" android:process=":album4" />
+        <activity android:name=".ui.album.AlbumActivity5" android:process=":album5" />
+        <activity android:name=".ui.album.AlbumActivity6" android:process=":album6" />
+        <activity android:name=".ui.album.EmptyProcessActivity" android:process=":empty" />
+        <activity android:name=".ui.album.DetailActivity"
+            />
+        <activity android:name=".ui.FragmentContainerActivity" />
+        <activity android:name=".ui.ToastActivity" />
+        <activity android:name=".ui.image.ImagePreviewActivity"
+            >
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:name=".ui.TestThemeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity android:name=".ui.emoji.EmojiActivity" />
+        <activity android:name=".ui.album.LoadMemActivity" />
+        <activity android:name=".ui.custom.DrawViewsActivity" />
+        <activity android:name=".ui.emoji.EmojiKeyboardActivity" />
+        <activity android:name=".ui.lottie.LottieActivity" />
+        <activity android:name=".ui.emoji.SpanEmojiActivity" />
+        <activity android:name=".ui.custom.TouchTestActivity" />
     </application>
 
 </manifest>

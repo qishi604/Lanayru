@@ -10,7 +10,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.chad.library.adapter.base.loadmore.SimpleLoadMoreView;
 import com.lanayru.app.R;
-import com.lanayru.app.ui.base.BaseActivity;
+import com.lanayru.library.ui.base.BaseActivity;
 
 import org.jetbrains.annotations.Nullable;
 

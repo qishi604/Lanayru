@@ -8,7 +8,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
-import com.lanayru.app.ui.base.RvAdapter
+import com.lanayru.library.ui.base.RvAdapter
 import com.lanayru.view.BluetoothItemView
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast

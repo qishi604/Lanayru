@@ -2,7 +2,7 @@ package com.lanayru.app.ui
 
 import android.os.Bundle
 import android.view.inputmethod.EditorInfo
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.extention.dp
 import org.jetbrains.anko.editText
 import org.jetbrains.anko.linearLayout

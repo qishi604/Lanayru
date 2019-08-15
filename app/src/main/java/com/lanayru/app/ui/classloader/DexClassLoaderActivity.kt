@@ -4,7 +4,7 @@ import android.content.res.Resources
 import android.os.Bundle
 import android.widget.ImageView
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.extention.dp
 import com.lanayru.util.ApkUtil
 import com.lanayru.util.Files

@@ -5,7 +5,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_autosizing_textview.*
 import org.jetbrains.anko.sdk25.coroutines.onClick
 

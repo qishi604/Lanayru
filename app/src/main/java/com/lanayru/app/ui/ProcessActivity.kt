@@ -1,7 +1,7 @@
 package com.lanayru.app.ui
 
 import android.os.Bundle
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import org.jetbrains.anko.button
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.toast

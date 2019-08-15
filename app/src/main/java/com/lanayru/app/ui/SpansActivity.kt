@@ -3,10 +3,10 @@ package com.lanayru.app.ui
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.extention.dp
 import com.lanayru.util.Spans
-import com.lanayru.view.emoji.EmojiSpan
+import com.lanayru.view.emoji.EmojiSpans
 import org.jetbrains.anko.*
 
 /**
@@ -55,6 +55,6 @@ class SpansActivity : BaseActivity() {
 
         Spans.setSpans(mTvContent, s1, s2, s3)
 
-        mTvContent1.text = EmojiSpan.getTestCharSequence()
+        mTvContent1.text = EmojiSpans.getTestCharSequence()
     }
 }

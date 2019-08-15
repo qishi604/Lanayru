@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.blankj.utilcode.util.KeyboardUtils
 import com.lanayru.app.R
-import com.lanayru.app.ui.base.BaseActivity
+import com.lanayru.library.ui.base.BaseActivity
 import com.lanayru.view.AndroidBug5497Workaround
 import kotlinx.android.synthetic.main.layout_keyboard.*
 
